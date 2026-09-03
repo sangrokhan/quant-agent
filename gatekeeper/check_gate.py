@@ -38,6 +38,7 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
@@ -74,8 +75,15 @@ class UsageStateError(RuntimeError):
     """Raised when usage_state.json is missing, unreadable, or malformed."""
 
 
-# Path to the Hermes agent package that ships agent.account_usage. Overridable
-# via env var for portability (e.g. different machine layout).
+# Path to the Hermes agent's own venv Python, whose site-packages carries the
+# `agent` package (agent.account_usage) plus its deps (httpx, etc). We must
+# use THIS interpreter to run the live-fetch snippet -- the system/uv python
+# running this script does not have httpx installed, and importing
+# agent.account_usage under the wrong interpreter raises ModuleNotFoundError.
+HERMES_AGENT_VENV_PYTHON = os.environ.get(
+    "HERMES_AGENT_VENV_PYTHON",
+    os.path.expanduser("~/.hermes/hermes-agent/venv/bin/python"),
+)
 HERMES_AGENT_PATH = os.environ.get(
     "HERMES_AGENT_PATH", os.path.expanduser("~/.hermes/hermes-agent")
 )
@@ -90,38 +98,65 @@ def load_usage_state_live() -> UsageState:
     Claude Code / Claude Pro-Max itself (the ``five_hour`` window,
     ``utilization`` field), not an estimate derived from local logs.
 
-    Raises UsageStateError if the Hermes module can't be imported or the API
-    call fails/returns no usable window (e.g. not logged in via OAuth).
+    Runs as a subprocess using the Hermes agent's OWN venv Python
+    (HERMES_AGENT_VENV_PYTHON), because ``agent.account_usage`` needs its
+    dependencies (httpx, etc) which only that venv has installed -- the
+    interpreter running this gatekeeper script (system python3 / uv-managed
+    quant-agent venv) does not and should not carry Hermes' own deps.
+
+    Raises UsageStateError if the subprocess/import/API call fails for any
+    reason (venv missing, not logged in via OAuth, network error, etc).
     """
-    if HERMES_AGENT_PATH not in sys.path:
-        sys.path.insert(0, HERMES_AGENT_PATH)
+    probe = (
+        "import sys, json; "
+        f"sys.path.insert(0, {HERMES_AGENT_PATH!r}); "
+        "from agent.account_usage import fetch_account_usage; "
+        "snap = fetch_account_usage('anthropic'); "
+        "windows = [] if snap is None else list(snap.windows); "
+        "five_hour = next((w for w in windows if w.label == 'Current session'), None); "
+        "print(json.dumps({"
+        "    'available': bool(snap and snap.available), "
+        "    'unavailable_reason': getattr(snap, 'unavailable_reason', None) if snap else None, "
+        "    'used_percent': (five_hour.used_percent if five_hour else None), "
+        "    'reset_at': (five_hour.reset_at.isoformat() if (five_hour and five_hour.reset_at) else None), "
+        "}))"
+    )
     try:
-        from agent.account_usage import fetch_account_usage  # type: ignore
-    except ImportError as exc:
+        proc = subprocess.run(
+            [HERMES_AGENT_VENV_PYTHON, "-c", probe],
+            capture_output=True,
+            text=True,
+            timeout=20,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
         raise UsageStateError(
-            f"could not import agent.account_usage from {HERMES_AGENT_PATH}: {exc}"
+            f"failed to run live usage probe via {HERMES_AGENT_VENV_PYTHON}: {exc}"
         ) from exc
 
+    if proc.returncode != 0:
+        raise UsageStateError(
+            f"live usage probe exited {proc.returncode}: {proc.stderr.strip()[-500:]}"
+        )
+
     try:
-        snapshot = fetch_account_usage("anthropic")
-    except Exception as exc:  # network/API errors, auth errors, etc.
-        raise UsageStateError(f"fetch_account_usage('anthropic') failed: {exc}") from exc
+        payload = json.loads(proc.stdout.strip().splitlines()[-1])
+    except (json.JSONDecodeError, IndexError) as exc:
+        raise UsageStateError(
+            f"live usage probe returned unparseable output: {proc.stdout!r}"
+        ) from exc
 
-    if snapshot is None or not snapshot.available:
-        reason = getattr(snapshot, "unavailable_reason", None) if snapshot else None
-        raise UsageStateError(f"account usage snapshot unavailable: {reason or 'no data'}")
+    if not payload.get("available") or payload.get("used_percent") is None:
+        raise UsageStateError(
+            f"account usage snapshot unavailable: {payload.get('unavailable_reason') or 'no data'}"
+        )
 
-    five_hour = next((w for w in snapshot.windows if w.label == "Current session"), None)
-    if five_hour is None or five_hour.used_percent is None:
-        raise UsageStateError("account usage snapshot has no 'Current session' (5h) window")
-
-    reset_iso = five_hour.reset_at.isoformat() if five_hour.reset_at else None
+    used_pct = float(payload["used_percent"])
     return UsageState(
-        usage_pct=float(five_hour.used_percent),
-        limit_reached=float(five_hour.used_percent) >= HARD_LIMIT_PCT,
+        usage_pct=used_pct,
+        limit_reached=used_pct >= HARD_LIMIT_PCT,
         updated_at=datetime.now(timezone.utc).isoformat(),
-        window_reset_at=reset_iso,
-        raw={"source": "anthropic_oauth_usage_api", "label": five_hour.label},
+        window_reset_at=payload.get("reset_at"),
+        raw={"source": "anthropic_oauth_usage_api", "label": "Current session"},
     )
 
 

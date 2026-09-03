@@ -10,3 +10,4 @@ run, to empirically estimate per-run consumption for the hourly cronjob
 | 17:53 | before manual run #1 (first-ever loop, heavy debugging) | 32.0% | - |
 | 17:56 | after manual run #1 | 36.0% | +4.0% |
 | 18:10 | baseline before cron run #1 (manual trigger via `run`) | 36.0% | - |
+| 18:12 | after cron run #1 (manual trigger, BTC momentum, rejected on MDD) | 38.0% | +2.0% |
