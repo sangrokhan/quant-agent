@@ -21,9 +21,18 @@ Weekdays (Mon-Fri) 10:00-18:00 KST — "business hours":
     state file) we fail closed (not approved) during business hours.
 
 Outside business hours (weekday evenings/nights + all of Sat/Sun):
-    Approve running the loop as long as usage has not hit the hard limit
-    (100%). Once the limit is reached, stay blocked until the usage state
-    file reports the rolling window has reset (usage below 100% again).
+    Approve running the loop as long as usage has not hit ``SAFE_STOP_PCT``.
+
+Universal safety floor (applies at ALL times, business hours or not):
+    Regardless of day/time, usage >= ``SAFE_STOP_PCT`` (95%, i.e. always
+    keep >=5% headroom) always blocks. We deliberately stop 5 points short
+    of the true 100% ceiling rather than running all the way to it: a run
+    that gets cut off mid-iteration by Anthropic's own rate limit is much
+    harder to reason about / recover from (partial strategy files, a
+    half-written knowledge base entry, an uncommitted git working tree)
+    than one that self-stops cleanly a little early. Once blocked this way,
+    stays blocked until the usage state reports the rolling window has
+    reset (usage drops back below the floor).
 
 Output
 ------
@@ -53,6 +62,16 @@ BUSINESS_HOURS_MAX_PCT = 75.0
 # Hard ceiling — usage state at/above this is always a hard stop, regardless
 # of day/time, because Claude itself will refuse further calls anyway.
 HARD_LIMIT_PCT = 100.0
+
+# Universal safety floor: ALWAYS stop once usage reaches this, even outside
+# business hours / on weekends where the policy would otherwise allow
+# running "until the hard limit". We deliberately stop 5 points short of
+# the real ceiling (100%) rather than running all the way to it, because a
+# run that gets cut off mid-iteration by Anthropic's own rate limit is much
+# harder to reason about / recover from than one that self-stops cleanly a
+# little early. This replaces HARD_LIMIT_PCT as the effective universal
+# stop condition; HARD_LIMIT_PCT is kept only as a documented true ceiling.
+SAFE_STOP_PCT = 95.0
 
 BUSINESS_HOURS_START = 10  # inclusive, KST
 BUSINESS_HOURS_END = 18  # exclusive, KST
@@ -247,12 +266,14 @@ def evaluate(now_kst: Optional[datetime] = None, usage_state_path: str = DEFAULT
             "suggested_workload": "light",
         }
 
-    if state.limit_reached or state.usage_pct >= HARD_LIMIT_PCT:
+    if state.limit_reached or state.usage_pct >= SAFE_STOP_PCT:
         return {
             "approved": False,
             "reason": (
-                f"5h rolling usage at {state.usage_pct:.1f}% (>= {HARD_LIMIT_PCT:.0f}%): "
-                "hard limit reached, waiting for window reset "
+                f"5h rolling usage at {state.usage_pct:.1f}% (>= {SAFE_STOP_PCT:.0f}% "
+                "safety floor, always enforced regardless of day/time): stopping "
+                "cleanly to keep >=5% headroom rather than run to the true "
+                f"{HARD_LIMIT_PCT:.0f}% ceiling and risk a mid-iteration cutoff "
                 f"(window_reset_at={state.window_reset_at!r})"
             ),
             "suggested_workload": "light",
@@ -283,7 +304,7 @@ def evaluate(now_kst: Optional[datetime] = None, usage_state_path: str = DEFAULT
         "approved": True,
         "reason": (
             f"outside weekday business hours / weekend (KST {now_kst.strftime('%a %H:%M')}); "
-            f"usage {state.usage_pct:.1f}%, below hard limit"
+            f"usage {state.usage_pct:.1f}%, below {SAFE_STOP_PCT:.0f}% safety floor"
         ),
         "suggested_workload": suggest_workload(state.usage_pct, business_hours),
     }
