@@ -1,7 +1,17 @@
-data/cache/
+data/cache/*
+!data/cache/.gitkeep
 __pycache__/
 *.pyc
 .venv/
 .env
 *.egg-info/
 .pytest_cache/
+
+# gatekeeper/usage_state.json IS committed on purpose as a mock/example.
+# If a future task wires up a real, frequently-updated usage state file,
+# write it to a different path (e.g. gatekeeper/usage_state.local.json) and
+# ignore that instead of overwriting the example in place.
+gatekeeper/usage_state.local.json
+
+# local paper-trading ledger (runtime state, not source)
+paper_trading/paper_ledger.json

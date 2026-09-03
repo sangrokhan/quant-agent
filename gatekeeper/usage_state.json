@@ -1,0 +1,9 @@
+{
+  "_comment": "MOCK example state — no real usage API is wired up yet. This file's schema is the contract check_gate.py reads. Replace values / regenerate this file from a real Claude usage lookup in a future task.",
+  "updated_at": "2026-09-03T08:00:00Z",
+  "rolling_window_hours": 5,
+  "window_start": "2026-09-03T03:00:00Z",
+  "window_reset_at": "2026-09-03T13:00:00Z",
+  "usage_pct": 42.0,
+  "limit_reached": false
+}

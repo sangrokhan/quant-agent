@@ -1,0 +1,12 @@
+# Scaffold-level dependencies (in addition to pyproject.toml's uv-managed
+# deps for src/quant_agent). Kept here too so `pip install -r requirements.txt`
+# works without uv for anyone just running the scaffold scripts directly.
+
+pandas>=2.2
+pyarrow>=17.0
+yfinance>=0.2.40
+ccxt>=4.3
+vectorbt>=0.26
+
+# dev/test
+pytest>=8.0
