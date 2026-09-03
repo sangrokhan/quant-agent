@@ -46,7 +46,9 @@ on top of Hermes cronjobs.
   the Hermes cronjob's own LLM turn — when the gatekeeper approves a run,
   that LLM turn follows the procedure in [`RESEARCH_LOOP.md`](RESEARCH_LOOP.md)
   step by step: **research externally first** (keyword discovery -> web
-  search -> dedupe against `knowledge_base/visited_pages.jsonl` -> extract
+  search, falling back to a real browser via `browser_exec` when the free
+  search/extract backend fails (paywalls, bot-blocks, backend outages are
+  routine) -> dedupe against `knowledge_base/visited_pages.jsonl` -> extract
   candidate strategies from unvisited pages -- ideas are not invented from
   the model's own recall alone), check novelty against
   `knowledge_base/strategies_log.jsonl`, form a hypothesis, write strategy

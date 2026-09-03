@@ -84,13 +84,26 @@ an access-control ledger so the same page is never processed twice.
    terms (e.g. don't just search "mean reversion strategy" every time; branch
    into specific factors, asset classes, regimes, papers, forum threads).
 2. **Search.** Use `web_search` with each keyword.
+   - **If `web_search` fails** (backend error, timeout, empty/garbage
+     results — this happens periodically with the free scraping backend),
+     **fall back to `browser_exec`**: drive an actual browser to
+     `https://www.google.com/search?q=<url-encoded query>` (or
+     `https://www.bing.com/search?q=...`), read the visible result links
+     from the page, and use those URLs instead of aborting the iteration.
+     This is a normal, expected fallback path, not an error condition — use
+     it immediately rather than retrying `web_search` repeatedly or giving
+     up on the iteration. Only end the iteration/outer-loop early if BOTH
+     `web_search` and the browser fallback fail for the same query.
 3. **Dedupe against the ledger.** Before fetching ANY result URL, check it
    (normalized — strip tracking params/trailing slash) against every `url`
    already in `knowledge_base/visited_pages.jsonl`. Skip anything already
    present. Pick 1-3 new, unvisited URLs that look relevant.
-4. **Extract.** Use `web_extract` on each chosen URL. Summarize what it
-   covers and whether it yields a testable hypothesis (specific
-   entry/exit logic, or at least specific parameters/thresholds — not just
+4. **Extract.** Use `web_extract` on each chosen URL. **If `web_extract`
+   fails** (paywall, JS-rendered page, blocked/anti-bot page — as with
+   search, this happens periodically), **fall back to `browser_exec`**:
+   navigate to the URL in an actual browser and read the rendered page
+   content directly. Summarize what it covers and whether it yields a
+   testable hypothesis (specific entry/exit logic, or at least specific parameters/thresholds — not just
    "moving averages can work"). Append one line per visited URL to
    `knowledge_base/visited_pages.jsonl` immediately (see
    `knowledge_base/visited_pages.md` for the schema) — do this even for
