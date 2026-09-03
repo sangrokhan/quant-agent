@@ -13,3 +13,4 @@ run, to empirically estimate per-run consumption for the hourly cronjob
 | 18:12 | after cron run #1 (manual trigger, BTC momentum, rejected on MDD) | 38.0% | +2.0% |
 | 18:15 | after cron run #2 (BTC momentum + inverse-vol sizing, rejected on MDD) | 38.0% | +0.0% (rounded; API reports whole percents) |
 | 18:47 | after 1x-limited test run (research pipeline: web search + grid test, ~5min duration) | 46.0% | +8.0% |
+| 19:13 | after full 3x-iteration cron trigger (no override, natural stop on search backend failure) | 49.0% | +3.0% (from 46.0%) |
