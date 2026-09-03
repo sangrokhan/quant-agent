@@ -39,11 +39,11 @@ def check_sharpe_ratio(
     """
     import vectorbt as vbt  # noqa: F401  (imported for its pandas accessor side effect)
 
-    # NOTE: vectorbt's Returns accessor API varies by version; the Research
-    # Agent should verify this call against the installed vectorbt version's
-    # docs (`returns.vbt.returns.sharpe_ratio()`) and adjust `freq`/args
-    # accordingly at run time.
-    sharpe = returns.vbt.returns.sharpe_ratio()
+    # vectorbt's Returns accessor needs an explicit annualization factor when
+    # the index has no inferable freq (e.g. after .pct_change()/masking
+    # breaks DatetimeIndex.freq) -- pass freq='D' explicitly rather than
+    # relying on index.freq, which is unset in practice for our daily bars.
+    sharpe = returns.vbt.returns(freq="D").sharpe_ratio()
 
     passed = bool(sharpe is not None and sharpe >= min_sharpe)
     return passed, {
@@ -61,7 +61,7 @@ def check_max_drawdown(
     """Max drawdown must not exceed ``max_allowed_mdd`` (fraction, e.g. 0.25 = 25%)."""
     import vectorbt as vbt  # noqa: F401
 
-    mdd = abs(returns.vbt.returns.max_drawdown())
+    mdd = abs(returns.vbt.returns(freq="D").max_drawdown())
     passed = bool(mdd <= max_allowed_mdd)
     return passed, {
         "metric": "max_drawdown",

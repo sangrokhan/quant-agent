@@ -7,6 +7,10 @@ pyarrow>=17.0
 yfinance>=0.2.40
 ccxt>=4.3
 vectorbt>=0.26
+plotly<5.24  # pin: plotly>=5.24 removed scattermapbox, which vectorbt<=1.1.0's
+             # theme init (_settings.py reset_theme) still references at
+             # import time -- newer plotly breaks `import vectorbt` entirely.
+             # Verified 2026-09-03: plotly 7.0.0 -> ImportError, plotly 5.23.0 -> OK.
 
 # dev/test
 pytest>=8.0

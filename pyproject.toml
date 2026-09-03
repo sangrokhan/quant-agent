@@ -8,6 +8,8 @@ dependencies = [
     "pyarrow>=17.0",
     "yfinance>=0.2.40",
     "ccxt>=4.3",
+    "vectorbt>=1.1.0",
+    "plotly<5.24",
 ]
 
 [dependency-groups]
