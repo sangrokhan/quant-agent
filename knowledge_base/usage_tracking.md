@@ -15,3 +15,4 @@ run, to empirically estimate per-run consumption for the hourly cronjob
 | 18:47 | after 1x-limited test run (research pipeline: web search + grid test, ~5min duration) | 46.0% | +8.0% |
 | 19:13 | after full 3x-iteration cron trigger (no override, natural stop on search backend failure) | 49.0% | +3.0% (from 46.0%) |
 | 19:29 | after full 4x-iteration cron trigger (natural stop, search backend failed again) | 55.0% | +6.0% (from 49.0%) |
+| 20:04 | after full 5x-iteration cron trigger (self-stopped for stability, not gate/limit) | 65.0% | +4.0% (from 61.0%) |
