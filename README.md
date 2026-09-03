@@ -45,10 +45,19 @@ on top of Hermes cronjobs.
 - **Research Agent**: **not a separate process or codebase.** The "agent" is
   the Hermes cronjob's own LLM turn — when the gatekeeper approves a run,
   that LLM turn follows the procedure in [`RESEARCH_LOOP.md`](RESEARCH_LOOP.md)
-  step by step: read the knowledge base, check novelty, form a hypothesis,
-  write strategy code, backtest/validate it with `validation/validators.py`,
-  and log the outcome back to the knowledge base. There is no
-  `research_agent.py` to run — the procedure doc *is* the implementation.
+  step by step: **research externally first** (keyword discovery -> web
+  search -> dedupe against `knowledge_base/visited_pages.jsonl` -> extract
+  candidate strategies from unvisited pages -- ideas are not invented from
+  the model's own recall alone), check novelty against
+  `knowledge_base/strategies_log.jsonl`, form a hypothesis, write strategy
+  code, **grid-test it** across parameters x volatility regimes x asset
+  classes (`validation/grid_test.py`), then run the full single-config
+  validator suite (`validation/validators.py`), and log the outcome (with
+  source URLs and grid summary) back to the knowledge base. Each hourly cron
+  trigger repeats this up to 10 times (re-checking the gate live before each
+  one) rather than just once — see "Outer loop" in `RESEARCH_LOOP.md`. There
+  is no `research_agent.py` to run — the procedure doc *is* the
+  implementation.
 
 ## Repository layout
 
