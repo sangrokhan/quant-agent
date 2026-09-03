@@ -89,7 +89,7 @@ def check_transaction_cost_survival(
     net_returns = gross_returns.copy()
     if len(net_returns) > 0:
         net_returns.iloc[-1] -= total_cost_drag
-    net_sharpe = net_returns.vbt.returns.sharpe_ratio()
+    net_sharpe = net_returns.vbt.returns(freq="D").sharpe_ratio()
     passed = bool(net_sharpe is not None and net_sharpe >= min_net_sharpe)
     return passed, {
         "metric": "net_sharpe_after_costs",
