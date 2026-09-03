@@ -74,9 +74,75 @@ class UsageStateError(RuntimeError):
     """Raised when usage_state.json is missing, unreadable, or malformed."""
 
 
+# Path to the Hermes agent package that ships agent.account_usage. Overridable
+# via env var for portability (e.g. different machine layout).
+HERMES_AGENT_PATH = os.environ.get(
+    "HERMES_AGENT_PATH", os.path.expanduser("~/.hermes/hermes-agent")
+)
+
+
+def load_usage_state_live() -> UsageState:
+    """Fetch REAL Claude 5h rolling usage via Hermes' built-in Anthropic OAuth
+    usage-API client (agent.account_usage.fetch_account_usage), which calls
+    the official (undocumented) endpoint api.anthropic.com/api/oauth/usage.
+
+    This is the ground truth: it reads the same 5-hour rolling window used by
+    Claude Code / Claude Pro-Max itself (the ``five_hour`` window,
+    ``utilization`` field), not an estimate derived from local logs.
+
+    Raises UsageStateError if the Hermes module can't be imported or the API
+    call fails/returns no usable window (e.g. not logged in via OAuth).
+    """
+    if HERMES_AGENT_PATH not in sys.path:
+        sys.path.insert(0, HERMES_AGENT_PATH)
+    try:
+        from agent.account_usage import fetch_account_usage  # type: ignore
+    except ImportError as exc:
+        raise UsageStateError(
+            f"could not import agent.account_usage from {HERMES_AGENT_PATH}: {exc}"
+        ) from exc
+
+    try:
+        snapshot = fetch_account_usage("anthropic")
+    except Exception as exc:  # network/API errors, auth errors, etc.
+        raise UsageStateError(f"fetch_account_usage('anthropic') failed: {exc}") from exc
+
+    if snapshot is None or not snapshot.available:
+        reason = getattr(snapshot, "unavailable_reason", None) if snapshot else None
+        raise UsageStateError(f"account usage snapshot unavailable: {reason or 'no data'}")
+
+    five_hour = next((w for w in snapshot.windows if w.label == "Current session"), None)
+    if five_hour is None or five_hour.used_percent is None:
+        raise UsageStateError("account usage snapshot has no 'Current session' (5h) window")
+
+    reset_iso = five_hour.reset_at.isoformat() if five_hour.reset_at else None
+    return UsageState(
+        usage_pct=float(five_hour.used_percent),
+        limit_reached=float(five_hour.used_percent) >= HARD_LIMIT_PCT,
+        updated_at=datetime.now(timezone.utc).isoformat(),
+        window_reset_at=reset_iso,
+        raw={"source": "anthropic_oauth_usage_api", "label": five_hour.label},
+    )
+
+
 def load_usage_state(path: str = DEFAULT_USAGE_STATE_PATH) -> UsageState:
-    if not os.path.exists(path):
-        raise UsageStateError(f"usage state file not found: {path}")
+    """Load current 5h rolling usage state.
+
+    Primary source: the live Anthropic OAuth usage API via Hermes
+    (load_usage_state_live). Falls back to the local usage_state.json mock
+    file (see README.md for its schema) only if the live fetch fails, e.g.
+    running this script on a machine without the Hermes agent package
+    available, or a transient API/network error.
+    """
+    try:
+        return load_usage_state_live()
+    except UsageStateError as live_exc:
+        if not os.path.exists(path):
+            raise UsageStateError(
+                f"live usage fetch failed ({live_exc}) and no fallback usage "
+                f"state file found: {path}"
+            ) from live_exc
+
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)

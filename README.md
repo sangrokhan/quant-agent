@@ -110,12 +110,27 @@ on exit code alone without parsing JSON if it prefers.
   ambitious a single research loop iteration should be (e.g. skip a long
   walk-forward parameter sweep under `"light"`).
 
-### `usage_state.json` schema
+### Usage data source — now LIVE (real Anthropic API)
 
-There is no real Claude usage API wired up yet — `check_gate.py` only
-**reads** this JSON file. A future task should replace/regenerate it from an
-actual usage lookup. Until then, keep it updated manually or via whatever
-mechanism is convenient.
+`check_gate.py` reads the **actual** Claude 5-hour rolling usage percentage
+from Anthropic's official (undocumented) OAuth usage endpoint
+(`https://api.anthropic.com/api/oauth/usage`, `five_hour.utilization`), via
+Hermes' built-in `agent.account_usage.fetch_account_usage("anthropic")`
+helper (`~/.hermes/hermes-agent`). This is the same 5-hour rolling window
+Claude Code / Claude Pro-Max itself enforces — not an estimate.
+
+Verified manually:
+```bash
+$ python3 gatekeeper/check_gate.py
+{"approved": true, "reason": "weekday business hours (KST 17:53); usage 30.0% within 75% headroom budget", "suggested_workload": "normal"}
+```
+
+If the live fetch fails (Hermes package not importable, network error, not
+logged in via OAuth), `check_gate.py` falls back to reading
+`usage_state.json` below — this mock file exists purely as that fallback /
+for local testing without network access, not as the primary source.
+
+### `usage_state.json` schema (fallback only)
 
 ```json
 {
@@ -136,9 +151,10 @@ Fields:
 - `window_reset_at` (optional): informational, surfaced in the `reason`
   string when blocked.
 
-The mock example above ships as `gatekeeper/usage_state.json`. **Do not**
-treat it as live data — see `.gitignore` notes below for how a real,
-frequently-updated state file should be handled.
+The mock example above ships as `gatekeeper/usage_state.json`. It is only
+consulted when the live Anthropic usage-API fetch fails — see
+`.gitignore` notes below for how a real, frequently-updated state file
+would be handled if you want to override the fallback path.
 
 ## How to run things
 
