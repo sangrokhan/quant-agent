@@ -32,15 +32,15 @@ class YFinanceProvider(MarketDataProvider):
                 progress=False,
                 auto_adjust=False,
             )
+
+            if raw is None or raw.empty:
+                return pd.DataFrame(columns=_OUTPUT_COLUMNS)
+
+            if isinstance(raw.columns, pd.MultiIndex):
+                raw.columns = raw.columns.get_level_values(0)
+
+            df = raw.reset_index().rename(columns=_COLUMN_MAP)
+            df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True)
+            return df[_OUTPUT_COLUMNS]
         except Exception as exc:
             raise MarketDataFetchError(f"yfinance fetch failed for {symbol}: {exc}") from exc
-
-        if raw is None or raw.empty:
-            return pd.DataFrame(columns=_OUTPUT_COLUMNS)
-
-        if isinstance(raw.columns, pd.MultiIndex):
-            raw.columns = raw.columns.get_level_values(0)
-
-        df = raw.reset_index().rename(columns=_COLUMN_MAP)
-        df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True)
-        return df[_OUTPUT_COLUMNS]
