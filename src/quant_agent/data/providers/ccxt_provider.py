@@ -1,25 +1,30 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime
 
 import ccxt
 import pandas as pd
 
 from .base import MarketDataFetchError, MarketDataProvider
 
-_MS_PER_SECOND = 1000
+_NS_PER_MS = 10**6
 _OUTPUT_COLUMNS = ["timestamp", "open", "high", "low", "close", "volume"]
 
 
 class CCXTProvider(MarketDataProvider):
     def __init__(self, exchange_id: str = "binance"):
         self.exchange_id = exchange_id
-        exchange_class = getattr(ccxt, exchange_id)
-        self.exchange = exchange_class({"enableRateLimit": True})
+        try:
+            exchange_class = getattr(ccxt, exchange_id)
+            self.exchange = exchange_class({"enableRateLimit": True})
+        except Exception as exc:
+            raise MarketDataFetchError(
+                f"unknown or unsupported ccxt exchange: {exchange_id}"
+            ) from exc
 
     def fetch(self, symbol: str, interval: str, start: datetime, end: datetime) -> pd.DataFrame:
-        since = int(start.replace(tzinfo=timezone.utc).timestamp() * _MS_PER_SECOND)
-        end_ms = int(end.replace(tzinfo=timezone.utc).timestamp() * _MS_PER_SECOND)
+        since = pd.Timestamp(start, tz="UTC").value // _NS_PER_MS
+        end_ms = pd.Timestamp(end, tz="UTC").value // _NS_PER_MS
         rows: list[list] = []
         try:
             while since < end_ms:

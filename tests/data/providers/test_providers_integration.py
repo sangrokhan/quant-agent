@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
@@ -9,7 +9,7 @@ from quant_agent.data.providers.yfinance_provider import YFinanceProvider
 @pytest.mark.integration
 def test_yfinance_provider_fetches_real_data():
     provider = YFinanceProvider()
-    end = datetime.utcnow()
+    end = datetime.now(timezone.utc).replace(tzinfo=None)
     start = end - timedelta(days=7)
     df = provider.fetch("AAPL", "1d", start, end)
     assert not df.empty
@@ -19,7 +19,7 @@ def test_yfinance_provider_fetches_real_data():
 @pytest.mark.integration
 def test_ccxt_provider_fetches_real_data():
     provider = CCXTProvider(exchange_id="binance")
-    end = datetime.utcnow()
+    end = datetime.now(timezone.utc).replace(tzinfo=None)
     start = end - timedelta(days=1)
     df = provider.fetch("BTC/USDT", "1h", start, end)
     assert not df.empty
