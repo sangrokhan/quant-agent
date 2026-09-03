@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import pandas as pd
 import yfinance as yf
@@ -27,7 +27,7 @@ class YFinanceProvider(MarketDataProvider):
             raw = yf.download(
                 symbol,
                 start=start,
-                end=end,
+                end=end + timedelta(days=1),
                 interval=interval,
                 progress=False,
                 auto_adjust=False,

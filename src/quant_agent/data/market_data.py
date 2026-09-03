@@ -44,7 +44,7 @@ class MarketDataService:
         start_ts = pd.Timestamp(start, tz="UTC")
         end_ts = pd.Timestamp(end, tz="UTC")
 
-        if coverage is not None and coverage[0] <= start_ts and coverage[1] >= end_ts:
+        if self.cache.covers(key, start, end):
             self.cache.log_hit(key, start, end)
             return self.cache.read(key, start, end)
 
