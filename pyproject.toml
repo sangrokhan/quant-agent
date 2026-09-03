@@ -1,0 +1,30 @@
+[project]
+name = "quant-agent"
+version = "0.1.0"
+description = "Autonomous quant research Ralph loop system"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=17.0",
+    "yfinance>=0.2.40",
+    "ccxt>=4.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: hits real network APIs, excluded by default",
+]
+addopts = "-m 'not integration'"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quant_agent"]
