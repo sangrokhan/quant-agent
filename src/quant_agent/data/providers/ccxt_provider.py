@@ -6,6 +6,7 @@ import ccxt
 import pandas as pd
 
 from .base import MarketDataFetchError, MarketDataProvider
+from ..cache import to_utc_timestamp
 
 _NS_PER_MS = 10**6
 _OUTPUT_COLUMNS = ["timestamp", "open", "high", "low", "close", "volume"]
@@ -26,16 +27,10 @@ class CCXTProvider(MarketDataProvider):
     def _to_utc_timestamp(dt: datetime) -> pd.Timestamp:
         """Coerce a naive or tz-aware datetime to a UTC pd.Timestamp.
 
-        ``pd.Timestamp(dt, tz="UTC")`` raises when ``dt`` already carries
-        tzinfo (e.g. gap-fetch callers in market_data.py pass back an
-        already-UTC-aware datetime from ``cov_start.to_pydatetime()``) --
-        use tz_localize/tz_convert instead so both naive and tz-aware
-        datetimes work.
+        Delegates to the shared helper in ``..cache`` (single source of
+        truth for this repo's naive/tz-aware datetime coercion pattern).
         """
-        ts = pd.Timestamp(dt)
-        if ts.tzinfo is None:
-            return ts.tz_localize("UTC")
-        return ts.tz_convert("UTC")
+        return to_utc_timestamp(dt)
 
     def fetch(self, symbol: str, interval: str, start: datetime, end: datetime) -> pd.DataFrame:
         since = self._to_utc_timestamp(start).value // _NS_PER_MS

@@ -5,7 +5,7 @@ from typing import Dict, Optional
 
 import pandas as pd
 
-from .cache import ParquetCache
+from .cache import ParquetCache, to_utc_timestamp
 from .models import CacheKey, Source
 from .providers.base import MarketDataProvider
 from .providers.ccxt_provider import CCXTProvider
@@ -41,8 +41,8 @@ class MarketDataService:
     ) -> pd.DataFrame:
         key = CacheKey(source=source, symbol=symbol, interval=interval, exchange=exchange)
         coverage = self.cache.get_coverage(key)
-        start_ts = pd.Timestamp(start, tz="UTC")
-        end_ts = pd.Timestamp(end, tz="UTC")
+        start_ts = to_utc_timestamp(start)
+        end_ts = to_utc_timestamp(end)
 
         if self.cache.covers(key, start, end):
             self.cache.log_hit(key, start, end)

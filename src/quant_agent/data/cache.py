@@ -14,6 +14,19 @@ logger = logging.getLogger("quant_agent.data.cache")
 OHLCV_COLUMNS = ["timestamp", "open", "high", "low", "close", "volume"]
 
 
+def to_utc_timestamp(dt: datetime) -> pd.Timestamp:
+    """Coerce a naive or tz-aware datetime/Timestamp to a UTC pd.Timestamp.
+
+    ``pd.Timestamp(dt, tz="UTC")`` raises when ``dt`` already carries
+    tzinfo -- callers throughout this data layer (and strategy code that
+    re-derives start/end from an already-UTC-aware price_df.index) may pass
+    either naive or tz-aware datetimes, so always go through this helper
+    instead of the bare constructor.
+    """
+    ts = pd.Timestamp(dt)
+    return ts.tz_localize("UTC") if ts.tzinfo is None else ts.tz_convert("UTC")
+
+
 class ParquetCache:
     def __init__(self, base_dir: str = "data/cache"):
         self.base_dir = base_dir
@@ -32,13 +45,13 @@ class ParquetCache:
         if coverage is None:
             return False
         cov_start, cov_end = coverage
-        return cov_start <= pd.Timestamp(start, tz="UTC") and cov_end >= pd.Timestamp(end, tz="UTC")
+        return cov_start <= to_utc_timestamp(start) and cov_end >= to_utc_timestamp(end)
 
     def read(self, key: CacheKey, start: datetime, end: datetime) -> pd.DataFrame:
         path = key.cache_path(self.base_dir)
         df = pd.read_parquet(path)
-        start_ts = pd.Timestamp(start, tz="UTC")
-        end_ts = pd.Timestamp(end, tz="UTC")
+        start_ts = to_utc_timestamp(start)
+        end_ts = to_utc_timestamp(end)
         mask = (df["timestamp"] >= start_ts) & (df["timestamp"] <= end_ts)
         return df.loc[mask].sort_values("timestamp").reset_index(drop=True)
 
