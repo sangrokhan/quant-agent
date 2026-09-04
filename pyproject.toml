@@ -13,6 +13,9 @@ dependencies = [
 ]
 
 [dependency-groups]
+dashboard = [
+    "streamlit>=1.63.0",
+]
 dev = [
     "pytest>=8.0",
 ]
