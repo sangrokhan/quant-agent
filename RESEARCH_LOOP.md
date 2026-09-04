@@ -56,19 +56,35 @@ You should already have the gatekeeper's JSON output for this iteration
 refining/documenting an existing near-miss idea instead of prototyping a
 brand-new one from scratch).
 
-## Step 1 — Read the knowledge base
+## Step 1 — Search the knowledge base (2-stage: index first, detail on match)
 
-Read, in full:
+Do NOT read `strategies_log.jsonl` in full — it grows unbounded and burns
+context. Instead, use the lightweight index and only load full detail for
+actual candidates:
 
-- `knowledge_base/strategies_log.jsonl` — every prior hypothesis, its
-  outcome, and (for rejections) why it failed. This is your memory across
-  loop iterations; nothing else persists your past reasoning.
-- `knowledge_base/strategies_log.md` — schema reference if you need a
-  refresher on the field contract before writing a new entry.
+1. **Stage 1 — index search.** Search
+   `knowledge_base/strategies_index.jsonl` (one lightweight tagged entry per
+   prior hypothesis: `id`, `created_at`, `hypothesis`, `outcome`, `tags`
+   with `indicator_family`/`technique`/`asset_class`) for this iteration's
+   candidate keywords/indicator families/techniques (e.g. grep/`search_files`
+   for `"MACD"` or `"mean_reversion"`). This surfaces candidate `id`s cheaply
+   without loading every full entry.
+2. **Stage 2 — detail lookup.** For each matched `id`, look up only that
+   specific line in `knowledge_base/strategies_log.jsonl` (the full record
+   with `hypothesis`, `validators`, `rejection_reason`, `notes`, etc.) to
+   understand exactly what was tried and why it passed/failed.
+3. **Zero matches.** If Stage 1 returns no matches for this iteration's
+   keywords/indicator family, there's no novelty concern from that angle —
+   proceed to Step 2 without loading `strategies_log.jsonl` at all.
 
-Build a mental model of: what's been tried, what passed and is currently
-"live" in `strategies/`, and what failed and why (especially recorded
-near-misses worth revisiting with a tweak — check the `notes` field).
+See `knowledge_base/strategies_log.md` (schema for both `strategies_log.jsonl`
+and `strategies_index.jsonl`) for a refresher on the field contracts before
+writing a new entry.
+
+Build a mental model (via the 2-stage search above) of: what's been tried,
+what passed and is currently "live" in `strategies/`, and what failed and
+why (especially recorded near-misses worth revisiting with a tweak — check
+the `notes` field of the matched full entries).
 
 ## Step 2 — Research pipeline: keyword -> search -> extract -> candidates
 
@@ -94,10 +110,14 @@ an access-control ledger so the same page is never processed twice.
      it immediately rather than retrying `web_search` repeatedly or giving
      up on the iteration. Only end the iteration/outer-loop early if BOTH
      `web_search` and the browser fallback fail for the same query.
-3. **Dedupe against the ledger.** Before fetching ANY result URL, check it
-   (normalized — strip tracking params/trailing slash) against every `url`
-   already in `knowledge_base/visited_pages.jsonl`. Skip anything already
-   present. Pick 1-3 new, unvisited URLs that look relevant.
+3. **Dedupe against the ledger (2-stage).** Before fetching ANY result URL,
+   normalize it (strip tracking params/trailing slash) and check it against
+   `knowledge_base/visited_urls.jsonl` first (lightweight `url`+`visited_at`
+   list — cheap to search in full). Skip anything already present. Only if
+   you need the fuller context (why a URL was/wasn't useful, its summary,
+   extracted hypothesis ids) look up that specific `url` in
+   `knowledge_base/visited_pages.jsonl`. Pick 1-3 new, unvisited URLs that
+   look relevant.
 4. **Extract.** Use `web_extract` on each chosen URL. **If `web_extract`
    fails** (paywall, JS-rendered page, blocked/anti-bot page — as with
    search, this happens periodically), **fall back to `browser_exec`**:
@@ -124,12 +144,15 @@ pure model recall.
 Same principle as before, now applied to the research-derived candidate(s)
 from Step 2 rather than a freely-invented idea:
 
-1. Compare each candidate hypothesis against every `hypothesis` string
-   already in `strategies_log.jsonl`. Skip near-duplicates of something
-   already `rejected` for a fundamental (non-fixable) reason, unless you're
-   meaningfully varying it (different asset, parameter regime, or
-   specifically addressing the prior rejection reason). Skip near-duplicates
-   of something already `accepted` and still live in `strategies/`.
+1. Compare each candidate hypothesis against matches surfaced by Step 1's
+   2-stage search (`strategies_index.jsonl` keyword/tag search →
+   `strategies_log.jsonl` detail lookup for matched ids) — search again here
+   with keywords specific to the candidate if Step 1 didn't already cover
+   them. Skip near-duplicates of something already `rejected` for a
+   fundamental (non-fixable) reason, unless you're meaningfully varying it
+   (different asset, parameter regime, or specifically addressing the prior
+   rejection reason). Skip near-duplicates of something already `accepted`
+   and still live in `strategies/`.
 2. From the surviving candidates, pick exactly ONE to implement and test
    this iteration (Steps 4 onward). If Step 2 produced multiple candidates,
    the others aren't wasted — they can seed a future iteration's Step 1
@@ -267,10 +290,19 @@ this file is append-only. Double-check your JSON is valid (one complete
 object per line, no trailing comma, no multi-line pretty-printing that
 would break JSONL parsing).
 
+Immediately after, append the matching lightweight entry to
+`knowledge_base/strategies_index.jsonl`: same `id`, `created_at`,
+`hypothesis`, `outcome`, plus a `tags` object (`indicator_family`,
+`technique`, `asset_class` — see `knowledge_base/strategies_log.md` for the
+tag vocabulary). This is what Step 1's Stage-1 search reads next iteration,
+so it must exist for every new `strategies_log.jsonl` line.
+
 Also double-check `knowledge_base/visited_pages.jsonl` got an entry for
 every URL fetched in Step 2 this iteration (not just the one(s) that led to
 the tested hypothesis) — this is what makes the access-control ledger
-actually work across iterations.
+actually work across iterations. For each `visited_pages.jsonl` append,
+also append the matching lightweight `{"url": ..., "visited_at": ...}` line
+to `knowledge_base/visited_urls.jsonl` (Step 2.3's Stage-1 dedupe source).
 
 ## End of one iteration — return to the outer loop
 

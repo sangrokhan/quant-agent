@@ -49,3 +49,46 @@ Field notes:
 Keep entries append-only — never rewrite or delete a prior line, even for a
 strategy that later gets superseded (add a new entry referencing the old
 `id` in `notes` instead).
+
+## `knowledge_base/strategies_index.jsonl` — lightweight search index
+
+`strategies_index.jsonl` is a 1:1, append-only companion index to this file
+(same `id`s, same line count, same order). It exists so the Research Agent
+never has to read the full `strategies_log.jsonl` — with its long
+`hypothesis`/`validators`/`notes` text — just to check novelty. Instead:
+
+1. **Search `strategies_index.jsonl`** for this iteration's keywords /
+   indicator families / techniques (e.g. grep for `"MACD"` or
+   `"mean_reversion"`) to cheaply find candidate `id`s.
+2. **Look up only the matched `id`s** in `strategies_log.jsonl` (e.g. grep
+   for `"id": "2026-09-03-013"`) to read the full entry.
+
+Schema (one JSON object per line, one for each `strategies_log.jsonl` line):
+
+```json
+{
+  "id": "same id as the strategies_log.jsonl entry",
+  "created_at": "same timestamp as the strategies_log.jsonl entry",
+  "hypothesis": "same hypothesis text as the strategies_log.jsonl entry",
+  "outcome": "accepted | rejected",
+  "tags": {
+    "indicator_family": ["MACD"],
+    "technique": ["crossover", "zero_line_confirmation"],
+    "asset_class": "equity"
+  }
+}
+```
+
+- `indicator_family`: list of technical indicator families referenced in the
+  hypothesis/strategy file (e.g. `MACD`, `RSI`, `Bollinger Bands`,
+  `Donchian`, `SMA`, `EMA`, `ATR`, `ADX`, candlestick_pattern, etc. — can be
+  empty for pure calendar/return-based strategies with no indicator).
+- `technique`: list of signal-generation techniques (e.g. `crossover`,
+  `mean_reversion`, `breakout`, `momentum`, `trend_following`,
+  `calendar_anomaly`, `pairs_trading`, `zscore`, `oscillator_threshold`,
+  `volatility_regime_filter`, `time_stop`, etc.).
+- `asset_class`: copied verbatim from the `strategies_log.jsonl` entry.
+
+**Every new `strategies_log.jsonl` line must get a matching
+`strategies_index.jsonl` line appended in the same iteration** (Step 9 of
+RESEARCH_LOOP.md) — never rewrite/delete prior lines here either.

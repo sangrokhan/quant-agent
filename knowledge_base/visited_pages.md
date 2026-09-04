@@ -40,3 +40,22 @@ Field notes:
 ```
 
 Keep entries append-only — never rewrite or delete a prior line.
+
+## `knowledge_base/visited_urls.jsonl` — lightweight dedupe index
+
+`visited_urls.jsonl` is a 1:1, append-only companion to this file (same
+count, same order), containing ONLY:
+
+```json
+{"url": "string, canonical/normalized URL", "visited_at": "ISO8601 UTC timestamp"}
+```
+
+It exists purely for cheap URL-dedupe checks (RESEARCH_LOOP.md Step 2.3):
+search `visited_urls.jsonl` first to see if a candidate URL was already
+visited. Only look up the matching `url` in the full `visited_pages.jsonl`
+when you actually need the richer context (`page_summary`,
+`extracted_hypothesis_ids`, `notes`) for a URL that turns out relevant.
+
+**Every new `visited_pages.jsonl` line must get a matching
+`visited_urls.jsonl` line appended in the same iteration** — never
+rewrite/delete prior lines here either.
