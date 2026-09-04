@@ -22,9 +22,24 @@ class CCXTProvider(MarketDataProvider):
                 f"unknown or unsupported ccxt exchange: {exchange_id}"
             ) from exc
 
+    @staticmethod
+    def _to_utc_timestamp(dt: datetime) -> pd.Timestamp:
+        """Coerce a naive or tz-aware datetime to a UTC pd.Timestamp.
+
+        ``pd.Timestamp(dt, tz="UTC")`` raises when ``dt`` already carries
+        tzinfo (e.g. gap-fetch callers in market_data.py pass back an
+        already-UTC-aware datetime from ``cov_start.to_pydatetime()``) --
+        use tz_localize/tz_convert instead so both naive and tz-aware
+        datetimes work.
+        """
+        ts = pd.Timestamp(dt)
+        if ts.tzinfo is None:
+            return ts.tz_localize("UTC")
+        return ts.tz_convert("UTC")
+
     def fetch(self, symbol: str, interval: str, start: datetime, end: datetime) -> pd.DataFrame:
-        since = pd.Timestamp(start, tz="UTC").value // _NS_PER_MS
-        end_ms = pd.Timestamp(end, tz="UTC").value // _NS_PER_MS
+        since = self._to_utc_timestamp(start).value // _NS_PER_MS
+        end_ms = self._to_utc_timestamp(end).value // _NS_PER_MS
         rows: list[list] = []
         try:
             while since < end_ms:
@@ -42,8 +57,8 @@ class CCXTProvider(MarketDataProvider):
 
             df = pd.DataFrame(rows, columns=_OUTPUT_COLUMNS)
             df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
-            start_ts = pd.Timestamp(start, tz="UTC")
-            end_ts = pd.Timestamp(end, tz="UTC")
+            start_ts = self._to_utc_timestamp(start)
+            end_ts = self._to_utc_timestamp(end)
             df = df[(df["timestamp"] >= start_ts) & (df["timestamp"] <= end_ts)]
             return df.reset_index(drop=True)
         except Exception as exc:
