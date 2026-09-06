@@ -1,0 +1,32 @@
+{
+  "sharpe": {
+    "metric": "sharpe_ratio",
+    "value": 0.5845063886017481,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "mdd": {
+    "metric": "max_drawdown",
+    "value": 0.0009446218183523092,
+    "threshold": 0.25
+  },
+  "tc": {
+    "metric": "net_sharpe_after_costs",
+    "value": 0.555456079035088,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10,
+    "num_trades": 1,
+    "estimated_total_cost_drag": 0.001
+  },
+  "wf": {
+    "metric": "walk_forward_pass_fraction",
+    "error": "validator broken in this vectorbt version: module 'vectorbt.utils' has no attribute 'splitting'"
+  },
+  "num_trades": 1,
+  "passed": {
+    "sharpe": false,
+    "mdd": true,
+    "tc": true,
+    "wf": null
+  }
+}
