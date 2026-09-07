@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.4020800799826167,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.12653777241101904,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5183224498719411,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 324,
+      "estimated_total_cost_drag": 0.324
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.07195927400871988,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 1.3334413577902713,
+      "std": 0.0959534720397896
+    },
+    "param_sens_pass": true,
+    "num_trades": 324,
+    "baseline_sharpe_with_weekend_gap": 1.453265251638644
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.4033722292127453,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.11141979744707853,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.32023125769273514,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 323,
+      "estimated_total_cost_drag": 0.323
+    },
+    "tc_pass": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.011654313624678512,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 1.4008563323313445,
+      "std": 0.016326019040106356
+    },
+    "param_sens_pass": true,
+    "num_trades": 323,
+    "baseline_sharpe_with_weekend_gap": 1.4262792956305017
+  }
+}
