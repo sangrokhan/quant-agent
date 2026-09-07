@@ -1,0 +1,48 @@
+{
+  "metric": "grid_test",
+  "total_cells": 54,
+  "passed_cells": 0,
+  "pass_fraction": 0.0,
+  "by_asset_class": {
+    "crypto": {
+      "passed": 0,
+      "total": 54
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 0,
+      "total": 18
+    },
+    "mid": {
+      "passed": 0,
+      "total": 18
+    },
+    "high": {
+      "passed": 0,
+      "total": 18
+    }
+  },
+  "best_cell": {
+    "params": {
+      "breakout_window": 10,
+      "btc_stability_ratio": 1.2,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.4171521715431072
+  },
+  "worst_cell": {
+    "params": {
+      "breakout_window": 10,
+      "btc_stability_ratio": 1.2,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.053060101510321894
+  }
+}
