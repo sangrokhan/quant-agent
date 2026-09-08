@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.7806658477680114,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.14323678887943303,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6621460412019425,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 58,
+      "estimated_total_cost_drag": 0.058
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.13914825144452234,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.8237750181684809,
+      "std": 0.11462685336182372
+    },
+    "param_sens_pass": true,
+    "num_trades": 58
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.6468756579969014,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.12397650330205456,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.502934536176738,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 56,
+      "estimated_total_cost_drag": 0.056
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.37818796790384873,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.6285656991912043,
+      "std": 0.23771598447118342
+    },
+    "param_sens_pass": true,
+    "num_trades": 56
+  }
+}
