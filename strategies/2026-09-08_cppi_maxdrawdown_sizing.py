@@ -69,8 +69,20 @@ def generate_signals(
     multiplier: float = 3.0,
     max_drawdown_floor_pct: float = 0.9,
     leverage_cap: float = 1.0,
+    rebalance_threshold: float = 0.0,
 ) -> pd.Series:
-    """Return the CPPI exposure weight series (continuous, in [0, leverage_cap])."""
+    """Return the CPPI exposure weight series (continuous, in [0, leverage_cap]).
+
+    ``rebalance_threshold`` (added in the 2026-09-08-175 refinement of
+    near-miss 2026-09-08-174): only actually CHANGE the held weight when the
+    freshly-computed CPPI target weight differs from the currently-held
+    weight by more than this fraction (e.g. 0.1 = 10 percentage points).
+    Otherwise keep holding the prior weight -- this is a standard "no-trade
+    band" used to cut rebalancing-driven transaction costs for continuous
+    sizing strategies, applied on top of the identical Max-Drawdown-extension
+    CPPI mechanism from 2026-09-08-174 (unchanged when rebalance_threshold=0,
+    matching that entry's default behavior exactly for backward comparability).
+    """
     df = _prep(price_df)
     close = df["close"]
 
@@ -82,20 +94,22 @@ def generate_signals(
     weight = pd.Series(0.0, index=close.index)
     shadow_nav = 1.0
     running_max = 1.0
+    held_weight = 0.0
 
     for i in range(len(close)):
         floor = max_drawdown_floor_pct * running_max
         cushion = max(shadow_nav - floor, 0.0)
         raw_weight = (multiplier * cushion / shadow_nav) if shadow_nav > 0 else 0.0
-        w = min(max(raw_weight, 0.0), leverage_cap)
+        target_w = min(max(raw_weight, 0.0), leverage_cap)
         if not bool(uptrend.iloc[i]):
-            w = 0.0
-        weight.iloc[i] = w
+            target_w = 0.0
 
-        # Compound the shadow NAV forward using TODAY's weight applied to
-        # TOMORROW's return would be look-ahead; instead compound using
-        # yesterday's decided weight against today's realized return (the
-        # weight decided at close of day i-1 is what's exposed during day i).
+        if abs(target_w - held_weight) > rebalance_threshold:
+            held_weight = target_w
+        weight.iloc[i] = held_weight
+
+        # Compound the shadow NAV forward using the weight decided at close
+        # of day i-1 applied to day i's realized return (no look-ahead).
         if i > 0:
             shadow_nav = shadow_nav * (1.0 + weight.iloc[i - 1] * daily_ret.iloc[i])
             running_max = max(running_max, shadow_nav)
