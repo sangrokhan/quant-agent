@@ -60,3 +60,31 @@ rather than a core allocation strategy.
 Strategy kept live in `strategies/`. Broad-ish across vol regimes and
 (unusually) both asset classes per the grid, and the single best-config
 passes all 5 standard validators.
+
+## Update 2026-09-09 — Crypto-side full validation (id 2026-09-09-026)
+
+This report's own "Caveat"/notes flagged that the grid showed unusually
+strong crypto pass_fraction (0.972) but that side was never run through the
+full single-config validator suite. This iteration closes that gap using
+the same best-cell config (`swing_window=8, exit_sma_window=20,
+max_hold_days=10`) on BTC/USDT and ETH/USDT, full sample 2019-01-01 to
+2026-09-01:
+
+| Validator | BTC/USDT | ETH/USDT | Threshold |
+|---|---|---|---|
+| Sharpe ratio | 1.393 (PASS) | 1.360 (PASS) | >= 1.0 |
+| Max drawdown | 0.076 (PASS) | 0.075 (PASS) | <= 0.25 |
+| Net Sharpe after costs (10bps/trade) | 0.720 (PASS) | 0.899 (PASS) | >= 0.5 |
+| Walk-forward pass fraction (4-fold manual) | 1.0 (PASS) | 1.0 (PASS) | >= 0.75 |
+| Parameter sensitivity (6-cell relative std) | 0.128 (PASS) | 0.085 (PASS) | <= 0.5 |
+
+Trade counts: BTC/USDT 463, ETH/USDT 451 (much higher frequency than QQQ's
+9 trades over the same window — crypto's 24/7, higher-volatility bars
+produce far more 8-bar swing-low divergence signals).
+
+**Outcome: ACCEPTED for BTC/USDT and ETH/USDT as well.** This strategy is
+now confirmed live across all four symbols originally gridded (QQQ, SPY
+via the grid's equity pass rate, and now BTC/USDT + ETH/USDT with full
+validator confirmation) — the first strategy in this repo validated as
+genuinely cross-asset-class (equity AND crypto) with all 5 validators
+passing on both sides.
