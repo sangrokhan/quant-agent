@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.2778055551308742,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.2855936952315353,
+      "threshold": 0.25
+    },
+    "mdd_pass": false,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.2760343201237492,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 2,
+      "estimated_total_cost_drag": 0.002
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "calendar-based strategy over an 8.5yr sample only spans ~2 full election cycles; walk-forward here is a weaker signal than for indicator-based strategies"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.3157896433048146,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 0.9121900785900584,
+      "std": 0.28806017954414537
+    },
+    "param_sens_pass": true,
+    "num_trades": 2
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.9144897614382921,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.3410474689324392,
+      "threshold": 0.25
+    },
+    "mdd_pass": false,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.912437594145575,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 2,
+      "estimated_total_cost_drag": 0.002
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "calendar-based strategy over an 8.5yr sample only spans ~2 full election cycles; walk-forward here is a weaker signal than for indicator-based strategies"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.3316814754139216,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 0.7382618913071436,
+      "std": 0.2448677933506256
+    },
+    "param_sens_pass": true,
+    "num_trades": 2
+  }
+}
