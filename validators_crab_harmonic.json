@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0618250827679037,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.017549676594438957,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9942602979952825,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 10,
+      "estimated_total_cost_drag": 0.01
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": NaN,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": Infinity,
+      "std": NaN
+    },
+    "param_sens_pass": false,
+    "num_trades": 10
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.43970880905234655,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.046189301358836365,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.414879934701629,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 4,
+      "estimated_total_cost_drag": 0.004
+    },
+    "tc_pass": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "wf_pass": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": NaN,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": Infinity,
+      "std": NaN
+    },
+    "param_sens_pass": false,
+    "num_trades": 4
+  }
+}
