@@ -1,0 +1,52 @@
+{
+  "QQQ": {
+    "num_trades": 1,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.577851674108086,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.021262166138612648,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5694512340020422,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 1,
+      "estimated_total_cost_drag": 0.001
+    },
+    "tc_pass": true
+  },
+  "SPY": {
+    "num_trades": 1,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.2915652109824543,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.035179394583419676,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.2836646392975808,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 1,
+      "estimated_total_cost_drag": 0.001
+    },
+    "tc_pass": false
+  }
+}
