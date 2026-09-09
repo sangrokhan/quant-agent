@@ -1,0 +1,46 @@
+{
+  "metric": "grid_test",
+  "total_cells": 27,
+  "passed_cells": 10,
+  "pass_fraction": 0.37037037037037035,
+  "by_asset_class": {
+    "equity": {
+      "passed": 10,
+      "total": 27
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 3,
+      "total": 9
+    },
+    "mid": {
+      "passed": 3,
+      "total": 9
+    },
+    "high": {
+      "passed": 4,
+      "total": 9
+    }
+  },
+  "best_cell": {
+    "params": {
+      "entry_z": 1.2,
+      "max_hold_days": 3
+    },
+    "asset_class": "equity",
+    "symbol": "GDX",
+    "vol_regime": "high",
+    "sharpe": 1.9337954287474968
+  },
+  "worst_cell": {
+    "params": {
+      "entry_z": 2.0,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "GDX",
+    "vol_regime": "low",
+    "sharpe": -0.21395562945694396
+  }
+}
