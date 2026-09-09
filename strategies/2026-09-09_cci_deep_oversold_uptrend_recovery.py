@@ -60,11 +60,11 @@ def _cci(df: pd.DataFrame, n: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    cci_window: int = 20,
-    oversold_threshold: float = -200.0,
+    cci_window: int = 8,
+    oversold_threshold: float = -125.0,
     exit_threshold: float = 0.0,
     trend_sma_window: int = 200,
-    max_hold_days: int = 20,
+    max_hold_days: int = 15,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series."""
     df = _prep(price_df)
