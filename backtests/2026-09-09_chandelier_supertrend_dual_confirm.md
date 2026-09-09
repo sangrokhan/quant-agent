@@ -65,3 +65,16 @@ regime-specific tuning.
 Scope: this strategy is recommended for SPY only. QQQ is close enough to be
 worth a narrow follow-up (e.g. a slightly wider max_hold_days or a small
 multiplier tweak) in a future iteration, but is not accepted as-is.
+
+## Follow-up (same cron trigger, id 2026-09-09-091)
+
+Widening `max_hold_days` to 60 (chand_multiplier=3.5, st_multiplier=3.0,
+chand_period=22, st_period=10 unchanged) rescues QQQ: Sharpe 1.343, MDD
+0.157, TC-survival 1.224, walk-forward 4/4, parameter sensitivity 0.048 —
+all 5 validators pass. However, this SAME wider config degrades SPY to a
+near-miss (Sharpe 0.928, walk-forward 3/4) — the two symbols now want
+different `max_hold_days` (SPY: 30, QQQ: 60). See KB entry 2026-09-09-091
+for the accepted QQQ config; the original max_hold_days=30 config above
+remains the accepted SPY config. A future iteration could explore whether
+`max_hold_days` should scale with a per-symbol volatility/trend-persistence
+measure rather than being a single shared constant.
