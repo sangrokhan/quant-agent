@@ -1,0 +1,50 @@
+{
+  "best": {
+    "vol_window": 40,
+    "h_mult": 6.0,
+    "max_hold_days": 45
+  },
+  "best_sharpe": 1.0009474543157817,
+  "top10": [
+    [
+      "{'vol_window': 40, 'h_mult': 6.0, 'max_hold_days': 45}",
+      1.0009474543157817
+    ],
+    [
+      "{'vol_window': 40, 'h_mult': 6.0, 'max_hold_days': 30}",
+      0.8571863232304298
+    ],
+    [
+      "{'vol_window': 20, 'h_mult': 6.0, 'max_hold_days': 45}",
+      0.8570066172177105
+    ],
+    [
+      "{'vol_window': 20, 'h_mult': 5.0, 'max_hold_days': 45}",
+      0.8218709098528648
+    ],
+    [
+      "{'vol_window': 10, 'h_mult': 3.0, 'max_hold_days': 15}",
+      0.7201767171992166
+    ],
+    [
+      "{'vol_window': 60, 'h_mult': 2.0, 'max_hold_days': 30}",
+      0.7107513591080948
+    ],
+    [
+      "{'vol_window': 10, 'h_mult': 2.0, 'max_hold_days': 30}",
+      0.68330055225801
+    ],
+    [
+      "{'vol_window': 60, 'h_mult': 2.0, 'max_hold_days': 15}",
+      0.682886267296784
+    ],
+    [
+      "{'vol_window': 10, 'h_mult': 3.0, 'max_hold_days': 30}",
+      0.6820832983227607
+    ],
+    [
+      "{'vol_window': 20, 'h_mult': 3.0, 'max_hold_days': 15}",
+      0.6740177295002228
+    ]
+  ]
+}
