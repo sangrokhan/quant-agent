@@ -1,0 +1,31 @@
+{
+  "sharpe": [
+    false,
+    {
+      "metric": "sharpe_ratio",
+      "value": 0.4520817591447174,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  ],
+  "mdd": [
+    true,
+    {
+      "metric": "max_drawdown",
+      "value": 0.13366998436872213,
+      "threshold": 0.25
+    }
+  ],
+  "tc": [
+    false,
+    {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.2803771787890282,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 81,
+      "estimated_total_cost_drag": 0.081
+    }
+  ],
+  "num_trades": 81
+}
