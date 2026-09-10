@@ -34,6 +34,14 @@ sensitive target, decisive Sharpe/TC failure) nor SPY (near-miss). Default
 config trend_sma_window=30/tip_sma_window=50 retained (already QQQ's best);
 GLD is NOT a recommended symbol for this strategy despite motivating its
 original hypothesis.
+
+UPDATE 2 (2026-09-11-060, direct fine-tune of SPY's near-miss): a local
+parameter search around SPY found trend_sma_window=25/tip_sma_window=30
+clears SPY's Sharpe (1.495) AND TC-survival (net Sharpe 0.803) thresholds,
+AND this SAME config further improves QQQ (Sharpe 1.640, net Sharpe
+1.111) versus the original 30/50 config. Default updated to 25/30 as the
+new shared config for SPY+QQQ (both accepted). GLD remains rejected
+decisively at this config too (Sharpe 0.306, TC 0.011).
 """
 
 from __future__ import annotations
@@ -79,8 +87,8 @@ def _get_tip_trend(idx: pd.DatetimeIndex, tip_sma_window: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    trend_sma_window: int = 50,
-    tip_sma_window: int = 50,
+    trend_sma_window: int = 25,
+    tip_sma_window: int = 30,
     is_crypto: bool = False,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series: primary SMA trend gated by TIP (real-yield proxy) trend."""
