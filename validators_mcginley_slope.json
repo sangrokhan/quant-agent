@@ -1,0 +1,96 @@
+{
+  "QQQ": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.11456978838125766,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.20672766250212515,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.16789976001513796,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 23,
+        "estimated_total_cost_drag": 0.023
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.5,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          false,
+          false,
+          true,
+          true
+        ],
+        "note": "manual split -- vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version"
+      }
+    ],
+    "num_trades": 23
+  },
+  "SPY": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.9547130814813675,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.05467984673908599,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.8552676227441869,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 27,
+        "estimated_total_cost_drag": 0.027
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "note": "manual split -- vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version"
+      }
+    ],
+    "num_trades": 27
+  }
+}
