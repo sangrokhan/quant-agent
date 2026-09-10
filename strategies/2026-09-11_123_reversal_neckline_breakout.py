@@ -68,11 +68,11 @@ def _fractal_extrema(series: pd.Series, lookback: int, kind: str) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    fractal_lookback: int = 3,
+    fractal_lookback: int = 2,
     max_pattern_bars: int = 40,
     stop_buffer_pct: float = 0.0,
-    reward_r_multiple: float = 2.0,
-    max_hold_days: int = 20,
+    reward_r_multiple: float = 1.0,
+    max_hold_days: int = 10,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 

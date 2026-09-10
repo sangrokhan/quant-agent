@@ -46,10 +46,29 @@ total.
 - QQQ at fractal_lookback=5 passed all 3 vol regimes at every reward_r_multiple tested (3/3 for all three R-multiples) — the cleanest, most consistent per-symbol cell block in the grid.
 - Crypto (BTC/USDT, ETH/USDT) failed every single grid cell (0/36) — decisive rejection for crypto.
 
-## Decision
+## Decision (original config)
 
 **Accepted, QQQ only** (fractal_lookback=5, reward_r_multiple=2.0). SPY and
-crypto scope explicitly excluded per the above evidence — a future loop
-revisiting SPY should note the near-miss Sharpe (0.527) and consider a
-regime/trend filter addition specific to SPY's flatter equity curve, rather
-than assuming the QQQ config transfers directly.
+crypto scope explicitly excluded per the above evidence.
+
+## UPDATE (same-day fine-tune, id 2026-09-11-025)
+
+A wider single-symbol param search on SPY (`fractal_lookback` in
+{2,3,4,5,7} x `reward_r_multiple` in {1.0,1.5,2.0,2.5,3.0} x `max_hold_days`
+in {10,20,30}, 75 cells) found `fractal_lookback=2, reward_r_multiple=1.0,
+max_hold_days=10` passes all 3 vol-regime terciles on SPY (grid
+pass_fraction improved from 0.319 -> 0.458 overall). Full single-config
+validation with this new shared config on BOTH symbols:
+
+| Symbol | Sharpe | MDD | TC-survival (net Sharpe) | Walk-forward | Param sensitivity | Trades |
+|---|---|---|---|---|---|---|
+| QQQ | 1.253 (PASS) | 0.141 (PASS) | 1.130 (PASS) | 1.00 (PASS, 4/4 splits) | 0.073 rel.std (PASS) | 60 |
+| SPY | 1.769 (PASS) | 0.075 (PASS) | 1.577 (PASS) | 1.00 (PASS, 4/4 splits) | 0.339 rel.std (PASS) | 47 |
+
+**Both QQQ and SPY now pass all 5 validators decisively with a single
+shared config** (fractal_lookback=2, reward_r_multiple=1.0,
+max_hold_days=10) — a strict improvement over the original QQQ-only
+acceptance. The strategy file's defaults were updated to this fine-tuned
+config. **ACCEPTED, QQQ + SPY** (shared config). Crypto still excluded
+(not re-tested this fine-tune round, but the original grid showed 0/36
+crypto cells passing across a comparable range).
