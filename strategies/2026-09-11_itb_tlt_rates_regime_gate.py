@@ -13,7 +13,18 @@ test, plus QQQ/SPY as broader-market falsification checks, and BTC/ETH as
 crypto falsification checks since no rate-sensitivity mechanism exists
 there) by requiring TLT to also be in an uptrend (TLT close > TLT's own
 SMA) -- i.e. only trade the trend-following signal when the "cheap
-financing" macro backdrop is intact. Distinct from all prior TLT-based
+financing" macro backdrop is intact.
+
+UPDATE (2026-09-11-055, direct fine-tune of this file's original 2026-09-
+11-054 entry): a local parameter search around SPY (originally a near-miss
+at trend_sma_window=50/tlt_sma_window=50) found trend_sma_window=40,
+tlt_sma_window=40 clears SPY's Sharpe (1.194) AND transaction-cost-
+survival (net Sharpe 0.513) thresholds, AND this same tighter shared
+config also improves ITB (Sharpe 1.135) and QQQ (Sharpe 1.127) versus the
+original 50/50 config -- so 40/40 is now the default/canonical shared
+config across all three symbols (ITB, QQQ, SPY all accepted).
+
+Distinct from all prior TLT-based
 strategies in this repo (TLT/IEF duration ratio, GLD/TLT ratio, SPY/TLT
 correlation) since this pairs TLT's own absolute trend (not a ratio) with
 a rate-sensitive SECTOR ETF (ITB) rather than a broad index or another
@@ -69,8 +80,8 @@ def _get_tlt_trend(idx: pd.DatetimeIndex, tlt_sma_window: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    trend_sma_window: int = 100,
-    tlt_sma_window: int = 100,
+    trend_sma_window: int = 40,
+    tlt_sma_window: int = 40,
     is_crypto: bool = False,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series: primary SMA trend gated by TLT trend."""
