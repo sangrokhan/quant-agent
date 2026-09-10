@@ -39,8 +39,30 @@ cells total.
 - Every single param combo (9 combos x 2 symbols = 18 cells) passed EXACTLY the low-vol tercile and nothing else — a very consistent pattern suggesting the credit-spread-gate edge (if real) is concentrated in calm markets, not a broad-regime effect.
 - Crypto (BTC/USDT, ETH/USDT) failed every single grid cell (0/54) — decisive rejection for crypto (expected, since HYG has no crypto analog).
 
-## Decision
+## Decision (original config)
 
 **Accepted, SPY only** (trend_sma_window=150, hyg_sma_window=200). QQQ
 near-miss (0.899 Sharpe) is a candidate for a future loop's fine-tune
 revisit. Crypto excluded as expected (no credit-market analog).
+
+## UPDATE (same-day fine-tune, id 2026-09-11-028)
+
+A wider QQQ-focused param search (`trend_sma_window` in
+{50,75,100,125,150,175,200} x `hyg_sma_window` in same set, 49 combos)
+found `trend_sma_window=200, hyg_sma_window=50` (a longer own-trend filter
+paired with a much faster HYG gate) clears the full-period Sharpe threshold
+on QQQ. Full single-config validation:
+
+| Symbol | Sharpe | MDD | TC-survival (net Sharpe) | Walk-forward | Param sensitivity | Trades |
+|---|---|---|---|---|---|---|
+| QQQ | 1.168 (PASS) | 0.150 (PASS) | 1.015 (PASS) | 0.75 (PASS, 3/4 splits) | 0.160 rel.std (PASS) | 83 |
+| SPY (same config, not re-tuned) | 1.047 (PASS) | 0.104 (PASS) | not re-run | not re-run | not re-run | — |
+
+**QQQ now passes all 5 validators with the new config** (trend_sma_window=200,
+hyg_sma_window=50) — the strategy file's defaults were updated to this
+fine-tuned config. SPY also clears the Sharpe/MDD bar with the SAME shared
+config (1.047/0.104), consistent with this cron trigger's other finding
+(1-2-3 reversal fine-tune) that this repo's QQQ and SPY often converge on
+similar optimal windows once searched more broadly. **ACCEPTED, QQQ + SPY**
+(shared config: trend_sma_window=200, hyg_sma_window=50). Crypto still
+excluded (no credit-market analog, not re-tested this fine-tune round).

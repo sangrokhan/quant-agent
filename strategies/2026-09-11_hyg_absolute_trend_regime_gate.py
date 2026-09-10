@@ -80,8 +80,8 @@ def _load_hyg_sma(index: pd.DatetimeIndex, hyg_sma_window: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    trend_sma_window: int = 100,
-    hyg_sma_window: int = 200,
+    trend_sma_window: int = 200,
+    hyg_sma_window: int = 50,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
