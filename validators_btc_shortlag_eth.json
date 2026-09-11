@@ -1,0 +1,16 @@
+{
+  "sharpe": {
+    "metric": "sharpe_ratio",
+    "value": 0.983428803640747,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "sharpe_pass": false,
+  "mdd": {
+    "metric": "max_drawdown",
+    "value": 0.5028550941419194,
+    "threshold": 0.25
+  },
+  "mdd_pass": false,
+  "n_trades": 760
+}
