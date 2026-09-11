@@ -1,0 +1,118 @@
+{
+  "QQQ": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.3286057586209056,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.027518612876860638,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.28787416618849254,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 4,
+        "estimated_total_cost_drag": 0.004
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.5,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "False",
+          "False",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version)"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.12758837501644396,
+        "threshold": 0.5,
+        "grid_size": 6,
+        "mean": 0.3766636633562734,
+        "std": 0.04805790473536781
+      }
+    ],
+    "num_trades": 4
+  },
+  "SPY": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.611798851981038,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.019319804749600156,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.5769910347042907,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 5,
+        "estimated_total_cost_drag": 0.005
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version)"
+      }
+    ],
+    "param_sensitivity": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.9278920918640308,
+        "threshold": 0.5,
+        "grid_size": 6,
+        "mean": 0.35260486441695904,
+        "std": 0.32717926524528507
+      }
+    ],
+    "num_trades": 5
+  }
+}
