@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.4934598141631171,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.1272082895996156,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.27877966411142574,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 124,
+      "estimated_total_cost_drag": 0.124
+    },
+    "tc_passed": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ],
+      "note": "manual date-slice fallback due to vectorbt.utils.splitting API bug"
+    },
+    "wf_passed": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.38259271960232183,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.29753586419722783,
+      "std": 0.11383505546244449
+    },
+    "ps_passed": true,
+    "num_trades": 124
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.3749435998748709,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.0887914694980877,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.08923436224691698,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 122,
+      "estimated_total_cost_drag": 0.122
+    },
+    "tc_passed": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ],
+      "note": "manual date-slice fallback due to vectorbt.utils.splitting API bug"
+    },
+    "wf_passed": true,
+    "param_sens": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 31.37235639978893,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": -0.008339371560333847,
+      "std": 0.2616257367410574
+    },
+    "ps_passed": false,
+    "num_trades": 122
+  }
+}
