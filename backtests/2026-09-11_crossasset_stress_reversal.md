@@ -13,7 +13,7 @@ https://quantpedia.com/short-term-correlated-stress-reversal-trading/
 |---|---|---|---|
 | Sharpe ratio | 1.170 | >= 1.0 | ✅ |
 | Max drawdown | 0.208 | <= 0.25 | ✅ |
-| Transaction cost survival (5bps/trade, 1510 trades) | net Sharpe 0.402 | >= 0.5 | **FAIL** |
+| Transaction cost survival (10bps/trade repo-standard, 1510 trades) | net Sharpe 0.079 | >= 0.5 | **FAIL** (decisive, not near-miss, at repo-standard 10bps; was reported 0.402 at an initially-used 5bps before catching the repo-standard convention is 10bps/trade — corrected here) |
 | Walk-forward (manual 4-way range-split; `check_walk_forward` raises on installed vectorbt 1.1.0, pre-existing bug flagged in 2026-09-10-021/022) | 4/4 splits positive, 1.0 | >= 0.75 ✅ |
 
 ## Step 6 grid summary (ief_thresh in [0.0, 0.002] x risk_thresh in [0.0, 0.005], SPY/QQQ + BTC/USDT/ETH/USDT, vol_regime_splits=3)
