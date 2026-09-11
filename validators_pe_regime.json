@@ -1,0 +1,118 @@
+{
+  "QQQ": {
+    "num_trades": 41,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.22944892691623353,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.3648389697966453,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.28998382450881316,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 41,
+        "estimated_total_cost_drag": 0.041
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.5,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          false,
+          false,
+          true
+        ],
+        "note": "manual 4-equal-slice fallback; vbt.utils.splitting.RangeSplitter broken in this install"
+      }
+    ],
+    "ps": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 1.6392729289024714,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 0.2529622792023505,
+        "std": 0.41467421632988183
+      }
+    ]
+  },
+  "SPY": {
+    "num_trades": 34,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.016295866784513762,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.20472762840348646,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.11025380995557042,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 34,
+        "estimated_total_cost_drag": 0.034
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.5,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "note": "manual 4-equal-slice fallback; vbt.utils.splitting.RangeSplitter broken in this install"
+      }
+    ],
+    "ps": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.9458137866011899,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 0.24711033341535388,
+        "std": 0.2337203601558584
+      }
+    ]
+  }
+}
