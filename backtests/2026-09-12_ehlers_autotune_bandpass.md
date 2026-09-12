@@ -1,59 +1,56 @@
-# Backtest Report: Ehlers AutoTune Dominant-Cycle Bandpass Filter (TASC 2026.05)
+# Backtest Report: Ehlers AutoTune Filter (Dominant-Cycle Bandpass)
 
 **Strategy file:** `strategies/2026-09-12_ehlers_autotune_bandpass.py`
-**Source:** John F. Ehlers, TASC 5/2026. Formula reproduced from
-https://financial-hacker.com/the-autotune-filter/ (fully disclosed
-EasyLanguage-to-C code).
+**Date:** 2026-09-12
 
 ## Hypothesis
 
-A highpassed price series' own autocorrelation across lags 1..window
-identifies the currently-dominant market cycle (lag of MINIMUM correlation,
-doubled = cycle length in bars, clamped to +/-2 bars/bar drift). That
-estimate tunes a 2-pole bandpass filter; entries/exits on the 2-bar ROC of
-the bandpass output crossing zero, gated by the correlation minimum being
-below a threshold (cyclic-regime filter), should time cycle turns better
-than a fixed-period bandpass.
+Per John Ehlers' TASC 5/2026 article "A Rolling Autocorrelation Function"
+(transcribed with full C/EasyLanguage-derived formula at
+https://financial-hacker.com/the-autotune-filter/, Petra Volkova):
+a dominant price cycle can be estimated via rolling autocorrelation of a
+highpass-filtered series (the most-anticorrelated lag, doubled, is the
+cycle length); tuning a bandpass filter to this dynamically-estimated
+cycle and trading its ROC zero-crossings, gated by a minimum-correlation
+threshold confirming a genuinely cyclic regime, should outperform an
+untuned oscillator. Source reports ~25% CAGR on ES futures with
+walk-forward optimization; the source's own comment thread raises a
+shuffled-control critique questioning whether real market data has robust
+dominant cycles at all — noted as a live risk in this test.
 
-## Quick screening results (equity only)
+## Grid test (Step 6) — `grid_result_ehlers_autotune.json`
 
-Full grid-test across param x symbol x vol-regime x asset-class was
-computationally infeasible within this iteration's time budget: the
-autocorrelation-search step is O(n * window^2) per bar, and crypto's
-higher-frequency bar count (~67,000 rows vs ~1,900 for daily equity) made
-a single crypto grid cell alone exceed several minutes. Given decisive
-equity underperformance below (see next section), the crypto leg was
-skipped rather than burning the iteration budget on a foregone conclusion.
+Grid: `window ∈ {14,20,26}`, `corr_thresh ∈ {-0.1,-0.2,-0.3}` × symbols
+{QQQ, SPY, BTC/USDT, ETH/USDT} × vol regime terciles, 2018-01-01 to
+2026-09-01. 108 total cells.
 
-| Symbol | Best (window, bandwidth) | Best Sharpe |
-|---|---|---|
-| QQQ | (26, 0.15) | 0.377 |
-| SPY | (26, 0.25) | 0.490 |
+- **pass_fraction: 0.1574** (17/108)
+- by_asset_class: equity 17/54, **crypto 0/54** (decisive fail)
+- by_vol_regime: low 14/36, mid 3/36, **high 0/36** — the strategy passes
+  ONLY in low-vol regimes, fails completely in high-vol
+- best_cell: SPY, `window=20, corr_thresh=-0.3`, low-vol, Sharpe 1.826
+- worst_cell: SPY, `window=20, corr_thresh=-0.1`, mid-vol, Sharpe -0.441
 
-Both are decisively below the min_sharpe=1.0 threshold across every
-(window, bandwidth) combination tried (window in {15,20,26}, bandwidth in
-{0.15,0.25}, corr_thresh had no effect on returns in this implementation --
-see notes).
+## Standard validators (Step 7) — best config `window=20, corr_thresh=-0.3`, full 2018-2026 sample
 
-## Decision: REJECT (decisive)
+| Symbol | Sharpe | MDD | TC-survival (net Sharpe) | Walk-forward | Param sensitivity | Verdict |
+|---|---|---|---|---|---|---|
+| SPY | 0.487 (**fail**, thr 1.0) | 0.184 (pass) | 0.295 (**fail**, thr 0.5) | 1.00 (pass) | rel_std 0.013 (pass) | **REJECT** |
+| QQQ | 0.562 (**fail**, thr 1.0) | 0.244 (pass, thr 0.25) | 0.400 (**fail**, thr 0.5) | 0.75 (pass) | rel_std 0.007 (pass) | **REJECT** |
 
-Best-case equity Sharpe (0.49 on SPY, 0.377 on QQQ) is far below the 1.0
-threshold across the entire tested parameter range; no config came close
-to passing. Crypto not tested (computationally infeasible at this data
-granularity within iteration budget, but equity result alone is decisive
-enough to reject without it). Strategy code and this report kept as a
-record of a rejected attempt.
+Both symbols show 140+ trades over the full sample (much higher turnover
+than the grid's per-regime slices suggest) — the strategy's decent
+per-regime Sharpe in low-vol windows is diluted by high turnover/costs
+and poor performance in mid/high-vol stretches once the full 2018-2026
+sample (including 2020 COVID crash, 2022 rate-hike drawdown) is included.
 
-## Notes on implementation limitations
+## Decision
 
-- `corr_thresh` (the cyclic-regime gate) had no visible effect on the
-  Sharpe values tested, suggesting either the correlation-minimum values
-  rarely cross the tested thresholds in this data, or the regime gate is
-  not binding here — a possible follow-up would inspect the `min_corr`
-  series directly, but given the decisive underperformance this wasn't
-  pursued further this iteration.
-- The autocorrelation-based dominant-cycle estimator here is a faithful
-  translation of the disclosed algorithm, but is O(window^2) per bar with
-  a plain Python loop (not vectorized) — a future revisit of this
-  indicator family should vectorize this before attempting a crypto/
-  higher-frequency test.
+**REJECT for all symbols/asset classes.** Fails Sharpe and transaction-cost
+survival on the full sample for both SPY and QQQ despite passing walk-forward
+and parameter-sensitivity; crypto rejected decisively at the grid stage
+(0/54). This corroborates the skeptical comment-thread critique found at
+the source: the dominant-cycle detection may not identify a genuinely
+tradeable structural edge in daily equity/crypto bars, only a noisy,
+regime-dependent signal that performs well in cherry-picked low-vol
+windows but doesn't survive full-sample costs and turnover.

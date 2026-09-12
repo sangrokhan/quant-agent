@@ -1,36 +1,41 @@
-"""Strategy: Ehlers AutoTune dominant-cycle bandpass filter, ROC zero-cross.
+"""Strategy: Ehlers AutoTune Filter -- dominant-cycle bandpass, long-only, cyclic-regime gated.
 
-Hypothesis (see knowledge_base entry): per John F. Ehlers' TASC 5/2026
-article, reproduced at
-https://financial-hacker.com/the-autotune-filter/ (fully disclosed
-EasyLanguage-to-C code): a highpassed price series' own autocorrelation
-across a range of lags identifies the currently-dominant market cycle
-(the lag with MINIMUM correlation, doubled, is the estimated cycle length
-in bars). That estimate is fed as the center period of a 2-pole bandpass
-filter. Entering/exiting on the 2-bar rate-of-change of the bandpass
-output crossing zero -- but ONLY when the correlation minimum itself is
-below a threshold (i.e. we are actually in a cyclic regime, not just
-noise) -- should time cycle turns better than a fixed-period bandpass.
+Hypothesis (see knowledge_base/strategies_log.jsonl for this iteration's id):
+Per John Ehlers' TASC 5/2026 article "A Rolling Autocorrelation Function",
+transcribed with full C/EasyLanguage-derived formula at
+https://financial-hacker.com/the-autotune-filter/ (Petra Volkova):
+markets periodically exhibit a dominant price cycle detectable via rolling
+autocorrelation of a highpass-filtered series -- the lag with the MOST
+NEGATIVE (anticorrelated) autocorrelation, doubled, estimates the dominant
+cycle length. Tuning a bandpass filter to that dynamically-estimated cycle
+and trading its rate-of-change (ROC) zero-crossings, gated by a
+minimum-correlation threshold (confirms a genuinely cyclic regime is
+present rather than trading noise), should outperform an untuned/fixed-
+period oscillator, per the source's own reported ~25% CAGR vs buy-and-hold
+on ES futures (with an important caveat raised in the source's own comment
+thread: a shuffled-control reanalysis found no significant cyclic
+structure survives in real FX/index return data at that scale -- this
+strategy is tested here on equity/crypto daily bars specifically to check
+whether the same caveat holds).
 
-Algorithm (fully disclosed by source):
-1. hp = HighPass3(close, window) -- reuse a 2-pole highpass building block
-   (approximated here with the repo's existing 2-pole highpass filter).
-2. For lag in 1..window: compute Pearson correlation of hp[t] vs
-   hp[t-lag] over a rolling `window`-bar sample.
-3. min_corr = min over lags of that correlation; dominant_cycle =
-   2 * argmin_lag, smoothed/clamped to move at most +/-2 bars per bar.
-4. bp = BandPass2(close, period=dominant_cycle, bandwidth) -- 2-pole
-   bandpass filter centered on the dominant cycle.
-5. roc = bp[t] - bp[t-2] (2-bar rate of change of the bandpass output).
-6. Long when roc crosses from negative to positive AND min_corr < thresh
-   (cyclic regime gate); exit on reverse cross or regime gate failing.
-
-This is long-only (source's short-entry condition, mirrored with `Filt`
-sign, is dropped for consistency with this repo's long-only convention).
+Signal logic
+------------
+- AutoTune(close, window): 2-pole highpass filter over `window` bars, then
+  rolling autocorrelation across lags 1..window; dominant cycle DC = 2 *
+  argmin(corr), clamped to the prior DC +/- 2 bars (recursion approximated
+  here with a simple bar-to-bar clamp on a rolling basis).
+- BandPass2(close, DC, bandwidth): 2nd-order bandpass filter tuned to DC.
+- Long entry (long-only adaptation of source's long/short rule): 2-bar ROC
+  of the bandpass output crosses from negative/zero to positive AND the
+  regime's min-correlation (MinCorr, the most negative correlation found)
+  is below `corr_thresh` (confirms cyclic regime).
+- Exit: ROC crosses back to non-positive, OR a `max_hold_days` time-stop
+  (source's original doesn't specify an explicit hold cap; added here to
+  avoid indefinite holds through a walk-forward/grid harness).
 
 Interface contract for validators (see validation/validators.py):
-    generate_returns(price_df, **params) -> pd.Series
-    generate_signals(price_df, **params) -> pd.Series
+    generate_signals(price_df, **params) -> pd.Series  ({0,1} position)
+    generate_returns(price_df, **params) -> pd.Series  (daily strategy returns)
 """
 
 from __future__ import annotations
@@ -47,112 +52,133 @@ def _prep(price_df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _highpass2(series: pd.Series, length: int) -> pd.Series:
-    """2-pole highpass filter (Ehlers standard building block)."""
-    n = max(2, int(length))
-    alpha = (np.cos(2 * np.pi / n) + np.sin(2 * np.pi / n) - 1) / np.cos(2 * np.pi / n)
-    vals = series.to_numpy(dtype=float)
-    out = np.zeros_like(vals)
-    for i in range(len(vals)):
-        v = vals[i]
-        v1 = vals[i - 1] if i >= 1 else v
-        v2 = vals[i - 2] if i >= 2 else v
-        p1 = out[i - 1] if i >= 1 else 0.0
-        p2 = out[i - 2] if i >= 2 else 0.0
-        out[i] = ((1 - alpha / 2) ** 2) * (v - 2 * v1 + v2) + 2 * (1 - alpha) * p1 - ((1 - alpha) ** 2) * p2
-    return pd.Series(out, index=series.index)
-
-
-def _autotune_dominant_cycle(hp: pd.Series, window: int) -> tuple[pd.Series, pd.Series]:
-    """Returns (dominant_cycle_series, min_corr_series)."""
-    vals = hp.to_numpy(dtype=float)
-    n = len(vals)
-    dc = np.full(n, float(window))
-    min_corr = np.ones(n)
-
-    for i in range(window * 2, n):
-        window_x = vals[i - window:i]
-        best_corr = 1.0
-        best_lag = window
-        for lag in range(1, window + 1):
-            x = vals[i - window - lag: i - lag]
-            y = window_x
-            if len(x) != window or len(y) != window:
-                continue
-            sx, sy = x.sum(), y.sum()
-            sxx, syy, sxy = (x * x).sum(), (y * y).sum(), (x * y).sum()
-            den1 = window * sxx - sx * sx
-            den2 = window * syy - sy * sy
-            denom = np.sqrt(max(den1 * den2, 1e-12))
-            corr = (window * sxy - sx * sy) / denom if denom > 0 else 0.0
-            if corr < best_corr:
-                best_corr = corr
-                best_lag = lag
-        candidate_dc = 2 * best_lag
-        prev_dc = dc[i - 1]
-        dc[i] = min(max(candidate_dc, prev_dc - 2), prev_dc + 2)
-        min_corr[i] = best_corr
-
-    return pd.Series(dc, index=hp.index), pd.Series(min_corr, index=hp.index)
-
-
-def _bandpass2(price: pd.Series, period_series: pd.Series, bandwidth: float) -> pd.Series:
-    vals = price.to_numpy(dtype=float)
-    periods = period_series.to_numpy(dtype=float)
-    n = len(vals)
+def _highpass2(price: np.ndarray, period: int) -> np.ndarray:
+    """2-pole highpass filter (Ehlers standard coefficients)."""
+    n = len(price)
     out = np.zeros(n)
-    for i in range(n):
-        period = max(periods[i], 3.0)
+    a1 = np.exp(-1.414 * np.pi / period)
+    b1 = 2 * a1 * np.cos(1.414 * np.pi / period)
+    c2 = b1
+    c3 = -a1 * a1
+    c1 = (1 + c2 - c3) / 4.0
+    for i in range(2, n):
+        out[i] = (
+            c1 * (price[i] - 2 * price[i - 1] + price[i - 2])
+            + c2 * out[i - 1]
+            + c3 * out[i - 2]
+        )
+    return out
+
+
+def _autotune_dc_series(hp: np.ndarray, window: int) -> tuple:
+    """Vectorized per-bar dominant-cycle + min-correlation series.
+
+    For each bar i, uses the trailing `2*window` highpassed samples: a fixed
+    base segment `xw` (first `window` samples) and, for each lag 1..window,
+    a shifted segment `yw` (samples `lag..lag+window`) drawn from the SAME
+    2*window historical span -- matching the source's HP[J] vs HP[Lag+J]
+    correlation over one window. The lag with the most-negative correlation
+    (anticorrelation), doubled, is the dominant-cycle estimate, clamped to
+    the prior estimate +/- 2 bars (the source's own recursive clamp).
+    """
+    n = len(hp)
+    dc_series = np.full(n, float(window))
+    min_corr_series = np.ones(n)
+    if n < 2 * window:
+        return dc_series, min_corr_series
+
+    lags = np.arange(1, window + 1)
+    prev_dc = float(window)
+    for i in range(2 * window - 1, n):
+        base = hp[i - 2 * window + 1 : i + 1]  # length 2*window
+        xw = base[:window]
+        sx = xw.sum()
+        sxx = (xw * xw).sum()
+        # Build a (window, window) matrix of shifted windows for all lags at once.
+        Y = np.lib.stride_tricks.sliding_window_view(base[1:], window)[: window]
+        sy = Y.sum(axis=1)
+        syy = (Y * Y).sum(axis=1)
+        sxy = (Y * xw).sum(axis=1)
+        den1 = window * sxx - sx * sx
+        den2 = window * syy - sy * sy
+        denom = den1 * den2
+        with np.errstate(invalid="ignore", divide="ignore"):
+            corr = np.where(denom > 0, (window * sxy - sx * sy) / np.sqrt(np.where(denom > 0, denom, 1.0)), 1.0)
+        best_idx = int(np.argmin(corr))
+        best_lag = lags[best_idx]
+        best_corr = float(corr[best_idx])
+        dc = 2.0 * best_lag
+        dc = float(np.clip(dc, prev_dc - 2.0, prev_dc + 2.0))
+        dc_series[i] = dc
+        min_corr_series[i] = best_corr
+        prev_dc = dc
+    return dc_series, min_corr_series
+
+
+def _bandpass2(price: np.ndarray, dc_series: np.ndarray, bandwidth: float) -> np.ndarray:
+    n = len(price)
+    out = np.zeros(n)
+    for i in range(2, n):
+        period = max(dc_series[i], 3.0)
         l1 = np.cos(2.0 * np.pi / period)
         g1 = np.cos(bandwidth * 2.0 * np.pi / period)
-        g1 = g1 if abs(g1) > 1e-6 else 1e-6
-        inner = max(1.0 / (g1 * g1) - 1.0, 0.0)
-        s1 = 1.0 / g1 - np.sqrt(inner)
-        v0 = vals[i]
-        v2 = vals[i - 2] if i >= 2 else v0
-        bp1 = out[i - 1] if i >= 1 else 0.0
-        bp2 = out[i - 2] if i >= 2 else 0.0
-        out[i] = 0.5 * (1 - s1) * (v0 - v2) + l1 * (1 + s1) * bp1 - s1 * bp2
-    return pd.Series(out, index=price.index)
+        denom = g1 if g1 != 0 else 1e-6
+        inner = 1.0 / (denom * denom) - 1.0
+        s1 = 1.0 / denom - np.sqrt(max(inner, 0.0))
+        out[i] = (
+            0.5 * (1.0 - s1) * (price[i] - price[i - 2])
+            + l1 * (1.0 + s1) * out[i - 1]
+            - s1 * out[i - 2]
+        )
+    return out
 
 
 def generate_signals(
     price_df: pd.DataFrame,
     window: int = 20,
     bandwidth: float = 0.25,
-    corr_thresh: float = 0.3,
+    corr_thresh: float = -0.2,
+    max_hold_days: int = 20,
 ) -> pd.Series:
+    """Return a {0,1} long/flat position series."""
     df = _prep(price_df)
     close = df["close"]
+    price = close.to_numpy(dtype=float)
+    n = len(price)
 
-    hp = _highpass2(close, window)
-    dc, min_corr = _autotune_dominant_cycle(hp, window)
-    bp = _bandpass2(close, dc, bandwidth)
-    roc = bp - bp.shift(2).fillna(0.0)
+    hp = _highpass2(price, window)
+    dc_series, min_corr_series = _autotune_dc_series(hp, window)
 
-    cross_up = (roc.shift(1) <= 0) & (roc > 0)
-    cross_down = (roc.shift(1) >= 0) & (roc < 0)
-    cyclic_regime = min_corr < corr_thresh
+    bp = _bandpass2(price, dc_series, bandwidth)
+    roc = np.zeros(n)
+    roc[2:] = bp[2:] - bp[:-2]
 
-    position = pd.Series(0, index=close.index, dtype=int)
+    position = np.zeros(n, dtype=int)
     in_position = False
-    for i in range(len(close)):
+    entry_idx = 0
+    for i in range(1, n):
+        cross_up = roc[i - 1] <= 0 and roc[i] > 0
+        cross_down = roc[i - 1] > 0 and roc[i] <= 0
+        cyclic_regime = min_corr_series[i] < corr_thresh
         if in_position:
-            if bool(cross_down.iloc[i]) or not bool(cyclic_regime.iloc[i]):
+            held = i - entry_idx
+            if cross_down or held >= max_hold_days:
                 in_position = False
-                position.iloc[i] = 0
-            else:
-                position.iloc[i] = 1
+                position[i] = 0
+                continue
+            position[i] = 1
         else:
-            if bool(cross_up.iloc[i]) and bool(cyclic_regime.iloc[i]):
+            if cross_up and cyclic_regime:
                 in_position = True
-                position.iloc[i] = 1
+                entry_idx = i
+                position[i] = 1
             else:
-                position.iloc[i] = 0
-    return position
+                position[i] = 0
+    return pd.Series(position, index=close.index, dtype=int)
 
 
 def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
+    """Position-weighted daily returns (no transaction costs)."""
     df = _prep(price_df)
     close = df["close"]
     position = generate_signals(price_df, **kwargs)
