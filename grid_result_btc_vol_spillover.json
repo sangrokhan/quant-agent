@@ -1,0 +1,46 @@
+{
+  "metric": "grid_test",
+  "total_cells": 27,
+  "passed_cells": 0,
+  "pass_fraction": 0.0,
+  "by_asset_class": {
+    "crypto": {
+      "passed": 0,
+      "total": 27
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 0,
+      "total": 9
+    },
+    "mid": {
+      "passed": 0,
+      "total": 9
+    },
+    "high": {
+      "passed": 0,
+      "total": 9
+    }
+  },
+  "best_cell": {
+    "params": {
+      "btc_vol_spike_percentile": 0.95,
+      "cooldown_days": 3
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.3706263069248543
+  },
+  "worst_cell": {
+    "params": {
+      "btc_vol_spike_percentile": 0.85,
+      "cooldown_days": 3
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.04654886949890461
+  }
+}
