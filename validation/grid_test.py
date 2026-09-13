@@ -176,7 +176,25 @@ def run_strategy_grid(
             key = (asset_class, symbol)
             if key not in price_cache:
                 try:
-                    price_cache[key] = loader(symbol, start, end)
+                    # BUG FIX (2026-09-14-119, first surfaced by 2026-09-03-005
+                    # but never fixed at the infrastructure level): loaders
+                    # are called here without an explicit `interval`, so
+                    # `load_crypto` silently defaults to interval="1h" while
+                    # every strategy/validator in this repo assumes daily
+                    # bars (252-day annualization in check_sharpe_ratio/
+                    # check_max_drawdown, daily-bar rolling-window lookback
+                    # periods in every strategy file). This has been
+                    # silently mis-annualizing and over-counting trades for
+                    # every crypto grid cell run through this function's
+                    # default call path since the repo's first day. Force
+                    # interval="1d" explicitly (falling back to the 2-arg
+                    # call if a loader doesn't accept the kwarg) so grid
+                    # cells are computed on the same bar granularity the
+                    # rest of the pipeline assumes.
+                    try:
+                        price_cache[key] = loader(symbol, start, end, interval="1d")
+                    except TypeError:
+                        price_cache[key] = loader(symbol, start, end)
                 except Exception as exc:  # noqa: BLE001 - record and continue the grid
                     for combo in param_combos:
                         params = dict(zip(param_names, combo))
