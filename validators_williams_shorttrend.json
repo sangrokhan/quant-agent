@@ -1,0 +1,116 @@
+{
+  "QQQ": {
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.0229101550088828,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.23245748454723003,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.783191603625625,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 186,
+        "estimated_total_cost_drag": 0.186
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ]
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.04702982550378957,
+        "threshold": 0.5,
+        "grid_size": 12,
+        "mean": 1.0881916960508788,
+        "std": 0.05117746557994565
+      }
+    ],
+    "num_trades": 186
+  },
+  "SPY": {
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.077719635625872,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.13276537217736328,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7937181943989021,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 161,
+        "estimated_total_cost_drag": 0.161
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ]
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.05866287422981033,
+        "threshold": 0.5,
+        "grid_size": 12,
+        "mean": 1.0088093415722015,
+        "std": 0.05917965552650782
+      }
+    ],
+    "num_trades": 161
+  }
+}
