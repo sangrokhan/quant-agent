@@ -1,0 +1,35 @@
+import sys, os, json
+from datetime import datetime
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "data"))
+sys.path.insert(0, os.path.join(ROOT, "validation"))
+
+from loaders import load_equity, load_crypto
+from validators import check_sharpe_ratio
+import importlib.util
+
+spec_path = os.path.join(ROOT, "strategies", "2026-09-13_aroon_sizing_shorttrend.py")
+spec = importlib.util.spec_from_file_location("aroon_strat", spec_path)
+strat = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(strat)
+
+start, end = datetime(2017, 1, 1), datetime(2026, 9, 1)
+
+candidates = [
+    {"trend_window": 22, "aroon_window": 10, "aroon_reference": 40.0},
+    {"trend_window": 25, "aroon_window": 10, "aroon_reference": 40.0},
+    {"trend_window": 20, "aroon_window": 12, "aroon_reference": 40.0},
+    {"trend_window": 20, "aroon_window": 14, "aroon_reference": 40.0},
+    {"trend_window": 20, "aroon_window": 10, "aroon_reference": 35.0},
+    {"trend_window": 20, "aroon_window": 10, "aroon_reference": 45.0},
+    {"trend_window": 25, "aroon_window": 12, "aroon_reference": 40.0},
+]
+
+for params in candidates:
+    print("=== params:", params)
+    for symbol in ["QQQ", "SPY"]:
+        price_df = load_equity(symbol, start, end)
+        returns = strat.generate_returns(price_df, **params)
+        sharpe_p, sharpe_e = check_sharpe_ratio(returns, min_sharpe=1.0)
+        print(symbol, "sharpe", round(sharpe_e["value"], 3), sharpe_p)
