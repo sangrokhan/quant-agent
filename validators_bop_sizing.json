@@ -1,0 +1,155 @@
+{
+  "QQQ": {
+    "params": {
+      "bop_sensitivity": 0.8,
+      "deadband": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1541437268409507,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.12227660560577791,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5895242715718972,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 205,
+      "estimated_total_cost_drag": 0.20500000000000002
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.01918010581021779,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.088087011583368,
+      "std": 0.020869624012892673
+    }
+  },
+  "SPY": {
+    "params": {
+      "bop_sensitivity": 0.8,
+      "deadband": 0.25
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.061568452324881,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.07301957109963764,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5616938032949144,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 144,
+      "estimated_total_cost_drag": 0.14400000000000002
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.021417877843055606,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.049639132605094,
+      "std": 0.022481042721426748
+    }
+  },
+  "BTC/USDT": {
+    "params": {
+      "bop_sensitivity": 0.8,
+      "deadband": 0.05
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.456212477510651,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.33149562388898146,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.96235576114361,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 525,
+      "estimated_total_cost_drag": 0.525
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.010539237095026261,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.4467670167740525,
+      "std": 0.015247820611045574
+    }
+  }
+}
