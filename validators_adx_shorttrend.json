@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1037879893912772,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.2088090233331814,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9212898306201287,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 110,
+      "estimated_total_cost_drag": 0.11
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.10251588888267969,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.0278983199264706,
+      "std": 0.1053759099482752
+    },
+    "num_trades": 110
+  },
+  "SPY": {
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.152708585727803,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.0992157500448323,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9131278378139874,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 102,
+      "estimated_total_cost_drag": 0.10200000000000001
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.09246821450631325,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.0159170478506925,
+      "std": 0.09394003550127833
+    },
+    "num_trades": 102
+  }
+}
