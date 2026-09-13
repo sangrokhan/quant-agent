@@ -1,0 +1,155 @@
+{
+  "QQQ": {
+    "params": {
+      "rmi_sensitivity": 0.8,
+      "deadband": 0.1
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1951477651040392,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.16445622286256256,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5258767930528975,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 339,
+      "estimated_total_cost_drag": 0.339
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.027034757808886704,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.1412355611058105,
+      "std": 0.030853026997384507
+    }
+  },
+  "SPY": {
+    "params": {
+      "rmi_sensitivity": 0.4,
+      "deadband": 0.1
+    },
+    "sharpe_ratio": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.9759494239056415,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.09122616114530091,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.29400763650632983,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 243,
+      "estimated_total_cost_drag": 0.243
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.016436286144546598,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 0.9659298757086258,
+      "std": 0.015876299832713305
+    }
+  },
+  "BTC/USDT": {
+    "params": {
+      "rmi_sensitivity": 0.4,
+      "deadband": 0.05
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.4543264111177492,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.3469994473061365,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0600137638354983,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 496,
+      "estimated_total_cost_drag": 0.496
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.008346276600020193,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.438145289269448,
+      "std": 0.012003158375258866
+    }
+  }
+}
