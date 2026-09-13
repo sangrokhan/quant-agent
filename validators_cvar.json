@@ -1,0 +1,146 @@
+{
+  "SPY": {
+    "num_trades": 22,
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.0133079540192882,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.19562024719561455,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9756654496514469,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 22,
+      "estimated_total_cost_drag": 0.022
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback; vbt.utils.splitting.RangeSplitter broken in this install"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.029697015637646602,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 0.9721764131227708,
+      "std": 0.028870738143058107
+    }
+  },
+  "QQQ": {
+    "num_trades": 12,
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.318632181317244,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.166840379579677,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.3014605912175867,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 12,
+      "estimated_total_cost_drag": 0.012
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback; vbt.utils.splitting.RangeSplitter broken in this install"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.04310570128608493,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.2555311076372888,
+      "std": 0.05412054888120032
+    }
+  },
+  "BTC/USDT": {
+    "num_trades": 31,
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.8765404765845206,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.24735344598665288,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8513449050744457,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 31,
+      "estimated_total_cost_drag": 0.031
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback; vbt.utils.splitting.RangeSplitter broken in this install"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.02886781190335583,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 0.8376808211657351,
+      "std": 0.024182012380461092
+    }
+  }
+}
