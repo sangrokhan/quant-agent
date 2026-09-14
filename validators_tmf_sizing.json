@@ -1,0 +1,155 @@
+{
+  "QQQ": {
+    "params": {
+      "sensitivity": 0.5,
+      "deadband": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.099105342988793,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.13416736904632742,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6499021220586223,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 162,
+      "estimated_total_cost_drag": 0.162
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.018074984291244274,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.070112482482516,
+      "std": 0.01934226631073589
+    }
+  },
+  "SPY": {
+    "params": {
+      "sensitivity": 0.7,
+      "deadband": 0.3
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1256893767787213,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.07596127468868774,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6214448849790736,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 131,
+      "estimated_total_cost_drag": 0.131
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.041312433472991524,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.0781906956583314,
+      "std": 0.04454268138558327
+    }
+  },
+  "BTC/USDT": {
+    "params": {
+      "sensitivity": 0.7,
+      "deadband": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.514253032122695,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.31436972793742124,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.3635419989821569,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 197,
+      "estimated_total_cost_drag": 0.197
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.00979116036719143,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.4788375986114575,
+      "std": 0.014479536085037052
+    }
+  }
+}
