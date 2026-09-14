@@ -1,0 +1,34 @@
+{
+  "QQQ": {
+    "params": {
+      "basis_length": 10,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "full_sample_sharpe": 1.1596594950123003
+  },
+  "SPY": {
+    "params": {
+      "basis_length": 14,
+      "sensitivity": 0.6,
+      "deadband": 0.15
+    },
+    "full_sample_sharpe": 1.0546318836776676
+  },
+  "BTC/USDT": {
+    "params": {
+      "basis_length": 10,
+      "sensitivity": 0.5,
+      "deadband": 0.15
+    },
+    "full_sample_sharpe": 1.5079569163965765
+  },
+  "ETH/USDT": {
+    "params": {
+      "basis_length": 14,
+      "sensitivity": 0.6,
+      "deadband": 0.15
+    },
+    "full_sample_sharpe": 1.3022969941976121
+  }
+}
