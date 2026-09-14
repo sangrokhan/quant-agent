@@ -1,54 +1,62 @@
-# Backtest Report: TII Continuous Sizing Overlay on SMA Trend Gate (2026-09-14)
+# Trend Intensity Index (TII) Continuous Sizing Overlay — Backtest Report
 
-**Strategy file:** `strategies/2026-09-14_tii_sizing_sma_trend.py`
-**Knowledge base id:** 2026-09-14-103
+**Date:** 2026-09-14
+**Strategy ID:** 2026-09-14-175 (assigned in knowledge_base log)
+**File:** `strategies/2026-09-14_tii_sizing_sma_trend.py`
+**Status:** REJECTED (all 4 symbols, QQQ/SPY both near-miss) -- kept as a
+record per Step 8.
 
 ## Hypothesis
 
-Trend Intensity Index (M.H. Pee, 2002): TII = 100*SDPOS/(SDPOS+SDNEG),
-RSI-style ratio of positive/negative SMA-deviation sums, bounded [0,100].
-Confirmed via DuckDuckGo HTML SERP (tradingpedia.com, stockmaniacs.net,
-pineify.app).
+Trend Intensity Index (TII): major_sma=SMA(close,major_period);
+deviation=close-major_sma; sdpos/sdneg=rolling sums of positive/negative
+deviations over minor_period; TII=100*sdpos/(sdpos+sdneg), bounded [0,100],
+centered at 50. Reused verbatim from this repo's 3 prior confirmed TII
+entries, all binary midline-cross/extreme-threshold/breakout triggers. This
+iteration reframes TII as a CONTINUOUS SIZING dial: since TII is already
+bounded [0,100], directly rescale via (TII-50)/50 -> [-1,1] WITHOUT an
+additional z-score/tanh stage (unlike unbounded oscillators used earlier
+this cron trigger). First TII continuous-sizing variant in this repo.
 
-Repo has 4+ prior TII entries, all binary midline/extreme-threshold
-crossovers, all rejected. This iteration reframes TII as a CONTINUOUS
-SIZING dial within an SMA(trend_window) uptrend gate, following the
-ADX/CHOP/VHF/PFE pattern.
+Source: repo's own prior confirmed formula (2026-09-04/05/08 TII entries);
+no new external source needed.
 
 ## Grid test summary (Step 6)
 
-`param_grid={tii_sensitivity: [0.4,0.6,0.8], deadband: [0.15,0.20,0.25]}`,
-`symbols={equity: [QQQ,SPY], crypto: [BTC/USDT,ETH/USDT]}`,
-`vol_regime_splits=3`, 2019-01-01 to 2026-09-01.
+`param_grid={minor_period: [10,20], sensitivity: [0.4,0.6,0.8]}`, symbols
+QQQ/SPY (equity) + BTC/USDT/ETH/USDT (crypto), vol_regime_splits=3.
 
-- total_cells=108, passed=41, pass_fraction=0.380
-- by_asset_class: equity 22/54 (0.41), crypto 19/54 (0.35)
-- by_vol_regime: low 36/36 (1.00), mid 5/36 (0.14), high 0/36 (0.00)
-- per-symbol: QQQ 13/27, SPY 9/27, BTC/USDT 10/27 (best in HIGH-vol
-  regime, unusual), ETH/USDT 9/27
+- **total_cells:** 72, **passed:** 26, **pass_fraction:** 0.361.
+- **by_asset_class:** equity 18/36 (0.500), crypto 8/36 (0.222).
+- **by_vol_regime:** low 18/24 (0.750), mid 8/24 (0.333), high 0/24 (0.000).
+- **best_cell:** QQQ, minor_period=10/sensitivity=0.4, low-vol, Sharpe
+  2.770.
+- **worst_cell:** QQQ, minor_period=20/sensitivity=0.4, high-vol, Sharpe
+  -0.821.
 
 ## Single-config validator results (Step 7)
 
-| Symbol | params | Sharpe | MDD | TC-survival net Sharpe | Verdict |
-|---|---|---|---|---|---|
-| QQQ | sens=0.4, db=0.15 | 0.630 (**FAIL**) | 21.10% (pass) | 0.311 (**FAIL**) | **REJECT** |
-| SPY | sens=0.8, db=0.20 | 0.655 (**FAIL**) | 17.10% (pass) | 0.356 (**FAIL**) | **REJECT** |
-| BTC/USDT | sens=0.8, db=0.25 | 1.254 (pass) | 45.23% (**FAIL**, decisive) | 1.183 (pass) | **REJECT** (MDD) |
+Best grid config (minor_period=10, sensitivity=0.4) tested full-sample per
+symbol, leverage_cap=1.0 (equity) / 0.4 (crypto):
+
+| Symbol | Sharpe | MDD | TC-survival (net Sharpe) | Walk-fwd | Param sensitivity (rel-std) | Outcome |
+|---|---|---|---|---|---|---|
+| QQQ | 0.978 (**fail**, near-miss) | 0.153 (pass) | 0.599 (pass) | 0.750 (pass) | 0.087 (pass) | **rejected** |
+| SPY | 0.954 (**fail**, near-miss) | 0.094 (pass) | 0.511 (pass) | 0.750 (pass) | 0.062 (pass) | **rejected** |
+| BTC/USDT | 0.159 (**fail**, decisive) | 0.233 (pass) | -0.061 (**fail**) | 1.000 (pass) | 0.048 (pass) | **rejected** |
+| ETH/USDT | 0.177 (**fail**, decisive) | 0.264 (**fail**) | -0.055 (**fail**) | 1.000 (pass) | 0.075 (pass) | **rejected** |
 
 ## Decision
 
-**Reject across all symbols.** Unlike the prior sizing-dial family
-(ADX/CHOP/VHF/PFE/TSI/etc.) which all cleared 1+ symbols cleanly, TII's
-best-grid-cell equity Sharpe (0.63-0.65) is well below the 1.0 threshold at
-the grid's own best-cell config -- not a cost-drag or deadband-tunable
-near-miss like BOP/PFE were, but a genuinely weak gross return profile.
-Crypto's MDD (45.2%) is the worst of any strategy this cron trigger, far
-beyond what widening the deadband typically fixes (per BOP/PFE experience,
-worth ~5-10pp of MDD reduction at most, not the ~20pp needed here). This is
-the first clean rejection in the continuous-sizing-dial reframing campaign
-this cron trigger (VZO/ADX/DMI-diff/CHOP/Vortex/TSI/RMI/SMI/BOP/IMI/VHF/PFE
-all accepted at least one symbol) -- useful negative evidence that not every
-previously-rejected binary-threshold indicator becomes viable once
-reframed as a continuous dial; TII's SMA-deviation-sum construction appears
-to carry genuinely weaker signal than the range/path-length or
-double-smoothed-momentum constructions that worked elsewhere this trigger.
+**Rejected (all 4 symbols).** QQQ and SPY BOTH near-miss Sharpe (0.978 and
+0.954 vs 1.0 threshold) while clearing every other validator comfortably
+(MDD, TC-survival, walk-forward, parameter sensitivity all pass) -- unlike
+most other rejections this cron trigger which fail decisively on multiple
+fronts, this is a genuine close-call double near-miss worth flagging for a
+future loop's direct-fix attempt (e.g. tuning major_period/trend_window or
+widening sensitivity slightly). Crypto fails Sharpe/TC-survival decisively
+as usual for daily-bar-calibrated sizing dials. Recorded as a near-miss
+rather than a decisive rejection so a future iteration can attempt the
+established "direct fix" pattern (parameter re-sweep targeting the specific
+near-miss metric) already used successfully elsewhere in this repo (e.g.
+Klinger Volume Oscillator 2026-09-04-085, Vortex SPY fix 2026-09-11-107).
