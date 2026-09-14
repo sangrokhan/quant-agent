@@ -1,0 +1,212 @@
+{
+  "QQQ": {
+    "params": {
+      "sensitivity": 0.3,
+      "deadband": 0.2,
+      "base_exposure": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1671442121012723,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.05487972126313578,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5514161243400472,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 86,
+      "estimated_total_cost_drag": 0.08600000000000001
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.27713813093278067,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9795064813799722,
+      "std": 0.27145859548619
+    }
+  },
+  "SPY": {
+    "params": {
+      "sensitivity": 0.3,
+      "deadband": 0.2,
+      "base_exposure": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.4664836015462586,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.024969794532613165,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5857647150288475,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 80,
+      "estimated_total_cost_drag": 0.08
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.22200059959236496,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.171549437968739,
+      "std": 0.2600846776811582
+    }
+  },
+  "BTC/USDT": {
+    "params": {
+      "sensitivity": 0.5,
+      "deadband": 0.15,
+      "leverage_cap": 0.3,
+      "base_exposure": 0.15
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.35417604739903,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.12601145053067964,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5319406899411648,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 304,
+      "estimated_total_cost_drag": 0.304
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.02908021457747878,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.2782435566020895,
+      "std": 0.037171596908268406
+    }
+  },
+  "ETH/USDT": {
+    "params": {
+      "sensitivity": 0.3,
+      "deadband": 0.15,
+      "leverage_cap": 0.4,
+      "base_exposure": 0.2
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.3070945625328865,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.17060830725620457,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8532644572061394,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 261,
+      "estimated_total_cost_drag": 0.261
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.07746943479793111,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.194485568336293,
+      "std": 0.09253612185329814
+    }
+  }
+}
