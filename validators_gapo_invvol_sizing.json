@@ -1,0 +1,30 @@
+{
+  "SPY": {
+    "params": {"sensitivity": 0.4, "deadband": 0.25, "leverage_cap": 1.0},
+    "sharpe_ratio": {"passed": true, "value": 1.005, "threshold": 1.0},
+    "max_drawdown": {"passed": true, "value": 0.072, "threshold": 0.25},
+    "transaction_cost_survival": {"passed": true, "value": 0.595, "threshold": 0.5},
+    "walk_forward": {"passed": true, "value": 0.75, "threshold": 0.75},
+    "parameter_sensitivity": {"passed": true, "value": 0.033, "threshold": 0.5}
+  },
+  "BTC/USDT": {
+    "params": {"sensitivity": 0.4, "deadband": 0.15, "leverage_cap": 0.4},
+    "sharpe_ratio": {"passed": true, "value": 1.379, "threshold": 1.0},
+    "max_drawdown": {"passed": true, "value": 0.227, "threshold": 0.25},
+    "transaction_cost_survival": {"passed": true, "value": 1.163, "threshold": 0.5},
+    "walk_forward": {"passed": true, "value": 0.75, "threshold": 0.75},
+    "parameter_sensitivity": {"passed": true, "value": 0.0, "threshold": 0.5}
+  },
+  "ETH/USDT": {
+    "params": {"sensitivity": 0.4, "deadband": 0.15, "leverage_cap": 0.35},
+    "sharpe_ratio": {"passed": true, "value": 1.119, "threshold": 1.0},
+    "max_drawdown": {"passed": true, "value": 0.245, "threshold": 0.25},
+    "transaction_cost_survival": {"passed": true, "value": 0.966, "threshold": 0.5},
+    "walk_forward": {"passed": true, "value": 0.75, "threshold": 0.75},
+    "parameter_sensitivity": {"passed": true, "value": 0.0, "threshold": 0.5}
+  },
+  "QQQ": {
+    "note": "rejected on primary Sharpe screen; no passing config found across base_exposure[0.3,0.4,0.5] x sensitivity[0.4,0.5,0.6] x deadband[0.15,0.25,0.30] sweep (best 0.952)",
+    "sharpe_ratio": {"passed": false, "value": "0.88-0.95 across sweep", "threshold": 1.0}
+  }
+}
