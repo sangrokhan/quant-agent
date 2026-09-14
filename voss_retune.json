@@ -1,0 +1,30 @@
+{
+  "QQQ": null,
+  "SPY": null,
+  "BTC/USDT": [
+    {
+      "period": 15,
+      "sensitivity": 0.3,
+      "deadband": 0.15,
+      "leverage_cap": 0.3,
+      "base_exposure": 0.2
+    },
+    1.461209668916454,
+    0.18712368510579314,
+    0.6045908449755956,
+    319
+  ],
+  "ETH/USDT": [
+    {
+      "period": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.15,
+      "leverage_cap": 0.3,
+      "base_exposure": 0.2
+    },
+    1.2171019799948637,
+    0.18911334470901486,
+    0.7347239763257742,
+    268
+  ]
+}
