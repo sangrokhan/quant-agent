@@ -1,0 +1,54 @@
+{
+  "QQQ": [
+    {
+      "length": 20,
+      "smooth_length": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.3
+    },
+    1.390343477788756,
+    0.11160085997338143,
+    0.8971448488955226,
+    139
+  ],
+  "SPY": [
+    {
+      "length": 20,
+      "smooth_length": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.3
+    },
+    1.03257341705854,
+    0.061198268886097695,
+    0.5044594564010187,
+    134
+  ],
+  "BTC/USDT": [
+    {
+      "length": 15,
+      "smooth_length": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.2,
+      "leverage_cap": 0.25,
+      "base_exposure": 0.2
+    },
+    1.4873449992362269,
+    0.1233237071802128,
+    1.1642107482756874,
+    129
+  ],
+  "ETH/USDT": [
+    {
+      "length": 20,
+      "smooth_length": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.2,
+      "leverage_cap": 0.25,
+      "base_exposure": 0.2
+    },
+    1.3043489586861958,
+    0.11891325759673388,
+    1.1223847765270611,
+    115
+  ]
+}
