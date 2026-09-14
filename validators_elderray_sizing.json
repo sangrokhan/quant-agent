@@ -1,0 +1,155 @@
+{
+  "QQQ": {
+    "params": {
+      "sensitivity": 0.5,
+      "deadband": 0.25
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.071591838436839,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.1810258711746071,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6399823557160886,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 201,
+      "estimated_total_cost_drag": 0.201
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.049632387435383514,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9976582792572022,
+      "std": 0.0495161622442115
+    }
+  },
+  "SPY": {
+    "params": {
+      "sensitivity": 0.5,
+      "deadband": 0.25
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.0081297075235307,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.09919796618669696,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5116534582287765,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 186,
+      "estimated_total_cost_drag": 0.186
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "False",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.02143771654928685,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.0200240750138303,
+      "std": 0.021866986993595003
+    }
+  },
+  "BTC/USDT": {
+    "params": {
+      "sensitivity": 0.5,
+      "deadband": 0.1
+    },
+    "sharpe_ratio": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.4972266959535665,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.37745734122214936,
+      "threshold": 0.25
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8709781495188254,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 825,
+      "estimated_total_cost_drag": 0.8250000000000001
+    },
+    "walk_forward": {
+      "passed": true,
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual 4-equal-slice fallback (vbt.utils.splitting API unavailable in installed vectorbt version)"
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.02042787450112026,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.4930004679673836,
+      "std": 0.030498826189751527
+    }
+  }
+}
