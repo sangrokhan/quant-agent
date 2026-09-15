@@ -89,9 +89,14 @@ def generate_signals(
     credit_zscore_window: int = 100,
     full_exposure_favorable: int = 3,
     half_exposure_favorable: int = 2,
+    max_exposure: float = 1.0,
 ) -> pd.Series:
-    """Return a fractional {0.0, 0.5, 1.0} position series (weekly-updated,
-    forward-filled to daily)."""
+    """Return a fractional {0.0, half_exposure*max_exposure, max_exposure}
+    position series (weekly-updated, forward-filled to daily).
+    `max_exposure` caps the full-exposure tier (default 1.0, unchanged
+    behavior) -- added this cron trigger to let a lower full-exposure cap
+    address the QQQ MDD near-miss from 2026-09-12-165 without re-deriving
+    the underlying regime logic."""
     df = _prep(price_df)
     close = df["close"]
 
@@ -127,8 +132,8 @@ def generate_signals(
     daily_target = weekly_count.reindex(close.index, method="ffill")
 
     position = pd.Series(0.0, index=close.index)
-    position[daily_target >= full_exposure_favorable] = 1.0
-    position[daily_target == half_exposure_favorable] = 0.5
+    position[daily_target >= full_exposure_favorable] = max_exposure
+    position[daily_target == half_exposure_favorable] = 0.5 * max_exposure
     position[daily_target < half_exposure_favorable] = 0.0
     return position
 
