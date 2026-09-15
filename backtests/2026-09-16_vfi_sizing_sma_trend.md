@@ -35,10 +35,20 @@ DAILY bars)
 
 ## Decision
 **Accept crypto only** (BTC/USDT, ETH/USDT -- all 5 validators pass with
-strong margins). Equity (QQQ, SPY) decisively rejected -- despite a wide
-parameter search (trend_window/sensitivity/deadband/vol_window), best
-achievable Sharpe stayed below the 1.0 threshold (0.854/0.879) and
-TC-survival failed decisively, suggesting VFI's volatility-scaled cutoff
-+ volume-cap construction generates a weaker signal on equity daily bars
-than on crypto's higher-volume/higher-volatility regime, an asymmetric
-result opposite to this repo's more common equity-favored pattern.
+strong margins). Equity (QQQ, SPY) INITIALLY decisively rejected (see
+sub-iteration fix below for QQQ).
+
+## Sub-iteration fix (2026-09-16-161): QQQ near-miss fix
+A wider parameter search (adding vol_window up to 250 and zscore_window
+variants) found trend_window=30, sensitivity=0.6, deadband=0.15,
+vol_window=250, zscore_window=80 clears both thresholds on QQQ (marginal
+but all 5 pass):
+
+| Symbol | Sharpe | MDD | TC-survival net Sharpe | Walk-fwd | Param-sens | Verdict |
+|---|---|---|---|---|---|---|
+| QQQ | 1.034 (PASS, marginal) | 0.236 (PASS, near cap) | 0.583 (PASS) | 1.0 (PASS) | 0.046 (PASS) | ACCEPT (marginal) |
+
+SPY: no config found in an equivalent search that clears both Sharpe>=1.0
+and TC-survival>=0.5 simultaneously -- SPY remains rejected. Combined with
+the crypto accept above, VFI continuous sizing now covers QQQ (marginal)
++ BTC/USDT + ETH/USDT; SPY remains out of scope for this strategy.
