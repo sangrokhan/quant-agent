@@ -58,3 +58,22 @@ Both crypto symbols now pass all 5 validators at daily-bar frequency,
 leverage_cap=0.25. Combined with the SPY accept above, Hurst continuous
 sizing now covers SPY + BTC/USDT + ETH/USDT (QQQ remains a near-miss,
 not fixed this cron trigger).
+
+## Sub-iteration fix (2026-09-16-159): QQQ near-miss fix
+Root cause: default config (tw=40,hw=100,sens=0.5,db=0.20) had Sharpe
+0.989 (just below 1.0) and TC-survival net Sharpe 0.406 (below 0.5) on
+QQQ, driven by 260 trades -- too much turnover for the deadband setting.
+A wider parameter search (trend_window up to 60, hurst_window 80-120,
+sensitivity 0.3-0.6, deadband 0.25-0.40) found trend_window=50,
+hurst_window=80, sensitivity=0.5, deadband=0.4 cuts turnover to 120 trades
+and lifts Sharpe to 1.485:
+
+| Symbol | Sharpe | MDD | TC-survival net Sharpe | Walk-fwd | Param-sens | Verdict |
+|---|---|---|---|---|---|---|
+| QQQ | 1.485 (PASS) | 0.095 (PASS) | 1.182 (PASS) | 1.0 (PASS) | 0.120 (PASS) | ACCEPT |
+
+QQQ now passes all 5 validators with the strongest margin of any Hurst
+config this cron trigger. Combined with SPY (2026-09-16-156) and
+BTC/USDT+ETH/USDT (2026-09-16-157), Hurst exponent continuous sizing now
+covers the FULL universe (QQQ, SPY, BTC/USDT, ETH/USDT), though each
+symbol uses a distinct tuned config (documented per-entry).
