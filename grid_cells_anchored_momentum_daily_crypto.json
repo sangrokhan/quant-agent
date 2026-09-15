@@ -1,0 +1,2306 @@
+[
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.8023292310149037,
+    "sharpe_passed": true,
+    "mdd": 0.0719316900003657,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3902463456743284,
+    "sharpe_passed": true,
+    "mdd": 0.22112158650557556,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.2943569921898224,
+    "sharpe_passed": true,
+    "mdd": 0.2142089385676037,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 0.8953447525058161,
+    "sharpe_passed": false,
+    "mdd": 0.15355986122253606,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.0803488595511026,
+    "sharpe_passed": true,
+    "mdd": 0.23666268979289917,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.3263669886009057,
+    "sharpe_passed": true,
+    "mdd": 0.21870488898253526,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.7701366417575788,
+    "sharpe_passed": true,
+    "mdd": 0.0916877734322672,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.2118122775174605,
+    "sharpe_passed": true,
+    "mdd": 0.2803154925997169,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.2163470989650107,
+    "sharpe_passed": true,
+    "mdd": 0.22249656520958705,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3291568104017824,
+    "sharpe_passed": true,
+    "mdd": 0.13070270409887108,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.2096671240374648,
+    "sharpe_passed": true,
+    "mdd": 0.2707075496340289,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.360694606947619,
+    "sharpe_passed": true,
+    "mdd": 0.1760510924551555,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.636919985921528,
+    "sharpe_passed": true,
+    "mdd": 0.10778901606244484,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3063706614359671,
+    "sharpe_passed": true,
+    "mdd": 0.2738947506269608,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.3403322148309766,
+    "sharpe_passed": true,
+    "mdd": 0.21532683778157502,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4076819075600597,
+    "sharpe_passed": true,
+    "mdd": 0.1516753268806471,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.5584839662108387,
+    "sharpe_passed": true,
+    "mdd": 0.2563689274818113,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4255197942485442,
+    "sharpe_passed": true,
+    "mdd": 0.24736115481404153,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.565465483161901,
+    "sharpe_passed": true,
+    "mdd": 0.0863655098968179,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.528700653516382,
+    "sharpe_passed": true,
+    "mdd": 0.22531334574899475,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.5382854393083236,
+    "sharpe_passed": true,
+    "mdd": 0.23600742541149455,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.600647666528074,
+    "sharpe_passed": true,
+    "mdd": 0.08882348127997741,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3965791246992783,
+    "sharpe_passed": true,
+    "mdd": 0.2688852066766084,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.381935018198367,
+    "sharpe_passed": true,
+    "mdd": 0.2762002044455958,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.646028968217987,
+    "sharpe_passed": true,
+    "mdd": 0.105459909123655,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.7042577289187077,
+    "sharpe_passed": true,
+    "mdd": 0.2575957200571154,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4715882153696662,
+    "sharpe_passed": true,
+    "mdd": 0.2875451310938526,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2420997464201937,
+    "sharpe_passed": true,
+    "mdd": 0.1672332300484365,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.6109836622290783,
+    "sharpe_passed": true,
+    "mdd": 0.24533317828270074,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.3272804044540036,
+    "sharpe_passed": true,
+    "mdd": 0.345968907630096,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.46846209745022,
+    "sharpe_passed": true,
+    "mdd": 0.11222672148110802,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.5593803646746565,
+    "sharpe_passed": true,
+    "mdd": 0.26748532180840956,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4304351773678075,
+    "sharpe_passed": true,
+    "mdd": 0.33219731250281737,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2967902757476226,
+    "sharpe_passed": true,
+    "mdd": 0.17668038584846724,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.6470769170518098,
+    "sharpe_passed": true,
+    "mdd": 0.25867604155193924,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.3913003442871315,
+    "sharpe_passed": true,
+    "mdd": 0.36791348588924655,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.8116054842456457,
+    "sharpe_passed": true,
+    "mdd": 0.07997440151475332,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.0608311446521552,
+    "sharpe_passed": true,
+    "mdd": 0.17911613743995292,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.5642806812090422,
+    "sharpe_passed": true,
+    "mdd": 0.16509770808881696,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.7080524569443165,
+    "sharpe_passed": true,
+    "mdd": 0.10708735836457617,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 0.8705154341214427,
+    "sharpe_passed": false,
+    "mdd": 0.20850993325861322,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.554495778508356,
+    "sharpe_passed": true,
+    "mdd": 0.1955119441133908,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 2.0572171661535497,
+    "sharpe_passed": true,
+    "mdd": 0.09121050884357573,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.2435349388913945,
+    "sharpe_passed": true,
+    "mdd": 0.14376507365788171,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.6780429220400472,
+    "sharpe_passed": true,
+    "mdd": 0.16170516209872332,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 2.1491663006110397,
+    "sharpe_passed": true,
+    "mdd": 0.09485510032930677,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.0431289581665926,
+    "sharpe_passed": true,
+    "mdd": 0.16645414393566305,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.757910305822935,
+    "sharpe_passed": true,
+    "mdd": 0.14758434043089008,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 2.0342853981315043,
+    "sharpe_passed": true,
+    "mdd": 0.10348747151430804,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.0643219791659593,
+    "sharpe_passed": true,
+    "mdd": 0.14024420861198106,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.801356627217729,
+    "sharpe_passed": true,
+    "mdd": 0.159033417992691,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.8977052533452878,
+    "sharpe_passed": true,
+    "mdd": 0.14289783178376014,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.1206796963012302,
+    "sharpe_passed": true,
+    "mdd": 0.12940224592145655,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.7348202386214622,
+    "sharpe_passed": true,
+    "mdd": 0.1423987737680732,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.7601168596043628,
+    "sharpe_passed": true,
+    "mdd": 0.09538859119114484,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.5544315237292443,
+    "sharpe_passed": true,
+    "mdd": 0.22463455246594666,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.5686788323995744,
+    "sharpe_passed": true,
+    "mdd": 0.2408043055132436,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5931628714463617,
+    "sharpe_passed": true,
+    "mdd": 0.08722411542786657,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.7610525746405477,
+    "sharpe_passed": true,
+    "mdd": 0.20554520143971844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.414709543633182,
+    "sharpe_passed": true,
+    "mdd": 0.29477507678266013,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5595408949005714,
+    "sharpe_passed": true,
+    "mdd": 0.10136977305589889,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.4944898335287657,
+    "sharpe_passed": true,
+    "mdd": 0.2832801221315423,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.507342583917515,
+    "sharpe_passed": true,
+    "mdd": 0.2956223665066319,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6272150699805388,
+    "sharpe_passed": true,
+    "mdd": 0.1048931929237984,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.7038105035178617,
+    "sharpe_passed": true,
+    "mdd": 0.24972997194598123,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.2448079348813983,
+    "sharpe_passed": true,
+    "mdd": 0.34189002932747714,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.695940463425915,
+    "sharpe_passed": true,
+    "mdd": 0.11395718980241631,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.7040679625362305,
+    "sharpe_passed": true,
+    "mdd": 0.26240365129893306,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4602547002381048,
+    "sharpe_passed": true,
+    "mdd": 0.33283129857511273,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4850012268352533,
+    "sharpe_passed": true,
+    "mdd": 0.1328941833611259,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.6344982818270624,
+    "sharpe_passed": true,
+    "mdd": 0.2868410452538316,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.2133403120345583,
+    "sharpe_passed": true,
+    "mdd": 0.3361117204720533,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5622127616937378,
+    "sharpe_passed": true,
+    "mdd": 0.16532194738362294,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.523539997824272,
+    "sharpe_passed": true,
+    "mdd": 0.25011694925775185,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.4471483114330852,
+    "sharpe_passed": false,
+    "mdd": 0.43286408927561215,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.0639009995633315,
+    "sharpe_passed": true,
+    "mdd": 0.20848839927119522,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.191708705559426,
+    "sharpe_passed": true,
+    "mdd": 0.3569236123984154,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.39297258089262743,
+    "sharpe_passed": false,
+    "mdd": 0.3851139723947905,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5996196207532944,
+    "sharpe_passed": true,
+    "mdd": 0.1719038703026997,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.527047342059398,
+    "sharpe_passed": true,
+    "mdd": 0.23441063089006586,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.19756723831808595,
+    "sharpe_passed": false,
+    "mdd": 0.5342733794125452,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4798937401072245,
+    "sharpe_passed": true,
+    "mdd": 0.19803017600210604,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.621008824911727,
+    "sharpe_passed": true,
+    "mdd": 0.23815019235137191,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.4676252509368078,
+    "sharpe_passed": false,
+    "mdd": 0.388763920224629,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5130586429634574,
+    "sharpe_passed": true,
+    "mdd": 0.22311609938973975,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.421522342496569,
+    "sharpe_passed": true,
+    "mdd": 0.2919822669346951,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.23795676753580255,
+    "sharpe_passed": false,
+    "mdd": 0.560736805755506,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6752393921381352,
+    "sharpe_passed": true,
+    "mdd": 0.16177936871252063,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.2754447583318296,
+    "sharpe_passed": true,
+    "mdd": 0.3174201222241132,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.4036021655013511,
+    "sharpe_passed": false,
+    "mdd": 0.42325449737021037,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.341176197935948,
+    "sharpe_passed": true,
+    "mdd": 0.2160634310104399,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.313795125401849,
+    "sharpe_passed": true,
+    "mdd": 0.31814487604033925,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.6365985921390798,
+    "sharpe_passed": false,
+    "mdd": 0.423396179981821,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5865504021352739,
+    "sharpe_passed": true,
+    "mdd": 0.2209790095514761,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3176436201698514,
+    "sharpe_passed": true,
+    "mdd": 0.3289172427333714,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.805836775506043,
+    "sharpe_passed": false,
+    "mdd": 0.42701823615217926,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4965532864722764,
+    "sharpe_passed": true,
+    "mdd": 0.24294394898995875,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.311203390009872,
+    "sharpe_passed": true,
+    "mdd": 0.30393650250663484,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.6963404403052382,
+    "sharpe_passed": false,
+    "mdd": 0.48157666743592775,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3177457085497122,
+    "sharpe_passed": true,
+    "mdd": 0.22862139287806416,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.20267364154999,
+    "sharpe_passed": true,
+    "mdd": 0.3427754668032761,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.7317113193691058,
+    "sharpe_passed": false,
+    "mdd": 0.4905362026758794,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4721371453448642,
+    "sharpe_passed": true,
+    "mdd": 0.26369887030949435,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3691797321321513,
+    "sharpe_passed": true,
+    "mdd": 0.33543964853086383,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.616136702121417,
+    "sharpe_passed": false,
+    "mdd": 0.49277662999213845,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.420391020838066,
+    "sharpe_passed": true,
+    "mdd": 0.23950562640464812,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.1862546334284936,
+    "sharpe_passed": true,
+    "mdd": 0.3780575691802275,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 6,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.6030582531431476,
+    "sharpe_passed": false,
+    "mdd": 0.5384164844264734,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2992449432532724,
+    "sharpe_passed": true,
+    "mdd": 0.10999266525529361,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3583692722297793,
+    "sharpe_passed": true,
+    "mdd": 0.149701819253795,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.3331349293974032,
+    "sharpe_passed": false,
+    "mdd": 0.37145502626434845,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.241634219534943,
+    "sharpe_passed": true,
+    "mdd": 0.12695392988602028,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.500892852986395,
+    "sharpe_passed": true,
+    "mdd": 0.1662485357632565,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.0836191936209081,
+    "sharpe_passed": false,
+    "mdd": 0.36971746852062004,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.5240309868062873,
+    "sharpe_passed": true,
+    "mdd": 0.11410718190508773,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.259588580756222,
+    "sharpe_passed": true,
+    "mdd": 0.20130509570359023,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.05283600105200764,
+    "sharpe_passed": false,
+    "mdd": 0.4374736008222986,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3394216835565527,
+    "sharpe_passed": true,
+    "mdd": 0.15105058883069766,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.4948896529867155,
+    "sharpe_passed": true,
+    "mdd": 0.14799357135065194,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.19368553563245972,
+    "sharpe_passed": false,
+    "mdd": 0.43388695732625415,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3774982675110814,
+    "sharpe_passed": true,
+    "mdd": 0.09788707149538167,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.295875285065798,
+    "sharpe_passed": true,
+    "mdd": 0.2041435920164678,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.22998591373056473,
+    "sharpe_passed": false,
+    "mdd": 0.4425368152077719,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3078076446572844,
+    "sharpe_passed": true,
+    "mdd": 0.1093036017160296,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.4991756898821382,
+    "sharpe_passed": true,
+    "mdd": 0.2100741289201471,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 8,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": -0.13982078804503947,
+    "sharpe_passed": false,
+    "mdd": 0.4925290688914218,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2789295559190967,
+    "sharpe_passed": true,
+    "mdd": 0.20445265092403275,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.2523112388522804,
+    "sharpe_passed": true,
+    "mdd": 0.32896648779160365,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.6423301043899278,
+    "sharpe_passed": false,
+    "mdd": 0.44779260523142683,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4471287781827156,
+    "sharpe_passed": true,
+    "mdd": 0.2229622456320388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.2316310741436642,
+    "sharpe_passed": true,
+    "mdd": 0.3402959089132367,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.8279592830645532,
+    "sharpe_passed": false,
+    "mdd": 0.467718767851525,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.4173513120199484,
+    "sharpe_passed": true,
+    "mdd": 0.2335393119885406,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3455733307893296,
+    "sharpe_passed": true,
+    "mdd": 0.3451258150235581,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.7512250925562381,
+    "sharpe_passed": false,
+    "mdd": 0.45211398200904185,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.1978795143637062,
+    "sharpe_passed": true,
+    "mdd": 0.2451058686659593,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.1634334135646656,
+    "sharpe_passed": true,
+    "mdd": 0.3695530516257063,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.6,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.7787126026691447,
+    "sharpe_passed": false,
+    "mdd": 0.48948814450750866,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3981406768177975,
+    "sharpe_passed": true,
+    "mdd": 0.24384529130219013,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.421334518805599,
+    "sharpe_passed": true,
+    "mdd": 0.36515289208854673,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.2
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.8244094439526397,
+    "sharpe_passed": false,
+    "mdd": 0.5104734577407766,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3600720870346465,
+    "sharpe_passed": true,
+    "mdd": 0.28124405617157633,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.261593619477938,
+    "sharpe_passed": true,
+    "mdd": 0.37015198706678776,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "ema_period": 10,
+      "sma_period": 20,
+      "sensitivity": 0.8,
+      "deadband": 0.35
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.708168228254794,
+    "sharpe_passed": false,
+    "mdd": 0.49744341387813495,
+    "mdd_passed": false,
+    "error": null
+  }
+]
