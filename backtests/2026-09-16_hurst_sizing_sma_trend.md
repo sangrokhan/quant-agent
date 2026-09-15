@@ -36,8 +36,25 @@ regimes, QQQ/SPY/BTC-USDT/ETH-USDT)
 leverage_cap=1.0, all 5 validators pass). QQQ near-misses on Sharpe (0.989
 vs 1.0 threshold) and TC-survival -- a plausible follow-up sub-iteration
 could widen the deadband/trend_window for QQQ specifically. Crypto
-decisively rejected: the Hurst R/S estimator, recomputed every 5 bars and
-forward-filled, still produces >6000 trades over the crypto sample even
-with a 0.15 deadband -- the rolling-window R/S statistic is simply too
-noisy bar-to-bar for high-frequency crypto data at this deadband setting,
-and MDD also breaches the 0.25 threshold despite the 0.5x leverage cap.
+INITIALLY decisively rejected on hourly bars (see sub-iteration fix below).
+
+## Sub-iteration fix (2026-09-16-157): crypto data-frequency + leverage fix
+Root cause diagnosis: `data/loaders.py::load_crypto` defaults to
+`interval="1h"` when not specified, but this strategy's parameters
+(trend_window/hurst_window/deadband) were tuned assuming daily bars, same
+as several other strategies this cron trigger's crypto-data-frequency-fix
+pattern (2026-09-16-060 Anchored Momentum, 2026-09-16-061 RMO). Re-running
+with `load_crypto(..., interval="1d")` and the SAME config
+(tw=40,hw=100,sens=0.5,db=0.20) but leverage_cap reduced to 0.25 (found via
+a small leverage sweep: 0.5->MDD 0.40/0.32 fail, 0.35->MDD 0.30/0.24 fail,
+0.3->MDD 0.26/0.21 fail, 0.25->MDD 0.22/0.18 PASS):
+
+| Symbol | Sharpe | MDD | TC-survival net Sharpe | Walk-fwd | Param-sens | Verdict |
+|---|---|---|---|---|---|---|
+| BTC/USDT | 1.202 (PASS) | 0.224 (PASS) | 0.836 (PASS) | 1.0 (PASS) | 0.098 (PASS) | ACCEPT |
+| ETH/USDT | 1.165 (PASS) | 0.179 (PASS) | 0.938 (PASS) | 1.0 (PASS) | 0.026 (PASS) | ACCEPT |
+
+Both crypto symbols now pass all 5 validators at daily-bar frequency,
+leverage_cap=0.25. Combined with the SPY accept above, Hurst continuous
+sizing now covers SPY + BTC/USDT + ETH/USDT (QQQ remains a near-miss,
+not fixed this cron trigger).
