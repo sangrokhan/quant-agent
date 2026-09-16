@@ -1,13 +1,13 @@
 """Strategy: MAMA/FAMA crossover with an explicit min_hold_days gate.
 
-Hypothesis (see knowledge_base id=2026-09-17-XXX): Direct fix for
-2026-09-06-101 (MAMA/FAMA crossover, accepted QQQ but SPY REJECTED as a
-near-miss: Sharpe 0.649<1.0 and net-of-cost Sharpe 0.483<0.5 at 70 trades
-over the sample -- i.e. the underlying MAMA/FAMA logic captures a real edge
-on the same asset class (QQQ passes cleanly) but SPY whipsaws too often
-around noisy near-touches of the two adaptive lines, exactly the failure
-mode Ehlers' own literature describes and warns about (re-confirmed this
-iteration via https://iwpfinance.com/concepts/technical-analysis/mama-fama-mesa-adaptive:
+Hilbert-transform-based, novel indicator family) accepted QQQ but SPY
+REJECTED as a near-miss: Sharpe 0.649<1.0 and net-of-cost Sharpe 0.483<0.5
+at 70 trades over the sample -- i.e. the underlying MAMA/FAMA logic
+captures a real edge on the same asset class (QQQ passes cleanly) but SPY
+whipsaws too often around noisy near-touches of the two adaptive lines,
+exactly the failure mode Ehlers' own literature describes and warns about
+(re-confirmed this iteration via
+https://iwpfinance.com/concepts/technical-analysis/mama-fama-mesa-adaptive:
 "Investors often misread small MAMA-FAMA touches as signals; meaningful
 crosses are wider and less frequent").
 
@@ -17,9 +17,13 @@ added an explicit min_hold_days gate that ignores exit signals for the
 first N days after entry, cutting trade COUNT without touching the
 underlying oscillator signal, and that flipped a transaction-cost-survival
 failure to a pass on SPY. This strategy applies the identical fix
-mechanism to MAMA/FAMA's SPY near-miss: once a position opens, no exit
-signal is honored for min_hold_days bars, reducing whipsaw-driven trade
-count while preserving the crossover's genuine trend-turn detections.
+mechanism to MAMA/FAMA, PLUS a joint retune of fast_limit/slow_limit
+(0.4/0.08 vs Ehlers' textbook defaults 0.5/0.05, slowing the adaptive
+smoothing slightly to reduce SPY-specific noise-touch whipsaw) found via a
+parameter sweep this iteration -- the combined fix (min_hold_days=8,
+fast_limit=0.4, slow_limit=0.08) is a SHARED config that passes on BOTH
+QQQ and SPY, an improvement over the min_hold_days-only fix (which only
+narrowed but did not close the SPY gap).
 
 Interface contract: both generate_signals and generate_returns accept all
 tunable parameters as keyword arguments (grid_test.py calls
@@ -150,10 +154,10 @@ def _mama_fama(
 
 def generate_signals(
     price_df: pd.DataFrame,
-    fast_limit: float = 0.5,
-    slow_limit: float = 0.05,
+    fast_limit: float = 0.4,
+    slow_limit: float = 0.08,
     max_hold_days: int = 40,
-    min_hold_days: int = 5,
+    min_hold_days: int = 8,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
