@@ -1,0 +1,46 @@
+{
+  "params": {
+    "kirsh_k": 1.8,
+    "kirsh_stderr_window": 20,
+    "sensitivity": 0.5,
+    "leverage_cap": 1.0,
+    "deadband": 0.35
+  },
+  "sharpe": {
+    "metric": "sharpe_ratio",
+    "value": 1.0046497442478897,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "mdd": {
+    "metric": "max_drawdown",
+    "value": 0.07768297627848708,
+    "threshold": 0.25
+  },
+  "tc": {
+    "metric": "net_sharpe_after_costs",
+    "value": 0.5110047810263448,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10.0,
+    "num_trades": 168,
+    "estimated_total_cost_drag": 0.168
+  },
+  "wf": {
+    "pass_fraction": 1.0,
+    "per_split": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "sens": {
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.06515014142109028,
+    "threshold": 0.5,
+    "grid_size": 3,
+    "mean": 1.010566478449335,
+    "std": 0.06583854898638736
+  },
+  "all_pass": true
+}
