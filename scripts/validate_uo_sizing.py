@@ -1,63 +1,66 @@
-import sys, json
-from datetime import datetime
+import sys, os, json
 sys.path.insert(0, "strategies")
 sys.path.insert(0, "validation")
 sys.path.insert(0, "data")
+sys.path.insert(0, ".")
+from datetime import datetime
 import importlib.util
-from itertools import product
 
-spec = importlib.util.spec_from_file_location("strat_mod", "strategies/2026-09-13_ultimate_oscillator_sizing_sma_trend.py")
+spec = importlib.util.spec_from_file_location("strat_mod", "strategies/2026-09-17_ultimate_oscillator_sizing_sma_trend.py")
 strat = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(strat)
 
-from loaders import load_equity
-from validators import check_sharpe_ratio, check_max_drawdown, check_transaction_cost_survival, check_parameter_sensitivity
-import vectorbt as vbt
+from loaders import load_equity, load_crypto
+from validators import (
+    check_sharpe_ratio, check_max_drawdown, check_transaction_cost_survival,
+    check_parameter_sensitivity,
+)
 
-BEST = dict(uo_fast=10, base_exposure=0.8, uo_sensitivity=0.4)
+params = dict(sensitivity=0.3, deadband=0.5, leverage_cap=1.0)
 
-out_all = {}
-for symbol in ["QQQ", "SPY"]:
-    df = load_equity(symbol, datetime(2017, 1, 1), datetime(2026, 9, 1))
-    returns = strat.generate_returns(df, **BEST)
-
-    sharpe = check_sharpe_ratio(returns)
-    mdd = check_max_drawdown(returns)
-    sig = strat.generate_signals(df, **BEST)
-    num_trades = int((sig.diff().abs() > 0).sum())
-    tc = check_transaction_cost_survival(returns, cost_bps_per_trade=10.0, num_trades=num_trades)
+results = {}
+for label, loader, sym in [("QQQ", load_equity, "QQQ"), ("SPY", load_equity, "SPY"),
+                            ("BTC", load_crypto, "BTC/USDT"), ("ETH", load_crypto, "ETH/USDT")]:
+    df = loader(sym, datetime(2019,1,1), datetime(2026,9,1))
+    returns = strat.generate_returns(df, **params)
+    pos = strat.generate_signals(df, **params)
+    num_trades = int((pos.diff().abs() > 1e-9).sum())
+    sharpe_pass, sharpe_ev = check_sharpe_ratio(returns)
+    mdd_pass, mdd_ev = check_max_drawdown(returns)
+    tc_pass, tc_ev = check_transaction_cost_survival(returns, cost_bps_per_trade=10.0, num_trades=num_trades)
 
     n_splits = 4
-    idx = df.index
-    step = len(idx) // n_splits
+    split_size = len(df) // n_splits
     wf_results = []
-    for i in range(n_splits):
-        s = i * step
-        e = len(idx) if i == n_splits - 1 else (i + 1) * step
-        slice_df = df.iloc[s:e]
-        if slice_df.empty:
+    for s in range(n_splits):
+        lo = s * split_size
+        hi = len(df) if s == n_splits - 1 else (s + 1) * split_size
+        slice_df = df.iloc[lo:hi]
+        if len(slice_df) < 60:
             continue
-        r = strat.generate_returns(slice_df, **BEST)
+        r = strat.generate_returns(slice_df, **params)
         sh = r.vbt.returns(freq="D").sharpe_ratio() if len(r) else None
         wf_results.append(sh is not None and sh > 0)
     wf_pass_fraction = (sum(wf_results) / len(wf_results)) if wf_results else 0.0
-    wf = (bool(wf_pass_fraction >= 0.75), {
-        "metric": "walk_forward_pass_fraction",
-        "value": wf_pass_fraction,
-        "threshold": 0.75,
-        "n_splits": n_splits,
-        "per_split_passed": wf_results,
-    })
+    wf_pass = wf_pass_fraction >= 0.75
 
-    param_grid_results = {}
-    for uf, be, us in product([7, 10], [0.6, 0.8, 1.0], [0.4, 0.6, 0.8]):
-        r = strat.generate_returns(df, uo_fast=uf, base_exposure=be, uo_sensitivity=us)
-        sh = check_sharpe_ratio(r)[1]["value"]
-        param_grid_results[f"uf={uf},be={be},us={us}"] = sh if sh is not None else 0.0
-    psens = check_parameter_sensitivity(param_grid_results)
+    # parameter sensitivity: sweep sensitivity across {0.3,0.5,0.8}
+    psens_grid = {}
+    for s_val in [0.3, 0.5, 0.8]:
+        p2 = dict(params); p2["sensitivity"] = s_val
+        r2 = strat.generate_returns(df, **p2)
+        sh2 = r2.vbt.returns(freq="D").sharpe_ratio() if len(r2) else None
+        psens_grid[f"sensitivity={s_val}"] = sh2 if sh2 is not None else 0.0
+    psens_pass, psens_ev = check_parameter_sensitivity(psens_grid)
 
-    out_all[symbol] = {"sharpe": sharpe, "mdd": mdd, "tc": tc, "wf": wf, "param_sensitivity": psens, "num_trades": num_trades}
+    results[label] = {
+        "sharpe": {"passed": sharpe_pass, **sharpe_ev},
+        "mdd": {"passed": mdd_pass, **mdd_ev},
+        "tc": {"passed": tc_pass, **tc_ev, "num_trades": num_trades},
+        "wf": {"passed": wf_pass, "value": wf_pass_fraction, "per_split": wf_results, "note": "manual 4-split fallback"},
+        "psens": {"passed": psens_pass, **psens_ev},
+    }
 
-print(json.dumps(out_all, indent=2, default=str))
-with open("validators_uo_sizing.json", "w") as f:
-    json.dump(out_all, f, indent=2, default=str)
+print(json.dumps(results, indent=2, default=str))
+with open("/tmp/uo_sizing_validators.json","w") as f:
+    json.dump(results, f, default=str)

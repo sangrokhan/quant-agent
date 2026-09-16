@@ -6,7 +6,7 @@ sys.path.insert(0, ".")
 from datetime import datetime
 import importlib.util
 
-spec = importlib.util.spec_from_file_location("strat_mod", "strategies/2026-09-13_ultimate_oscillator_sizing_sma_trend.py")
+spec = importlib.util.spec_from_file_location("strat_mod", "strategies/2026-09-17_ultimate_oscillator_sizing_sma_trend.py")
 strat = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(strat)
 
@@ -15,24 +15,20 @@ from loaders import load_equity, load_crypto
 
 grid_spec = GridSpec(
     param_grid={
-        "uo_fast": [7, 10],
-        "base_exposure": [0.6, 0.8, 1.0],
-        "uo_sensitivity": [0.4, 0.6, 0.8],
+        "sensitivity": [0.3, 0.5, 0.8],
+        "deadband": [0.0, 0.2],
+        "leverage_cap": [1.0],
     },
     symbols={"equity": ["QQQ", "SPY"], "crypto": ["BTC/USDT", "ETH/USDT"]},
     vol_regime_splits=3,
 )
-
 result = run_strategy_grid(
     generate_returns_fn=strat.generate_returns,
     loader_fn_by_asset_class={"equity": load_equity, "crypto": load_crypto},
     spec=grid_spec,
-    start=datetime(2017, 1, 1),
-    end=datetime(2026, 9, 1),
+    start=datetime(2019, 1, 1), end=datetime(2026, 9, 1),
 )
-
 summary = result.summary()
-with open("grid_result_uo_sizing.json", "w") as f:
-    json.dump(summary, f, indent=2, default=str)
-
-print(json.dumps(summary, indent=2, default=str)[:6000])
+print(json.dumps(summary, indent=2, default=str))
+with open("/tmp/uo_sizing_grid.json", "w") as f:
+    json.dump(summary, f, default=str)
