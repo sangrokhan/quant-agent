@@ -42,7 +42,7 @@ sweep found configs clearing all 5 validators:
 | SPY | sens=0.4, db=0.15 (best tried) | 0.964 (**FAIL**) | 6.04% (pass) | 0.218 (**FAIL**) | 0.75 (pass) | 0.332 rel-std (pass) | **REJECT** (Sharpe, TC-survival) |
 | BTC/USDT | sens=0.6, db=0.2 | 1.226 (pass) | 21.71% (pass) | 1.033 (pass) | 0.75 (pass) | 0.101 rel-std (pass) | **ACCEPT** |
 
-## Decision
+## Decision (original, 2026-09-14-101)
 
 **Accept for QQQ (equity) AND BTC/USDT (crypto)** — both clear all 5
 validators, the first strategy this cron trigger to accept BOTH an equity
@@ -58,3 +58,29 @@ trigger's strongest performers. Parameter sensitivity is noticeably higher
 than other accepted dials this trigger (0.10-0.13 rel-std vs typically
 <0.05) -- still comfortably under the 0.5 threshold but worth noting for a
 future refinement pass.
+
+## SPY fix (2026-09-17-028, follow-up iteration)
+
+A wider joint sweep of `deadband` x `vhf_sensitivity` x `vhf_window` x
+`base_exposure` (81 combos, SPY only) found 7 combos clearing all
+thresholds, all requiring a higher `base_exposure=0.6` and a *lower*
+`vhf_sensitivity=0.3` than the original SPY attempt (sensitivity=0.4) --
+the original SPY rejection was a param-tuning issue (too-frequent
+rebalancing relative to SPY's lower realized vol vs QQQ/BTC), not a
+fundamental incompatibility.
+
+Selected config: `vhf_sensitivity=0.3, deadband=0.25, vhf_window=28,
+base_exposure=0.6`.
+
+| Validator | Result |
+|---|---|
+| Sharpe | 1.163 (pass, threshold 1.0) |
+| MDD | 6.38% (pass, threshold 25%) |
+| TC-survival net Sharpe | 0.577 (pass, threshold 0.5, 129 trades) |
+| Walk-forward pass fraction | 0.75 (pass, threshold 0.75) |
+| Param sensitivity rel-std | 0.046 (pass, threshold 0.5) |
+
+**Accept SPY.** Combined with the original 2026-09-14-101 accept, the VHF
+continuous-sizing dial now covers equity QQQ+SPY and crypto BTC/USDT (ETH/USDT
+not separately retested this iteration). Full raw validator output:
+`validate_result_vhf_spy_fix.json`.

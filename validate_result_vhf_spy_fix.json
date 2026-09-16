@@ -1,0 +1,39 @@
+{
+  "params": {
+    "vhf_sensitivity": 0.3,
+    "deadband": 0.25,
+    "vhf_window": 28,
+    "base_exposure": 0.6
+  },
+  "sharpe": {
+    "metric": "sharpe_ratio",
+    "value": 1.1626899278400846,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "mdd": {
+    "metric": "max_drawdown",
+    "value": 0.06377048824432041,
+    "threshold": 0.25
+  },
+  "tc": {
+    "metric": "net_sharpe_after_costs",
+    "value": 0.5771327617047266,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10.0,
+    "num_trades": 129,
+    "estimated_total_cost_drag": 0.129
+  },
+  "wf": {
+    "pass_fraction": 0.75
+  },
+  "sens": {
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.046164832900548285,
+    "threshold": 0.5,
+    "grid_size": 3,
+    "mean": 1.113135756883219,
+    "std": 0.05138772621213914
+  },
+  "all_pass": true
+}
