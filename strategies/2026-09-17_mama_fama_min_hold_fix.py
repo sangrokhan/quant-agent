@@ -28,6 +28,16 @@ narrowed but did not close the SPY gap).
 Interface contract: both generate_signals and generate_returns accept all
 tunable parameters as keyword arguments (grid_test.py calls
 generate_returns_fn(price_df, **params) directly).
+
+Crypto rescue (2026-09-17-093): the fast_limit=0.4/slow_limit=0.08/
+min_hold_days=8 config clears Sharpe on BOTH BTC/USDT (1.006) and
+ETH/USDT (1.348) but MDD decisively fails unleveraged (0.471/0.615 vs the
+0.25 budget). Per this repo's established leverage-cap-aware rescue
+pattern (e.g. 2026-09-14-125, Elder-Ray/Chaikin Oscillator sizing dials),
+adding a ``leverage_cap`` parameter that scales the binary 0/1 position
+down brings crypto MDD back under budget (leverage_cap=0.3 passes both
+BTC/USDT MDD=0.164 and ETH/USDT MDD=0.222) without touching Sharpe (linear
+position scaling doesn't change the Sharpe ratio).
 """
 
 from __future__ import annotations
@@ -158,6 +168,7 @@ def generate_signals(
     slow_limit: float = 0.08,
     max_hold_days: int = 40,
     min_hold_days: int = 8,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
@@ -201,7 +212,14 @@ def generate_signals(
                 position.iloc[i] = 1
             else:
                 position.iloc[i] = 0
-    return position
+    # leverage_cap scales the binary 0/1 position into [0, leverage_cap] --
+    # this repo's established crypto-MDD rescue pattern (e.g. 2026-09-14-125
+    # Elder-Ray/Chaikin Oscillator sizing dials): a full-size 1.0 position on
+    # unleveraged crypto's much higher realized volatility routinely blows
+    # through the 25% MDD budget even when Sharpe/other validators pass, so
+    # capping exposure below 1.0 for crypto brings MDD back in bounds while
+    # preserving the underlying directional signal.
+    return position.astype(float) * leverage_cap
 
 
 def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
