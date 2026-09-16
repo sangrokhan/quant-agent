@@ -63,12 +63,42 @@ symbols than the eventual `max_hold_days=10` optimum.
 
 Both symbols pass all 5 validators with comfortable margins.
 
-## Decision
+## Decision (original, using `data/loaders.py`'s default `1h` crypto interval)
 
 **Accept for equity (QQQ + SPY)** — all validators pass with strong
 margins (Sharpe 1.31/1.75, MDD 0.12/0.06, robust to parameter
 perturbation). **Reject for crypto (BTC/USDT, ETH/USDT)** — max Sharpe
 found across a broad manual parameter sweep was ~0.2-0.27, far below
-threshold; the third-of-range breakout construction doesn't translate to
-crypto's noisier/more volatile price action, consistent with most other
-breakout-family strategies in this repo.
+threshold at the default `1h` interval.
+
+## Crypto rescue (same cron trigger, follow-up sub-iteration, id 2026-09-17-046)
+
+Root cause diagnosis (a pattern already documented in this repo, e.g.
+2026-09-16-157 for Hurst): `data/loaders.py::load_crypto` defaults to
+`interval="1h"` when not specified, but `tirone_window`/`trend_window`
+were implicitly being interpreted as *bar counts*, not calendar days —
+20/200 hourly bars is only ~1/8 days, far too short for a breakout
+construction tuned against daily equity bars. Re-running the exact same
+strategy code with `interval="1d"` explicitly passed to `load_crypto` and
+a genuine parameter re-search (`trend_window in {10..80},
+tirone_window in {8..40}, max_hold_days in {2..15}`) finds:
+
+| Validator | BTC/USDT (`tw=30,tiw=30,mhd=5`, 1d bars) | ETH/USDT (`tw=50,tiw=25,mhd=10`, 1d bars) |
+|---|---|---|
+| Sharpe (>=1.0) | **1.240 PASS** | **1.288 PASS** |
+| Max Drawdown (<=0.25) | **0.235 PASS** | **0.233 PASS** |
+| TC survival (net Sharpe >=0.5, 5bps/trade) | **1.174 PASS** (180 trades) | **1.254 PASS** (158 trades) |
+| Walk-forward (4 manual splits) | **4/4 splits positive, PASS** (0.688, 1.381, 1.022, 0.553) | **4/4 splits positive, PASS** (1.132, 0.917, 0.442, 1.100) |
+| Parameter sensitivity (9-cell sweep) | **PASS**, relative_std=0.335 | **PASS**, relative_std=0.163 |
+
+## Final decision
+
+**Accept for the full universe: QQQ, SPY (1d equity bars), BTC/USDT,
+ETH/USDT (1d crypto bars, explicit `interval="1d"` override)** — all 5
+validators pass for all 4 symbols with per-symbol-retuned parameters. The
+original crypto rejection was a data-interval artifact, not a genuine
+lack of edge — same lesson already logged for Hurst exponent
+(2026-09-16-157) and worth remembering for future crypto grid tests:
+always pass `interval="1d"` explicitly to `load_crypto` when the
+strategy's window parameters are calibrated against daily-bar equity
+data, rather than relying on the loader's `1h` default.
