@@ -1,0 +1,82 @@
+{
+  "QQQ": {
+    "params": {
+      "deadband": 0.25,
+      "prime_window": 20,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "sharpe": 1.2647943110214774,
+    "sharpe_pass": true,
+    "mdd": 0.13230332496747033,
+    "mdd_pass": true,
+    "tc": 0.6932672012779751,
+    "tc_pass": true,
+    "num_trades": 219,
+    "wf": 0.75,
+    "wf_pass": true,
+    "sens": 0.031028521523281224,
+    "sens_pass": true,
+    "all_pass": true
+  },
+  "SPY": {
+    "params": {
+      "deadband": 0.15,
+      "prime_window": 20,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "sharpe": 1.1738783874198222,
+    "sharpe_pass": true,
+    "mdd": 0.06638774390461655,
+    "mdd_pass": true,
+    "tc": 0.246851618060452,
+    "tc_pass": false,
+    "num_trades": 327,
+    "wf": 1.0,
+    "wf_pass": true,
+    "sens": 0.025943239568655095,
+    "sens_pass": true,
+    "all_pass": false
+  },
+  "BTC/USDT": {
+    "params": {
+      "deadband": 0.25,
+      "prime_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 0.5
+    },
+    "sharpe": 0.16797549238124854,
+    "sharpe_pass": false,
+    "mdd": 0.30116285627638373,
+    "mdd_pass": false,
+    "tc": -0.05707814247478499,
+    "tc_pass": false,
+    "num_trades": 5689,
+    "wf": 1.0,
+    "wf_pass": true,
+    "sens": 0.07274432908847679,
+    "sens_pass": true,
+    "all_pass": false
+  },
+  "ETH/USDT": {
+    "params": {
+      "deadband": 0.25,
+      "prime_window": 10,
+      "sensitivity": 0.4,
+      "leverage_cap": 0.5
+    },
+    "sharpe": 0.17401669795136085,
+    "sharpe_pass": false,
+    "mdd": 0.28832493815504356,
+    "mdd_pass": false,
+    "tc": -0.056337599267542754,
+    "tc_pass": false,
+    "num_trades": 6627,
+    "wf": 1.0,
+    "wf_pass": true,
+    "sens": 0.2651998838704475,
+    "sens_pass": true,
+    "all_pass": false
+  }
+}
