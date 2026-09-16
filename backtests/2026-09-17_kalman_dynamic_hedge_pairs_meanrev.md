@@ -98,3 +98,33 @@ QQQ's Sharpe is a narrow pass (1.031 vs 1.0) — a future iteration could
 try widening the parameter search or testing a different equity pair
 (e.g. XLF sector components) to see if the Kalman dynamic-hedge-ratio
 approach generalizes with more margin.
+
+## Crypto rescue (same cron trigger, follow-up sub-iteration, id 2026-09-17-047)
+
+Root cause diagnosis (same interval issue already documented for Tirone
+Levels 2026-09-17-046 and Hurst exponent 2026-09-16-157): the original
+crypto grid used `data/loaders.py::load_crypto`'s default `interval="1h"`,
+too fine a granularity for `z_window`/`max_hold_days` calibrated against
+daily bars. Re-running BTC/USDT (partner ETH/USDT) with `interval="1d"`
+explicitly passed and a genuine parameter re-search:
+
+| Validator | BTC/USDT (partner ETH/USDT, `entry_z=1.5,z_window=20,q=1e-4`, 1d bars) |
+|---|---|
+| Sharpe (>=1.0) | **1.030 PASS** (narrow) |
+| Max Drawdown (<=0.25) | **0.203 PASS** |
+| TC survival (net Sharpe >=0.5, 5bps/trade, 300 trades) | **0.900 PASS** |
+| Walk-forward (4 manual splits) | **4/4 splits positive, PASS** (0.617, 1.623, 0.817, 0.526) |
+| Parameter sensitivity (12-cell entry_z x z_window sweep) | **PASS**, relative_std=0.153 |
+
+ETH/USDT as the primary leg (partner BTC/USDT) still fails at 1d interval
+(no config found with Sharpe >= 1.0) — the asymmetry persists even after
+the interval fix, mirroring the QQQ-works/SPY-doesn't asymmetry on the
+equity side.
+
+## Final decision
+
+**Accept for QQQ (partner SPY) and BTC/USDT (partner ETH/USDT, `interval="1d"`)**.
+**Reject SPY-as-primary-leg and ETH/USDT-as-primary-leg** — both fail
+Sharpe even after the interval fix; in both asset classes, only one
+direction of the pair carries genuine mean-reverting signal via this
+Kalman-adaptive-hedge-ratio mechanism.
