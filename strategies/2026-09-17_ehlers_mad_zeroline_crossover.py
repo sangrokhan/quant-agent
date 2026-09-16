@@ -55,8 +55,8 @@ def _mad(close: pd.Series, short_length: int, long_length: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    short_length: int = 8,
-    long_length: int = 23,
+    short_length: int = 6,
+    long_length: int = 18,
     trend_window: int = 100,
     min_hold_days: int = 5,
     max_hold_days: int = 40,
