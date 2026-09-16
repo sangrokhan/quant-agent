@@ -30,11 +30,37 @@ net-Sharpe-after-costs>=0.5, walk-forward pass-fraction>=0.75,
 param-sensitivity rel-std<=0.5). TC-survival is a moderate-margin pass
 (0.547 vs 0.5 threshold) at 205 trades over the full sample.
 
-## Decision
-**Accept (QQQ).** Combined with the existing `2026-09-15-040` crypto accept
-(BTC/USDT, ETH/USDT), Donchian Channel Width inverse-volatility sizing now
-covers QQQ + BTC/USDT + ETH/USDT (SPY remains rejected — no rescue attempt
-made this iteration).
+## Decision (original, 2026-09-15-040 + 2026-09-16 QQQ fix)
+
+**Accept for crypto (BTC/USDT, ETH/USDT). Accept QQQ** (via a separate
+follow-up minmax_window retune, see `backtests/2026-09-16_donchian_width_qqq_fix.md`).
+**SPY rejected** in both attempts, no rescue found at that time.
+
+## SPY fix (follow-up iteration this cron trigger)
+
+A wider joint sweep over `trend_window` x `donchian_window` x
+`minmax_window` x `sensitivity` x `deadband` (720 combos) found 3 combos
+clearing all thresholds for SPY, best at:
+
+`trend_window=40, donchian_window=30, minmax_window=150, sensitivity=0.3,
+deadband=0.30`
+
+| Validator | Result |
+|---|---|
+| Sharpe | 1.050 (pass, threshold 1.0) |
+| MDD | 6.89% (pass, threshold 25%) |
+| TC-survival net Sharpe | 0.551 (pass, threshold 0.5, 127 trades) |
+| Walk-forward pass fraction | 1.0 (pass, threshold 0.75) |
+| Param sensitivity rel-std | 0.057 (pass, threshold 0.5) |
+
+**Accept SPY.** Combined with the existing QQQ (via minmax_window=80 retune)
+and crypto BTC/USDT+ETH/USDT accepts, Donchian Channel Width inverse-vol
+sizing now covers the full universe: QQQ, SPY, BTC/USDT, ETH/USDT. SPY
+needed a considerably longer `minmax_window` (150 vs QQQ's 80) and
+`donchian_window` (30 vs 20) than QQQ, consistent with SPY's generally
+lower/smoother realized volatility requiring a longer lookback to find
+meaningful compression/expansion contrast. Full raw validator output:
+`validate_result_donchian_width_spy_fix.json`.
 
 ## Source
 https://sdk-trading.com/en/indicators/volatility/donchian-channels/
