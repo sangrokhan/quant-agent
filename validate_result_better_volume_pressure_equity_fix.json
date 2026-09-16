@@ -1,0 +1,32 @@
+{
+  "QQQ": {
+    "params": {
+      "bv_smooth_window": 5,
+      "sensitivity": 0.6,
+      "deadband": 0.3,
+      "leverage_cap": 1.0
+    },
+    "sharpe": 1.16579022114497,
+    "mdd": 0.11133918517760755,
+    "tc": 0.6675725946664616,
+    "num_trades": 147,
+    "wf": 0.75,
+    "sens": 0.024953658059433833,
+    "all_pass": true
+  },
+  "SPY": {
+    "params": {
+      "bv_smooth_window": 5,
+      "sensitivity": 0.5,
+      "deadband": 0.3,
+      "leverage_cap": 1.0
+    },
+    "sharpe": 1.1278269736057247,
+    "mdd": 0.07114226522794509,
+    "tc": 0.5352763830524679,
+    "num_trades": 126,
+    "wf": 0.75,
+    "sens": 0.04170708257144064,
+    "all_pass": true
+  }
+}
