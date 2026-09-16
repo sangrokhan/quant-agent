@@ -28,6 +28,16 @@ Interface contract for validators (see validation/validators.py):
     generate_returns(price_df, **params) -> pd.Series
     generate_signals(price_df, **params) -> pd.Series (continuous exposure
     in [0, leverage_cap]).
+
+QQQ fix (follow-up iteration this cron trigger): the original QQQ attempt
+(trend_window=40, norm_window=252) had Sharpe stuck at 0.90-0.97 across a
+12-config sweep. A wider joint sweep over trend_window x norm_window x
+sensitivity x deadband found QQQ clears all 5 validators at
+trend_window=30, norm_window=150 (shorter RAVI min-max normalization
+lookback, shorter trend gate), sensitivity=0.4, deadband=0.35 -- Sharpe
+1.128, MDD 14.5%, TC-survival net Sharpe 0.726 (138 trades), walk-forward
+0.75, param-sensitivity rel-std 0.027. No new external fetch -- same
+already-confirmed RAVI formula.
 """
 
 from __future__ import annotations

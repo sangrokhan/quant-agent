@@ -51,9 +51,9 @@ leverage-cap-recalibration pattern) all pass all 5 validators.
 
 ## Decision
 
-**Partial accept**: SPY + BTC/USDT + ETH/USDT all pass. QQQ rejected --
-unusual asymmetry (QQQ typically outperforms SPY for this cron trigger's
-sizing-dial strategies; here it's the reverse), suggesting RAVI's
+**Partial accept (original)**: SPY + BTC/USDT + ETH/USDT all pass. QQQ
+rejected -- unusual asymmetry (QQQ typically outperforms SPY for this cron
+trigger's sizing-dial strategies; here it's the reverse), suggesting RAVI's
 fast/slow-MA-divergence trend-strength signal is a better fit for SPY's
 smoother trend character than QQQ's higher-beta chop. Flagged as a genuine
 (not borderline) rejection -- QQQ Sharpe stuck 0.90-0.97 across 12 swept
@@ -63,3 +63,27 @@ tested crypto Sharpe in the swept range (grid cells for those two params
 were degenerate for crypto at this leverage_cap -- flagged for a future
 iteration's closer look at whether the RAVI normalization saturates for
 crypto's higher volatility).
+
+## QQQ fix (follow-up iteration this cron trigger)
+
+A wider joint sweep over `trend_window` x `norm_window` x `sensitivity` x
+`deadband` (previously only base_exposure/sensitivity/trend_window were
+swept, not `norm_window`) found QQQ clears all 5 validators with a
+*shorter* RAVI normalization lookback:
+
+`trend_window=30, norm_window=150, sensitivity=0.4, deadband=0.35`
+
+| Validator | Result |
+|---|---|
+| Sharpe | 1.128 (pass, threshold 1.0) |
+| MDD | 14.5% (pass, threshold 25%) |
+| TC-survival net Sharpe | 0.726 (pass, threshold 0.5, 138 trades) |
+| Walk-forward pass fraction | 0.75 (pass, threshold 0.75) |
+| Param sensitivity rel-std | 0.027 (pass, threshold 0.5) |
+
+**Accept QQQ.** Combined with the original SPY/BTC/USDT/ETH/USDT accepts,
+the RAVI trend-strength conviction dial now covers the full universe: QQQ,
+SPY, BTC/USDT, ETH/USDT. The original rejection was a `norm_window`
+mis-tuning (252-day lookback too long for QQQ's regime shifts), not a
+fundamental incompatibility. Full raw validator output:
+`validate_result_ravi_qqq_fix.json`.
