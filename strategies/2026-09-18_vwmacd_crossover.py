@@ -100,10 +100,16 @@ def generate_signals(
 
 
 def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
-    """Position-weighted daily returns (no transaction costs)."""
+    """Position-weighted daily returns (no transaction costs).
+
+    ``leverage_cap`` (default 1.0) scales notional exposure -- used by a
+    follow-up iteration (2026-09-18-062) to cap crypto max_drawdown,
+    following this repo's established leverage-cap rescue pattern.
+    """
+    leverage_cap = kwargs.pop("leverage_cap", 1.0)
     df = _prep(price_df)
     close = df["close"]
     position = generate_signals(price_df, **kwargs)
     daily_ret = close.pct_change().fillna(0.0)
-    strategy_ret = position.shift(1).fillna(0) * daily_ret
+    strategy_ret = position.shift(1).fillna(0) * daily_ret * leverage_cap
     return strategy_ret
