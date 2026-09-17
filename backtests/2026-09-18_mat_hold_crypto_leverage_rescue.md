@@ -68,14 +68,26 @@ with margin on both symbols.)
 
 ## Decision
 
-**Accepted: ETH/USDT only.** All 4 runnable validators pass with comfortable
-margin. BTC/USDT is a genuine near-miss — Sharpe (0.958) is scale-invariant
-to leverage_cap and cannot be fixed by the sizing dial alone; a future
-iteration could try a BTC-specific parameter retune (e.g. looser
-`consolidation_tolerance` or different `impulse_body_mult`) rather than
-leverage adjustment, since BTC's MDD/TC-survival/param-sensitivity already
-pass comfortably at this leverage.
+**Accepted: ETH/USDT and BTC/USDT, at different per-symbol configs.**
+
+- **ETH/USDT**: `impulse_body_mult=1.3, consolidation_tolerance=0.01,
+  max_hold_days=15, leverage_cap=0.4`. All 4 runnable validators pass with
+  comfortable margin (Sharpe 1.200, MDD 17.3%, net Sharpe after costs 1.057,
+  param sensitivity 0.170).
+- **BTC/USDT**: originally a near-miss at the shared config (Sharpe 0.958,
+  scale-invariant to leverage_cap so unfixable by sizing alone). A follow-up
+  iteration (2026-09-18-055) grid-scanned `consolidation_tolerance` x
+  `impulse_body_mult` x `max_hold_days` on BTC alone and found
+  `impulse_body_mult=1.5, consolidation_tolerance=0.005, max_hold_days=15,
+  leverage_cap=0.4` (a stricter pattern-match requirement, cutting trade
+  count from 75 to 59 but improving trade quality) clears all 4 runnable
+  validators: Sharpe 1.110, MDD 10.3%, net Sharpe after costs 0.924, param
+  sensitivity 0.061.
+
+This completes full crypto-universe coverage for the Mat Hold pattern
+(BTC/USDT + ETH/USDT both accepted, each at its own tuned parameter set).
 
 Equity (QQQ, SPY) remains rejected per the precursor entry (2026-09-18-051)
 — the mid-vol gate made full-sample Sharpe negative on both, the opposite
-of the intended rescue effect.
+of the intended rescue effect. Not retuned per-symbol this cron trigger;
+left as a candidate for a future iteration.
