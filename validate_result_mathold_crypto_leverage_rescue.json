@@ -1,0 +1,98 @@
+{
+  "BTC/USDT": {
+    "num_trades": 75,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.9576203647492938,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.13156382338007933,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7462762829537443,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 15.0,
+        "num_trades": 75,
+        "estimated_total_cost_drag": 0.1125
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.033051058856966624,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": 1.0024271717457947,
+        "std": 0.03313127945319285
+      }
+    ]
+  },
+  "ETH/USDT": {
+    "num_trades": 69,
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.1996776825695996,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.17288735682734258,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.0568272223405566,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 15.0,
+        "num_trades": 69,
+        "estimated_total_cost_drag": 0.10350000000000001
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.1695115928958449,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": 1.0955663773043345,
+        "std": 0.18571120173998795
+      }
+    ]
+  }
+}
