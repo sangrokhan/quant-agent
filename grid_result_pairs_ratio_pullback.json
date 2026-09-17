@@ -1,0 +1,102 @@
+{
+  "metric": "grid_test",
+  "total_cells": 72,
+  "passed_cells": 20,
+  "pass_fraction": 0.2777777777777778,
+  "equity_summary": {
+    "metric": "grid_test",
+    "total_cells": 36,
+    "passed_cells": 14,
+    "pass_fraction": 0.3888888888888889,
+    "by_asset_class": {
+      "equity": {
+        "passed": 14,
+        "total": 36
+      }
+    },
+    "by_vol_regime": {
+      "low": {
+        "passed": 12,
+        "total": 12
+      },
+      "mid": {
+        "passed": 2,
+        "total": 12
+      },
+      "high": {
+        "passed": 0,
+        "total": 12
+      }
+    },
+    "best_cell": {
+      "params": {
+        "fast_length": 12,
+        "slow_length": 30,
+        "max_hold_days": 15
+      },
+      "asset_class": "equity",
+      "symbol": "QQQ",
+      "vol_regime": "low",
+      "sharpe": 1.9550059280342635
+    },
+    "worst_cell": {
+      "params": {
+        "fast_length": 12,
+        "slow_length": 40,
+        "max_hold_days": 15
+      },
+      "asset_class": "equity",
+      "symbol": "QQQ",
+      "vol_regime": "mid",
+      "sharpe": 0.05415117783364151
+    }
+  },
+  "crypto_summary": {
+    "metric": "grid_test",
+    "total_cells": 36,
+    "passed_cells": 6,
+    "pass_fraction": 0.16666666666666666,
+    "by_asset_class": {
+      "crypto": {
+        "passed": 6,
+        "total": 36
+      }
+    },
+    "by_vol_regime": {
+      "low": {
+        "passed": 4,
+        "total": 12
+      },
+      "mid": {
+        "passed": 2,
+        "total": 12
+      },
+      "high": {
+        "passed": 0,
+        "total": 12
+      }
+    },
+    "best_cell": {
+      "params": {
+        "fast_length": 20,
+        "slow_length": 40,
+        "max_hold_days": 15
+      },
+      "asset_class": "crypto",
+      "symbol": "ETH/USDT",
+      "vol_regime": "low",
+      "sharpe": 1.0911496172865132
+    },
+    "worst_cell": {
+      "params": {
+        "fast_length": 8,
+        "slow_length": 40,
+        "max_hold_days": 15
+      },
+      "asset_class": "crypto",
+      "symbol": "ETH/USDT",
+      "vol_regime": "high",
+      "sharpe": 0.2780950714571831
+    }
+  }
+}
