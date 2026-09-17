@@ -118,9 +118,18 @@ def generate_signals(
     va_pct: float = 0.70,
     vol_avg_window: int = 20,
     vol_expansion_mult: float = 1.3,
+    confirm_window: int = 5,
     max_hold_days: int = 20,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    Unlike the same-bar-only predecessor (2026-09-18-063, rejected for
+    signal starvation), this version allows the bullish-engulfing +
+    volume-expansion confirmation to occur ANY TIME within
+    ``confirm_window`` bars after the VAL breakdown-then-reclaim,
+    matching the source indicator's own "Maximum bars to signal after
+    breakout" setting rather than requiring exact same-bar coincidence.
+    """
     df = _prep(price_df)
     close = df["close"]
     open_ = df["open"]
@@ -128,8 +137,8 @@ def generate_signals(
 
     poc, val, vah = _rolling_value_area(df, profile_window, n_bins, va_pct)
 
-    below_val_prev = (close.shift(1) < val.shift(1)).fillna(False)
-    reclaimed_val = (close >= val).fillna(False)
+    below_val = (close < val).fillna(False)
+    reclaimed_val = (close >= val).fillna(False) & below_val.shift(1).fillna(False)
 
     bullish_engulfing = (
         (close > open_)
@@ -140,8 +149,17 @@ def generate_signals(
 
     vol_avg = volume.rolling(vol_avg_window).mean()
     volume_expansion = (volume > vol_expansion_mult * vol_avg).fillna(False)
+    confirm_bar = bullish_engulfing & volume_expansion
 
-    entry = below_val_prev & reclaimed_val & bullish_engulfing & volume_expansion
+    # Causal: at bar i, fire if a VAL reclaim happened at some bar in the
+    # trailing window [i-confirm_window, i] AND bar i itself is a
+    # confirm_bar (bullish engulfing + volume expansion). This looks
+    # BACKWARD only (rolling max over past bars including bar i), so no
+    # look-ahead: entry at bar i only ever uses information available by
+    # the close of bar i.
+    reclaim_recent = reclaimed_val.rolling(confirm_window + 1, min_periods=1).max().astype(bool)
+    entry = confirm_bar & reclaim_recent
+
     exit_target = (close >= poc).fillna(False)
     exit_failed = (close < val).fillna(False)
 
