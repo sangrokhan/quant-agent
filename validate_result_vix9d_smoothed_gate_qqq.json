@@ -1,0 +1,58 @@
+{
+  "num_trades": 37,
+  "sharpe": [
+    true,
+    {
+      "metric": "sharpe_ratio",
+      "value": 1.4344729834917251,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  ],
+  "mdd": [
+    true,
+    {
+      "metric": "max_drawdown",
+      "value": 0.13438443909296027,
+      "threshold": 0.25
+    }
+  ],
+  "tc": [
+    true,
+    {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.3905323900380748,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 37,
+      "estimated_total_cost_drag": 0.037
+    }
+  ],
+  "walk_forward": [
+    true,
+    {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable)"
+    }
+  ],
+  "param_sensitivity": [
+    true,
+    {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.13198372918577844,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.2853702995500196,
+      "std": 0.16964796551925268
+    }
+  ]
+}

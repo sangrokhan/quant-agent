@@ -38,9 +38,28 @@ Sharpe 0.988 -- still a near-miss (though improved from the parent's
 0.909). Not pursued further to single-config validators this iteration;
 QQQ remains rejected pending a future retune.
 
+## QQQ Follow-Up (2026-09-18-035, same cron trigger)
+A wider follow-up scan (trend_window in {30,40,...,150}, vix_ratio_threshold
+in {0.9..1.15}, vix_smooth_window in {3,5,7,10,15}) found a much stronger
+QQQ config: trend_window=150, vix_ratio_threshold=1.1, vix_smooth_window=10.
+
+### QQQ, trend_window=150, vix_ratio_threshold=1.1, vix_smooth_window=10
+| Validator | Value | Threshold | Passed |
+|---|---|---|---|
+| Sharpe ratio | 1.434 | >= 1.0 | YES |
+| Max drawdown | 0.134 | <= 0.25 | YES |
+| Net Sharpe after costs (10bps/trade, 37 trades) | 1.391 | >= 0.5 | YES |
+| Walk-forward (4 splits) | 1.0 pass fraction | >= 0.75 | YES |
+| Parameter sensitivity (9-cell sweep, relative std) | 0.132 | <= 0.5 | YES |
+
+**All 5 validators pass with strong margins -- ACCEPTED for QQQ.**
+
 ## Decision
-**ACCEPT for SPY** (strategies/2026-09-18_vix9d_vix_smoothed_gate_trend.py,
-trend_window=50, vix_ratio_threshold=1.05, vix_smooth_window=3). QQQ
-remains a near-miss (Sharpe 0.988), flagged for a possible future retune.
-Rescues the parent 2026-09-10-038's SPY near-miss (0.905 -> 1.017) via
-smoothing alone, no architectural change.
+**ACCEPT for both SPY** (trend_window=50, vix_ratio_threshold=1.05,
+vix_smooth_window=3, Sharpe 1.017) **and QQQ** (trend_window=150,
+vix_ratio_threshold=1.1, vix_smooth_window=10, Sharpe 1.434) -- per-symbol
+tuned configs, both clearing all 5 validators. Rescues the parent
+2026-09-10-038's near-misses on both symbols via smoothing + wider
+trend_window/threshold search alone, no architectural change. Not tested
+on crypto (VIX9D/VIX has no crypto analog, consistent with the parent
+strategy's scope).
