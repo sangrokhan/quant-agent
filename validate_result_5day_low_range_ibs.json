@@ -1,0 +1,58 @@
+{
+  "QQQ": {
+    "sharpe": 1.0246036178566342,
+    "sharpe_pass": true,
+    "mdd": 0.0724702443009696,
+    "mdd_pass": true,
+    "tc_survival_net_sharpe": 0.7274402267108414,
+    "tc_pass": true,
+    "walk_forward_pass_fraction": 1.0,
+    "wf_pass": true,
+    "param_sensitivity_relstd": 0.2109187769345348,
+    "ps_pass": true,
+    "n_trades": 93,
+    "all_pass": true
+  },
+  "SPY": {
+    "sharpe": 0.545421552929789,
+    "sharpe_pass": false,
+    "mdd": 0.10025607951056403,
+    "mdd_pass": true,
+    "tc_survival_net_sharpe": 0.25622703884033615,
+    "tc_pass": false,
+    "walk_forward_pass_fraction": 0.75,
+    "wf_pass": true,
+    "param_sensitivity_relstd": 0.2868436371304459,
+    "ps_pass": true,
+    "n_trades": 82,
+    "all_pass": false
+  },
+  "BTC/USDT": {
+    "sharpe": 0.19336477704624166,
+    "sharpe_pass": false,
+    "mdd": 0.33529317525083324,
+    "mdd_pass": false,
+    "tc_survival_net_sharpe": -0.020863597312308926,
+    "tc_pass": false,
+    "walk_forward_pass_fraction": 1.0,
+    "wf_pass": true,
+    "param_sensitivity_relstd": 0.14105074830338668,
+    "ps_pass": true,
+    "n_trades": 1670,
+    "all_pass": false
+  },
+  "ETH/USDT": {
+    "sharpe": 0.25330398416693156,
+    "sharpe_pass": false,
+    "mdd": 0.2715754972320755,
+    "mdd_pass": false,
+    "tc_survival_net_sharpe": 0.006403900156365848,
+    "tc_pass": false,
+    "walk_forward_pass_fraction": 1.0,
+    "wf_pass": true,
+    "param_sensitivity_relstd": 0.2867334772441617,
+    "ps_pass": true,
+    "n_trades": 1639,
+    "all_pass": false
+  }
+}
