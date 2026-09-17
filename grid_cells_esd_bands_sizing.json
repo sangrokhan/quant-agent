@@ -1,0 +1,1514 @@
+[
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.45461641541671,
+    "mdd": 0.04425070044671675,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.4333476757081909,
+    "mdd": 0.09706272242890235,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.028983672319544317,
+    "mdd": 0.1330749108190562,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.554412826260889,
+    "mdd": 0.05361504033501152,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.477293577529055,
+    "mdd": 0.10687138753267122,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.07735502806849687,
+    "mdd": 0.16629828591780138,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.408451589741365,
+    "mdd": 0.062031105023808375,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.263317758608849,
+    "mdd": 0.14217990944687464,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.16491791155698268,
+    "mdd": 0.16284406758634828,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.4617579504184612,
+    "mdd": 0.04264631759516124,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.391750018457766,
+    "mdd": 0.10900395964004439,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.15257265271302403,
+    "mdd": 0.12660736696967845,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.613065908073072,
+    "mdd": 0.05035070399224939,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.4471315582536985,
+    "mdd": 0.11577346867867278,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.19695778154718072,
+    "mdd": 0.1686580282131358,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.436437917519189,
+    "mdd": 0.05816660209507429,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.3202246440440464,
+    "mdd": 0.14529758657471992,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.023596766613768815,
+    "mdd": 0.15734826534777746,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.458436000322009,
+    "mdd": 0.042612997986752776,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.4060124260127504,
+    "mdd": 0.10575505824251918,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.6422243259754281,
+    "mdd": 0.15745515063088178,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.468296266305821,
+    "mdd": 0.050841927153814304,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.4509027729275086,
+    "mdd": 0.11133462337311162,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.6803272915638994,
+    "mdd": 0.18471349116520364,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.41244157662096,
+    "mdd": 0.05857291442014734,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.3990509165191314,
+    "mdd": 0.14134687886340458,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.4968825306913566,
+    "mdd": 0.1664645359618654,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.3236260680023055,
+    "mdd": 0.025510911576582807,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.15885137376795994,
+    "mdd": 0.08526183708682145,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8717642821206364,
+    "mdd": 0.10586171370508013,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.290634150593591,
+    "mdd": 0.030154993180152356,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.3007485179874542,
+    "mdd": 0.09475215059445907,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8531477047746898,
+    "mdd": 0.11703188696025368,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.2882157236313936,
+    "mdd": 0.03251581009119808,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.3357151218813804,
+    "mdd": 0.10963029391634604,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8416459548172354,
+    "mdd": 0.13259222744493404,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.292838386630089,
+    "mdd": 0.023826707613942677,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.379513586992415,
+    "mdd": 0.07880532894104242,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.7888281157429162,
+    "mdd": 0.09722959587483992,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.312479666614582,
+    "mdd": 0.029864704945022358,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.5000028866525567,
+    "mdd": 0.08528826232371922,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8277465607107343,
+    "mdd": 0.10719182372480751,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.2577887627042723,
+    "mdd": 0.03251581009119786,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.4372949418466285,
+    "mdd": 0.09973348602590215,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.7522894366216833,
+    "mdd": 0.11638318325737196,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.502951851138418,
+    "mdd": 0.023826707613942566,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.22776210475270345,
+    "mdd": 0.07690923180086495,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.35677644716353935,
+    "mdd": 0.08715059401758352,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.4537062400403054,
+    "mdd": 0.029864704945022247,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.2592184340009464,
+    "mdd": 0.08660302804739328,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.4245095903025057,
+    "mdd": 0.09850520168816723,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.3890884874368004,
+    "mdd": 0.03251581009119808,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.20936442704686492,
+    "mdd": 0.09785227501592875,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5665847004282063,
+    "mdd": 0.11459118054359829,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.6232322877331988,
+    "mdd": 0.09348287800777277,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.257589581799701,
+    "mdd": 0.24307275793763272,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.2164286527118786,
+    "mdd": 0.21557799005796718,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.619505496829069,
+    "mdd": 0.11344135204208838,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2231865643806947,
+    "mdd": 0.293053389406002,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.2331418529557263,
+    "mdd": 0.2885569547759683,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.5901543441692603,
+    "mdd": 0.12494923539315028,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2520314128876553,
+    "mdd": 0.3174820197582673,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.2619629628151086,
+    "mdd": 0.3115671876575664,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.6138054218057667,
+    "mdd": 0.10668318416905587,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.501202910041909,
+    "mdd": 0.21392416036229045,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.4826919829066438,
+    "mdd": 0.29251981062816523,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.6184146397085761,
+    "mdd": 0.1375095082787141,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.4757719219523309,
+    "mdd": 0.25116535560232656,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.4183167678956223,
+    "mdd": 0.3516347029309004,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.6126135091918523,
+    "mdd": 0.1369105777816596,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.4756516658430074,
+    "mdd": 0.28923860638583376,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.333611106317037,
+    "mdd": 0.3720520882593489,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.7673557479654054,
+    "mdd": 0.09653721157231909,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.27135286140611,
+    "mdd": 0.21915017842288886,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.4591198430999202,
+    "mdd": 0.2984153700907686,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.7785707858059374,
+    "mdd": 0.12486036201081452,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2648011556120184,
+    "mdd": 0.2395101512297938,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.3810940033858319,
+    "mdd": 0.3474613251456764,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.742143854004275,
+    "mdd": 0.13703469954374847,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2402429045428771,
+    "mdd": 0.256331966621288,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.34426243352716,
+    "mdd": 0.3429291387356723,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0240131553634888,
+    "mdd": 0.22503786916071689,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.463325450226638,
+    "mdd": 0.3176908341798427,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.439357194518987,
+    "mdd": 0.4494645660595843,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0296342380626922,
+    "mdd": 0.2609235264550728,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.5429952640572684,
+    "mdd": 0.38587286366148454,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.43322035680439086,
+    "mdd": 0.5196825130170772,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.006981492300629,
+    "mdd": 0.2792806093571889,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.489370300931901,
+    "mdd": 0.4198920949633289,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 30,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.469146873311205,
+    "mdd": 0.5219778925449613,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.2020959727309855,
+    "mdd": 0.21228457767150832,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.5990500602020328,
+    "mdd": 0.30096780013805535,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.42969781446487054,
+    "mdd": 0.47229412850246355,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0991815406877046,
+    "mdd": 0.2444699355873563,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.6681480758380878,
+    "mdd": 0.3572531809848999,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.4051757893489972,
+    "mdd": 0.5324224360203788,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.1101028423970924,
+    "mdd": 0.2606187898539549,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.627176569183291,
+    "mdd": 0.3815946914357181,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 40,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.46243657850197406,
+    "mdd": 0.5457509244240625,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8195142098985215,
+    "mdd": 0.2913174536052052,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.6069102577018066,
+    "mdd": 0.21553549038472586,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.4,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.25361388767246973,
+    "mdd": 0.5184320220831865,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.75257893065854,
+    "mdd": 0.2931946832246388,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.7395998317327566,
+    "mdd": 0.23679716832958653,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.6,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.20885307680732507,
+    "mdd": 0.5669659331524999,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.7977654521031786,
+    "mdd": 0.3043373672444548,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.6401407770782286,
+    "mdd": 0.27474922328938634,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "trend_window": 60,
+      "sensitivity": 0.8,
+      "leverage_cap": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.25152709373867216,
+    "mdd": 0.579338285607121,
+    "passed": false,
+    "error": null
+  }
+]

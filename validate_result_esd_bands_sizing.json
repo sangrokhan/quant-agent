@@ -1,0 +1,118 @@
+{
+  "BTC/USDT": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.18710786551119052,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.39862542508996335,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.06055000603322826,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 10286,
+        "estimated_total_cost_drag": 10.286
+      }
+    ],
+    "walk_forward": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable)"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.08327280432840083,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 1.3290923309407001,
+        "std": 0.11067724560880308
+      }
+    ],
+    "num_trades": 10286
+  },
+  "QQQ": {
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.168240937157513,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.15319702877534336,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.3391135773466805,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 377,
+        "estimated_total_cost_drag": 0.377
+      }
+    ],
+    "walk_forward": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable)"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.04586118190091299,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 1.3987812608956662,
+        "std": 0.06414976184552458
+      }
+    ],
+    "num_trades": 377
+  }
+}
