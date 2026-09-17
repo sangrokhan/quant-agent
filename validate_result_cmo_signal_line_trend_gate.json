@@ -1,0 +1,80 @@
+{
+  "QQQ": {
+    "num_trades": 40,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.5096853898013937,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.2239967509937385,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.43797979569149487,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 40,
+      "estimated_total_cost_drag": 0.04
+    },
+    "tc_pass": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.5,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "note": "manual 4-slice fallback; vbt.utils.splitting.RangeSplitter missing in this install"
+    },
+    "wf_pass": false
+  },
+  "SPY": {
+    "num_trades": 33,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.1815487657729387,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.2331118791125587,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.11525938649475025,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 33,
+      "estimated_total_cost_drag": 0.033
+    },
+    "tc_pass": false,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.5,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "note": "manual 4-slice fallback; vbt.utils.splitting.RangeSplitter missing in this install"
+    },
+    "wf_pass": false
+  }
+}
