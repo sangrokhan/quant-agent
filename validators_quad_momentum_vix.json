@@ -1,0 +1,30 @@
+{
+  "params": {
+    "leverage_multiplier": 1.0,
+    "vix_threshold": 25.0
+  },
+  "sharpe": 1.3516064662064105,
+  "mdd": 0.20302669311604493,
+  "num_trades": 29,
+  "net_sharpe_after_costs": 1.313908687007173,
+  "cost_bps": 10.0,
+  "wf_pass_fraction": 0.75,
+  "wf_per_split": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "param_sensitivity_cv": 0.09064929109879952,
+  "param_sensitivity_sharpes": [
+    1.196898630220113,
+    1.18831033894074,
+    1.178174012847508,
+    1.3516064662064105,
+    1.3482299303057241,
+    1.3426332144285111,
+    1.0694545486178229,
+    1.083140569162497,
+    1.0940785487805431
+  ]
+}
