@@ -1,0 +1,88 @@
+{
+  "QQQ": {
+    "num_trades": 19,
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.0351826227469458,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.13959887414612282,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.007928979525383,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 19,
+        "estimated_total_cost_drag": 0.019
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "value": 1.0,
+        "per_split": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ]
+      }
+    ]
+  },
+  "SPY": {
+    "num_trades": 19,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.2640878229467401,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.25686906025586176,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.23005871907904757,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 19,
+        "estimated_total_cost_drag": 0.019
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "value": 0.5,
+        "per_split": [
+          "False",
+          "False",
+          "True",
+          "True"
+        ]
+      }
+    ]
+  }
+}
