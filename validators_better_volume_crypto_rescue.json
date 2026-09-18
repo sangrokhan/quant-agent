@@ -1,0 +1,104 @@
+{
+  "BTC/USDT": {
+    "params": {
+      "trend_window": 40,
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.17644454533118947,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.24602632228072552,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": -0.05630426241743455,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 4725,
+      "estimated_total_cost_drag": 4.7250000000000005
+    },
+    "wf": {
+      "passed": "True",
+      "value": 1.0,
+      "per_split": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "psens": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.06306375263430991,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 0.16575246559988543,
+      "std": 0.010452972489118138
+    },
+    "all_pass": false
+  },
+  "ETH/USDT": {
+    "params": {
+      "trend_window": 40,
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.35,
+      "leverage_cap": 0.4
+    },
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.14578389054517338,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.28374043092064427,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": -0.05906678851557909,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 5869,
+      "estimated_total_cost_drag": 5.869
+    },
+    "wf": {
+      "passed": "True",
+      "value": 1.0,
+      "per_split": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "psens": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.0015687579788718578,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 0.14548146450145813,
+      "std": 0.00022822520821462537
+    },
+    "all_pass": false
+  }
+}

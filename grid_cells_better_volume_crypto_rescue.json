@@ -1,0 +1,5186 @@
+[
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6189974651885897,
+    "sharpe_passed": true,
+    "mdd": 0.06992685905191753,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.4194868797675377,
+    "sharpe_passed": true,
+    "mdd": 0.16309377659572366,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4865305801171125,
+    "sharpe_passed": true,
+    "mdd": 0.22751117281859523,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6099089357905354,
+    "sharpe_passed": true,
+    "mdd": 0.07075352454454553,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.41822943060826,
+    "sharpe_passed": true,
+    "mdd": 0.16648976288071737,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4883510449848327,
+    "sharpe_passed": true,
+    "mdd": 0.23030117663710714,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6009596502686854,
+    "sharpe_passed": true,
+    "mdd": 0.07157971713547107,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.416836446114109,
+    "sharpe_passed": true,
+    "mdd": 0.16987478668929157,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.4899586110882344,
+    "sharpe_passed": true,
+    "mdd": 0.23308650435006395,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6826493812104968,
+    "sharpe_passed": true,
+    "mdd": 0.06274579112338896,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3388415530361846,
+    "sharpe_passed": true,
+    "mdd": 0.15993289486505935,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.723051428461453,
+    "sharpe_passed": true,
+    "mdd": 0.21075752377539236,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.681472776734899,
+    "sharpe_passed": true,
+    "mdd": 0.0629553741665222,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3366817808742775,
+    "sharpe_passed": true,
+    "mdd": 0.16090159062645049,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.7234469369887315,
+    "sharpe_passed": true,
+    "mdd": 0.2124172515696615,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.6802693972084424,
+    "sharpe_passed": true,
+    "mdd": 0.06316493947265789,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3345093849685978,
+    "sharpe_passed": true,
+    "mdd": 0.16186945397289154,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.723764059047965,
+    "sharpe_passed": true,
+    "mdd": 0.2140742438092138,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.7140384830159148,
+    "sharpe_passed": true,
+    "mdd": 0.054444525572000635,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.150047370426929,
+    "sharpe_passed": true,
+    "mdd": 0.16303682272932407,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.6272510727646117,
+    "sharpe_passed": true,
+    "mdd": 0.2529700654393823,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.7169318381452559,
+    "sharpe_passed": true,
+    "mdd": 0.054645374243526446,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.1502879277326679,
+    "sharpe_passed": true,
+    "mdd": 0.16407041387084276,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.6296158327326458,
+    "sharpe_passed": true,
+    "mdd": 0.25479535298208833,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.719737276974345,
+    "sharpe_passed": true,
+    "mdd": 0.0548462220710324,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 1.15049410136835,
+    "sharpe_passed": true,
+    "mdd": 0.16510299013696994,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 1.6318377395931225,
+    "sharpe_passed": true,
+    "mdd": 0.2566180990932926,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3596632117108407,
+    "sharpe_passed": true,
+    "mdd": 0.14014276761110156,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.406452605158253,
+    "sharpe_passed": true,
+    "mdd": 0.27669729940939947,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.39261291301232537,
+    "sharpe_passed": false,
+    "mdd": 0.3741599825274543,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.3567152746017948,
+    "sharpe_passed": true,
+    "mdd": 0.14239270982537777,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3950833565469387,
+    "sharpe_passed": true,
+    "mdd": 0.2838532482340803,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.3928661604815334,
+    "sharpe_passed": false,
+    "mdd": 0.3804917253861885,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.353780877535392,
+    "sharpe_passed": true,
+    "mdd": 0.1454498311416612,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.383915509294416,
+    "sharpe_passed": true,
+    "mdd": 0.29094782650968387,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.3930840423498833,
+    "sharpe_passed": false,
+    "mdd": 0.3867709286577812,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 10,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2102577227469953,
+    "sharpe_passed": true,
+    "mdd": 0.1430615827439239,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.406871433347432,
+    "sharpe_passed": true,
+    "mdd": 0.25435757707521156,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.33757949051245817,
+    "sharpe_passed": false,
+    "mdd": 0.38159874866627175,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2077404784896602,
+    "sharpe_passed": true,
+    "mdd": 0.14398625584085933,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.4005985860400396,
+    "sharpe_passed": true,
+    "mdd": 0.2574010633077667,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.3383123676983135,
+    "sharpe_passed": false,
+    "mdd": 0.3842220826168935,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.205231794340571,
+    "sharpe_passed": true,
+    "mdd": 0.14491034567233407,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3943417238038065,
+    "sharpe_passed": true,
+    "mdd": 0.2604340534339946,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.33901880554164454,
+    "sharpe_passed": false,
+    "mdd": 0.3868370158113037,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 20,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.245495693616989,
+    "sharpe_passed": true,
+    "mdd": 0.14209772905136797,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.30423727117883,
+    "sharpe_passed": true,
+    "mdd": 0.2493650756225151,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.35284618354571773,
+    "sharpe_passed": false,
+    "mdd": 0.3662799968596251,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.2,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.24366006552495,
+    "sharpe_passed": true,
+    "mdd": 0.14254144498342247,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3062623823696504,
+    "sharpe_passed": true,
+    "mdd": 0.25100060140795355,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.35027929305289757,
+    "sharpe_passed": false,
+    "mdd": 0.370391302567856,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.3,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": 1.2418281518504284,
+    "sharpe_passed": true,
+    "mdd": 0.14327870829875722,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": 2.3082087031122374,
+    "sharpe_passed": true,
+    "mdd": 0.252633425416382,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.4,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": 0.347744606052269,
+    "sharpe_passed": false,
+    "mdd": 0.37448075677076,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.5,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.4
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "bv_smooth_window": 30,
+      "sensitivity": 0.4,
+      "deadband": 0.6,
+      "leverage_cap": 0.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime_label": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  }
+]
