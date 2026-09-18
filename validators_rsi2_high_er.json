@@ -1,0 +1,32 @@
+{
+  "QQQ": {
+    "sharpe": 1.0702127268863901,
+    "mdd": 0.0711414248313893,
+    "num_trades": 90,
+    "net_sharpe_after_costs": 0.7618336025646162,
+    "cost_bps": 10.0,
+    "wf_pass_fraction": 1.0,
+    "wf_per_split": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "param_sensitivity_cv": 0.16471387541882146
+  },
+  "SPY": {
+    "sharpe": 1.0350872273970093,
+    "mdd": 0.08542647802731518,
+    "num_trades": 86,
+    "net_sharpe_after_costs": 0.6204716425559739,
+    "cost_bps": 10.0,
+    "wf_pass_fraction": 0.5,
+    "wf_per_split": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "param_sensitivity_cv": 0.15395945102932937
+  }
+}
