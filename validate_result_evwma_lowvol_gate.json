@@ -1,0 +1,182 @@
+{
+  "QQQ": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.4675247868880633,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.16342550313647042,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.22321330886006083,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 165,
+        "estimated_total_cost_drag": 0.165
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "note": "manual split substitute"
+      }
+    }
+  },
+  "SPY": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.4230541508073835,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.15413764941548658,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.0927578997130389,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 177,
+        "estimated_total_cost_drag": 0.177
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "note": "manual split substitute"
+      }
+    }
+  },
+  "BTC/USDT": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.4727420522234523,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": false,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.4229753847203678,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.3694172239059959,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 208,
+        "estimated_total_cost_drag": 0.20800000000000002
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.75,
+        "threshold": 0.75,
+        "per_split_passed": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "note": "manual split substitute"
+      }
+    }
+  },
+  "ETH/USDT": {
+    "sharpe_ratio": {
+      "passed": true,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 1.227803901486415,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": false,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.5588478429074089,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.135538246895382,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 216,
+        "estimated_total_cost_drag": 0.216
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "note": "manual split substitute"
+      }
+    }
+  }
+}
