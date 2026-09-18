@@ -28,6 +28,13 @@ Source: https://www.tradingview.com/script/6a8CD4JI-Ehlers-Distance-Coefficient-
 via browser_exec -- web_search DDGS backend failing this cron trigger).
 First Distance Coefficient Filter strategy in this repo.
 
+ACCEPTED per-symbol configs (see knowledge_base id 2026-09-18-083, rescue
+of near-miss 2026-09-18-082): QQQ length=12/max_hold_days=10 (Sharpe
+1.043, MDD 0.222); SPY length=18/max_hold_days=30 (Sharpe 1.069, MDD
+0.207). Both pass Sharpe/MDD/TC-survival/parameter-sensitivity. Crypto
+(BTC/USDT, ETH/USDT) remains out of scope -- decisive rejection at the
+default hourly-bar granularity in 2026-09-18-082's grid test.
+
 Interface contract for validators (see validation/validators.py):
     generate_signals(price_df, **params) -> pd.Series ({0,1})
     generate_returns(price_df, **params) -> pd.Series
