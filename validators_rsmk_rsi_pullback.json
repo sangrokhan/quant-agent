@@ -1,0 +1,126 @@
+{
+  "ETH/USDT": {
+    "params": {
+      "rs_bars": 25,
+      "rsi_oversold": 40,
+      "max_hold_days": 30
+    },
+    "num_trades": 230,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.7366881678566576,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.9987933498396292,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.7192131479072041,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 230,
+        "estimated_total_cost_drag": 0.23
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "False",
+          "False",
+          "False",
+          "False"
+        ]
+      }
+    ],
+    "psens": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.632359857957634,
+        "threshold": 0.5,
+        "grid_size": 24,
+        "mean": 0.7296761492663829,
+        "std": 0.4614179061051633
+      }
+    ]
+  },
+  "QQQ": {
+    "params": {
+      "rs_bars": 35,
+      "rsi_oversold": 30,
+      "max_hold_days": 30
+    },
+    "num_trades": 1,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.959731168259548,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.025368439805888987,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.9518376346564342,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 1,
+        "estimated_total_cost_drag": 0.001
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.25,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          false,
+          false,
+          false,
+          "True"
+        ]
+      }
+    ],
+    "psens": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.5898574430571515,
+        "threshold": 0.5,
+        "grid_size": 24,
+        "mean": 0.5948867671134399,
+        "std": 0.35089838735806883
+      }
+    ]
+  }
+}
