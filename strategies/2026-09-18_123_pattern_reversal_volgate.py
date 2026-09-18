@@ -1,6 +1,15 @@
-"""Strategy: 123 Pattern Bullish Reversal (three-swing structural reversal).
+"""Strategy: 123 Pattern Bullish Reversal, low-vol regime-gated rescue.
 
-Hypothesis (see knowledge_base/strategies_log.jsonl id=2026-09-18-090):
+Hypothesis (see knowledge_base/strategies_log.jsonl id=2026-09-18-091):
+Direct rescue of this same cron trigger's prior rejection 2026-09-18-090
+(123 Pattern Bullish Reversal ungated: SPY full-sample Sharpe 0.79/MDD 0.31
+both failed, BUT the grid's isolated low-vol tercile showed Sharpe
+~2.08 SPY / 1.86 QQQ). This variant adds an explicit low-vol realized-vol
+regime gate (identical construction to 2026-09-03_bb_meanrev_qqq_volregime.py:
+20-day realized vol <= 1.0x trailing 252-day median), only taking the
+123-pattern entry when the market IS in that low-vol regime where the
+pattern was shown to work, rather than trading through all regimes
+unconditionally. Source pattern itself unchanged from 2026-09-18-090:
 Per quantifiedstrategies.com's "123 Pattern Reversal Trading Strategy"
 (https://www.quantifiedstrategies.com/123-pattern-reversal-strategy/):
 a bullish 123 reversal is confirmed by a specific 4-bar low/high structural
@@ -62,7 +71,7 @@ def generate_signals(
     vol_window: int = 20,
     vol_lookback: int = 252,
     vol_regime_ratio: float = 1.0,
-    use_vol_gate: bool = False,
+    use_vol_gate: bool = True,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
