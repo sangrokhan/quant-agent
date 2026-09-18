@@ -1,0 +1,178 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.315332643582725,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.08034975256997501,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.234035221061242,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 27,
+      "estimated_total_cost_drag": 0.027
+    },
+    "wf": {
+      "passed": "False",
+      "value": 0.5,
+      "per_split": [
+        "False",
+        "True",
+        "True",
+        "False"
+      ]
+    },
+    "psens": {
+      "passed": false,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.8449216437580099,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 0.7072746016008511,
+      "std": 0.5975916189728827
+    },
+    "all_pass": "False"
+  },
+  "SPY": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.570695522175784,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.08377030313502687,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.4864474747516963,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 22,
+      "estimated_total_cost_drag": 0.022
+    },
+    "wf": {
+      "passed": "True",
+      "value": 0.75,
+      "per_split": [
+        "False",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "psens": {
+      "passed": false,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.7890463114498837,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 0.27133607226624545,
+      "std": 0.21409672698498006
+    },
+    "all_pass": false
+  },
+  "BTC": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.003298618828624969,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.5443050143612774,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": -0.05924001624400277,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 644,
+      "estimated_total_cost_drag": 0.644
+    },
+    "wf": {
+      "passed": "False",
+      "value": 0.5,
+      "per_split": [
+        "True",
+        "False",
+        "True",
+        "False"
+      ]
+    },
+    "psens": {
+      "passed": false,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 1.491660169966601,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": -0.03257815573969642,
+      "std": 0.04859553732787396
+    },
+    "all_pass": false
+  },
+  "ETH": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.04443976485647593,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.4411388429218439,
+      "threshold": 0.25
+    },
+    "tc": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": -0.02806422437219844,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 662,
+      "estimated_total_cost_drag": 0.662
+    },
+    "wf": {
+      "passed": "True",
+      "value": 0.75,
+      "per_split": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ]
+    },
+    "psens": {
+      "passed": false,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 1.0771510098944133,
+      "threshold": 0.5,
+      "grid_size": 4,
+      "mean": 0.016849648139182744,
+      "std": 0.018149615509486215
+    },
+    "all_pass": false
+  }
+}
