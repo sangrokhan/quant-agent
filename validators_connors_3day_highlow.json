@@ -1,0 +1,130 @@
+{
+  "QQQ": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.9627828312774412,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.0711414248313893,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.8191465849419431,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 42,
+        "estimated_total_cost_drag": 0.042
+      }
+    ],
+    "walk_forward": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable)"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.1026503760430375,
+        "threshold": 0.5,
+        "grid_size": 5,
+        "mean": 0.8904753767689719,
+        "std": 0.09140763228240047
+      }
+    ],
+    "num_trades": 42,
+    "params": {
+      "trend_window": 150,
+      "pullback_sma_window": 4,
+      "confirm_days": 3,
+      "max_hold_days": 15
+    }
+  },
+  "SPY": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.9547782866489268,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.11161089119140366,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.6680967094249621,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 91,
+        "estimated_total_cost_drag": 0.091
+      }
+    ],
+    "walk_forward": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "note": "manual split (vbt.utils.splitting.RangeSplitter unavailable)"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.04086372458519394,
+        "threshold": 0.5,
+        "grid_size": 5,
+        "mean": 0.8880076773457042,
+        "std": 0.03628730115659262
+      }
+    ],
+    "num_trades": 91,
+    "params": {
+      "trend_window": 150,
+      "pullback_sma_window": 5,
+      "confirm_days": 2,
+      "max_hold_days": 15
+    }
+  }
+}
