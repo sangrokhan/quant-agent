@@ -1,0 +1,158 @@
+{
+  "QQQ": {
+    "params": {
+      "hp_length": 40,
+      "sensitivity": 0.4,
+      "deadband": 0.25,
+      "leverage_cap": 1.0
+    },
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0746518678341965,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.09521816776520453,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8112459003064758,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 177,
+      "estimated_total_cost_drag": 0.0885
+    },
+    "walk_forward": {
+      "error": "check_walk_forward() missing 1 required positional argument: 'strategy_fn'"
+    },
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.11137378825730634,
+      "threshold": 0.5,
+      "grid_size": 5,
+      "mean": 1.002488751198743,
+      "std": 0.11165096990634027
+    },
+    "all_pass": true
+  },
+  "SPY": {
+    "params": {
+      "hp_length": 40,
+      "sensitivity": 0.4,
+      "deadband": 0.25,
+      "leverage_cap": 1.0
+    },
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0450864780568356,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.06031049752557105,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.7435118932906947,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 156,
+      "estimated_total_cost_drag": 0.078
+    },
+    "walk_forward": {
+      "error": "check_walk_forward() missing 1 required positional argument: 'strategy_fn'"
+    },
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.06165470189003663,
+      "threshold": 0.5,
+      "grid_size": 5,
+      "mean": 1.0502712932223017,
+      "std": 0.06475416348728426
+    },
+    "all_pass": true
+  },
+  "BTC/USDT": {
+    "params": {
+      "hp_length": 40,
+      "sensitivity": 0.4,
+      "deadband": 0.25,
+      "leverage_cap": 0.3
+    },
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.2991927069137525,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.1800897035562119,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.1538250849509044,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 193,
+      "estimated_total_cost_drag": 0.0965
+    },
+    "walk_forward": {
+      "error": "check_walk_forward() missing 1 required positional argument: 'strategy_fn'"
+    },
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.03666169893357765,
+      "threshold": 0.5,
+      "grid_size": 5,
+      "mean": 1.2346910308521972,
+      "std": 0.04526587084909189
+    },
+    "all_pass": true
+  },
+  "ETH/USDT": {
+    "params": {
+      "hp_length": 40,
+      "sensitivity": 0.4,
+      "deadband": 0.25,
+      "leverage_cap": 0.3
+    },
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.1761756258221905,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.18483178943326783,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0960151773232527,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 165,
+      "estimated_total_cost_drag": 0.0825
+    },
+    "walk_forward": {
+      "error": "check_walk_forward() missing 1 required positional argument: 'strategy_fn'"
+    },
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.044795092830571516,
+      "threshold": 0.5,
+      "grid_size": 5,
+      "mean": 1.1897179695647038,
+      "std": 0.05329352688884996
+    },
+    "all_pass": true
+  }
+}
