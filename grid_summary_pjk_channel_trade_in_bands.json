@@ -1,0 +1,50 @@
+{
+  "metric": "grid_test",
+  "total_cells": 108,
+  "passed_cells": 30,
+  "pass_fraction": 0.2777777777777778,
+  "by_asset_class": {
+    "equity": {
+      "passed": 25,
+      "total": 54
+    },
+    "crypto": {
+      "passed": 5,
+      "total": 54
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 16,
+      "total": 36
+    },
+    "mid": {
+      "passed": 14,
+      "total": 36
+    },
+    "high": {
+      "passed": 0,
+      "total": 36
+    }
+  },
+  "best_cell": {
+    "params": {
+      "period": 50,
+      "zone": 0.3
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.1704126374446395
+  },
+  "worst_cell": {
+    "params": {
+      "period": 50,
+      "zone": 0.3
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -1.0772949033181105
+  }
+}

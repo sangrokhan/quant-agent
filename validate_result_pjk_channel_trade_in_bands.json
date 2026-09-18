@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "num_trades": 120,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.8963662190808804,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.2238540482210596,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8308889706320151,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 120,
+      "estimated_total_cost_drag": 0.06
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction_manual",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "False",
+        "True"
+      ],
+      "note": "manual split used -- validators.check_walk_forward errors on installed vectorbt (vbt.utils.splitting missing)"
+    },
+    "wf_pass": "True",
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.15573679694681244,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.7099184622431562,
+      "std": 0.11056042740315576
+    },
+    "param_sensitivity_pass": true
+  },
+  "SPY": {
+    "num_trades": 108,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.7857691145781271,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_pass": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.17941313459089037,
+      "threshold": 0.25
+    },
+    "mdd_pass": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.7039246199767438,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 5.0,
+      "num_trades": 108,
+      "estimated_total_cost_drag": 0.054
+    },
+    "tc_pass": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction_manual",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "False",
+        "True"
+      ],
+      "note": "manual split used -- validators.check_walk_forward errors on installed vectorbt (vbt.utils.splitting missing)"
+    },
+    "wf_pass": "True",
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.16237304900665703,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.711085517394748,
+      "std": 0.11546112356386148
+    },
+    "param_sensitivity_pass": true
+  }
+}
