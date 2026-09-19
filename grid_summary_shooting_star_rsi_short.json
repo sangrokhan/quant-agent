@@ -1,0 +1,52 @@
+{
+  "metric": "grid_test",
+  "total_cells": 216,
+  "passed_cells": 3,
+  "pass_fraction": 0.013888888888888888,
+  "by_asset_class": {
+    "equity": {
+      "passed": 2,
+      "total": 108
+    },
+    "crypto": {
+      "passed": 1,
+      "total": 108
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 3,
+      "total": 72
+    },
+    "mid": {
+      "passed": 0,
+      "total": 72
+    },
+    "high": {
+      "passed": 0,
+      "total": 72
+    }
+  },
+  "best_cell": {
+    "params": {
+      "trend_window": 75,
+      "shadow_ratio": 2.0,
+      "rsi_overbought": 65.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.009640581919111
+  },
+  "worst_cell": {
+    "params": {
+      "trend_window": 30,
+      "shadow_ratio": 2.5,
+      "rsi_overbought": 65.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -1.1278196171565849
+  }
+}
