@@ -1,0 +1,52 @@
+{
+  "symbol": "IWM",
+  "params": {
+    "trend_window": 100,
+    "smi_window": 10
+  },
+  "num_trades": 60,
+  "sharpe": {
+    "passed": true,
+    "metric": "sharpe_ratio",
+    "value": 1.1078674398194475,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.0888137039940381,
+    "threshold": 0.25
+  },
+  "tx_cost": {
+    "passed": true,
+    "metric": "net_sharpe_after_costs",
+    "value": 0.9088644243743881,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 5.0,
+    "num_trades": 60,
+    "estimated_total_cost_drag": 0.03
+  },
+  "walk_forward": {
+    "passed": false,
+    "metric": "walk_forward_pass_fraction (manual 4-split)",
+    "value": 0.5,
+    "threshold": 0.75,
+    "n_splits": 4,
+    "per_split_passed": [
+      "True",
+      "True",
+      "False",
+      "False"
+    ]
+  },
+  "param_sensitivity": {
+    "passed": true,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.3228103946348075,
+    "threshold": 0.5,
+    "grid_size": 6,
+    "mean": 0.8066683286714138,
+    "std": 0.2604009215178197
+  }
+}
