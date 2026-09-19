@@ -1,0 +1,154 @@
+{
+  "equity:QQQ": {
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.176040597899045,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.12524476597274103,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.4383323320743503,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 267,
+      "estimated_total_cost_drag": 0.267
+    },
+    "walk_forward": {
+      "passed": null,
+      "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.028271567626425416,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 2.5082859087673453,
+      "std": 0.07091317469612593
+    },
+    "num_trades": 267
+  },
+  "equity:SPY": {
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.1888262145549486,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.08067042302579852,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": false,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.32759693616791735,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 251,
+      "estimated_total_cost_drag": 0.251
+    },
+    "walk_forward": {
+      "passed": null,
+      "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.049681207226465525,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 2.3434059547705304,
+      "std": 0.11642323685468801
+    },
+    "num_trades": 251
+  },
+  "crypto:BTC/USDT": {
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.3987247101615692,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.374975276709393,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.1254815465593893,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 324,
+      "estimated_total_cost_drag": 0.324
+    },
+    "walk_forward": {
+      "passed": null,
+      "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.023531767317296337,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.6116017956342346,
+      "std": 0.03792383846300177
+    },
+    "num_trades": 324
+  },
+  "crypto:ETH/USDT": {
+    "sharpe": {
+      "passed": true,
+      "metric": "sharpe_ratio",
+      "value": 1.2492063309909012,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "max_drawdown": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.3708664739190727,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0709610359678352,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 319,
+      "estimated_total_cost_drag": 0.319
+    },
+    "walk_forward": {
+      "passed": null,
+      "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.026314007550809242,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.4270696893270731,
+      "std": 0.0375519225804836
+    },
+    "num_trades": 319
+  }
+}
