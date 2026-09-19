@@ -1,0 +1,48 @@
+{
+  "metric": "grid_test",
+  "total_cells": 81,
+  "passed_cells": 17,
+  "pass_fraction": 0.20987654320987653,
+  "by_asset_class": {
+    "equity": {
+      "passed": 17,
+      "total": 81
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 16,
+      "total": 27
+    },
+    "mid": {
+      "passed": 0,
+      "total": 27
+    },
+    "high": {
+      "passed": 1,
+      "total": 27
+    }
+  },
+  "best_cell": {
+    "params": {
+      "rsi_period": 5,
+      "rsi_entry": 75.0,
+      "rsi_exit": 50.0
+    },
+    "asset_class": "equity",
+    "symbol": "GLD",
+    "vol_regime": "low",
+    "sharpe": 1.6140848162359969
+  },
+  "worst_cell": {
+    "params": {
+      "rsi_period": 3,
+      "rsi_entry": 80.0,
+      "rsi_exit": 50.0
+    },
+    "asset_class": "equity",
+    "symbol": "GLD",
+    "vol_regime": "high",
+    "sharpe": -0.9327312242481212
+  }
+}
