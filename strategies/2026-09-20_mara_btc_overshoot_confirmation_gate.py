@@ -128,12 +128,19 @@ def generate_signals(
     trend_sma_window: int = 100,
     zscore_window: int = 60,
     entry_z: float = 0.5,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series.
+    """Return a {0, leverage_cap} long/flat position series.
 
-    Long when close > own trend_sma_window-day SMA AND the MARA/BTC ratio's
-    rolling z-score is at/above entry_z (MARA overshooting BTC to the
-    upside -- bullish crowd-conviction confirmation); flat otherwise.
+    Long (at leverage_cap exposure) when close > own trend_sma_window-day
+    SMA AND the MARA/BTC ratio's rolling z-score is at/above entry_z (MARA
+    overshooting BTC to the upside -- bullish crowd-conviction
+    confirmation); flat otherwise. ``leverage_cap`` (default 1.0, i.e. full
+    exposure -- unchanged behavior for the already-accepted QQQ/SPY equity
+    legs) lets crypto legs run at a REDUCED exposure to control drawdown
+    while preserving the underlying signal's risk-adjusted edge (same
+    established leverage-cap-aware retune pattern used throughout this
+    repo, e.g. strategies/2026-09-14_twiggs_money_flow_sizing_dial.py).
     """
     df = _prep(price_df)
     close = df["close"]
@@ -143,7 +150,7 @@ def generate_signals(
 
     overshoot_gate = _load_overshoot_gate(df.index, zscore_window, entry_z)
 
-    position = (own_trend_up.astype(int) & overshoot_gate).astype(int)
+    position = (own_trend_up.astype(int) & overshoot_gate).astype(float) * leverage_cap
     return position
 
 
