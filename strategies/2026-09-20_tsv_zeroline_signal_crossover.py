@@ -52,14 +52,20 @@ def _tsv(close: pd.Series, volume: pd.Series, segment_period: int = 13) -> pd.Se
 
 def generate_signals(
     price_df: pd.DataFrame,
-    segment_period: int = 13,
-    signal_period: int = 13,
+    segment_period: int = 21,
+    signal_period: int = 25,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
     Long entry: TSV crosses above zero AND TSV is above its own signal-line
     moving average (buying pressure confirmed dominant). Exit: TSV crosses
     back below zero OR crosses back below the signal line, whichever first.
+
+    Defaults (segment_period=21, signal_period=25) reflect the ACCEPTED
+    QQQ-only config found in the 2026-09-20 rescue iteration (id
+    2026-09-20-080) after the original wide-grid config (segment_period=13,
+    signal_period=13) was rejected for marginal parameter-sensitivity
+    failure (see knowledge_base id 2026-09-20-079).
     """
     df = _prep(price_df)
     close = df["close"]
