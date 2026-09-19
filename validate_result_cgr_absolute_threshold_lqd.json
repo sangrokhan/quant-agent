@@ -1,0 +1,47 @@
+{
+  "num_trades": 86,
+  "sharpe": {
+    "passed": false,
+    "metric": "sharpe_ratio",
+    "value": 0.030845495164321727,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.13611483950871517,
+    "threshold": 0.25
+  },
+  "tx_cost": {
+    "passed": false,
+    "metric": "net_sharpe_after_costs",
+    "value": -0.13937160807637672,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 5.0,
+    "num_trades": 86,
+    "estimated_total_cost_drag": 0.043000000000000003
+  },
+  "walk_forward": {
+    "passed": false,
+    "metric": "walk_forward_pass_fraction (manual 4-split, check_walk_forward validator broken in installed vectorbt)",
+    "value": 0.5,
+    "threshold": 0.75,
+    "n_splits": 4,
+    "per_split_passed": [
+      "True",
+      "False",
+      "False",
+      "True"
+    ]
+  },
+  "param_sensitivity": {
+    "passed": false,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 9.883612575387513,
+    "threshold": 0.5,
+    "grid_size": 9,
+    "mean": -0.010663994268721715,
+    "std": 0.1053987878581983
+  }
+}
