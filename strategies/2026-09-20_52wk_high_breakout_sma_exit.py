@@ -1,60 +1,34 @@
-"""Strategy: 52-Week High breakout, exit on 200-day SMA cross (Exit 1 variant).
+"""Strategy: 52-Week High breakout entry, exit on 200-day SMA cross-below.
 
-Hypothesis (see knowledge_base/strategies_log.jsonl id=2026-09-20-054):
-Per quantifiedstrategies.com's "52-Week High Trading Strategy" article
-(https://www.quantifiedstrategies.com/52-week-high-strategy/, visited this
-iteration via browser_exec fallback -- web_search DDGS backend hit repeated
-TLS/connection-reset errors on every query attempted), the "52-week high
-effect" documents that stocks/assets trading at or near their 52-week
-(252-trading-day) high tend to outperform going forward -- momentum/
-underreaction to good news near a psychologically salient reference point,
-per academic work the source cites (Hong/Jordan/Liu "Industry Information
-and the 52-Week High Effect", George/Hwang 52-week-high momentum).
+Hypothesis (see knowledge_base/strategies_log.jsonl id=2026-09-20-116):
+Per QuantifiedStrategies.com's "52-Week High Trading Strategy" article
+(https://www.quantifiedstrategies.com/52-week-high-trading-strategy/),
+citing academic work (Hong, Jordan & Liu, "Industry Information and the
+52-Week High Effect") and a disclosed enlightenedstocktrading.com backtest:
+stocks making a fresh 52-week (252 trading-day) closing high tend to
+continue outperforming (an anchoring-bias / under-reaction effect -- market
+participants use the 52-week high as a reference point and are slow to bid
+prices past it, so momentum continues once it's cleared). The source's own
+disclosed single-symbol-compatible rule set: enter long when today's close
+is a new 252-day closing high; exit when the close crosses back below its
+own 200-day SMA (disclosed as "Exit 1" in the source, CAGR 8.6%/MDD 44% on
+their broad stock sample). First 52-week-high strategy in this repo (0
+prior matches in strategies_index.jsonl for "52-week" or "52 week").
 
-The source summarizes a fully disclosed single-asset backtest from
-enlightenedstocktrading.com ("Should you trade with a stocks 52-week highs
-or lows?"): buy when a stock closes at a new 52-week high, and test three
-exit rules. This repo implements Exit 1 (the source's own best-performing
-exit, 8.6% CAGR / 44% MDD in its original stock-universe backtest): "Hold
-until the stock crosses below the 200-day moving average." This is the
-plain single-asset momentum-breakout-then-trend-exit construction, directly
-implementable under this repo's generate_signals/generate_returns contract
-(unlike the source's other two backtests, which use cross-sectional
-top-10-stock-basket ranking and monthly rebalancing across S&P 100
-constituents -- feasibility-blocked here since this repo's loaders/strategy
-interface are single-symbol only, same blocker noted for prior
-cross-sectional-rotation attempts in this repo, e.g. 2026-09-11-037).
-
-Mechanical rules:
-  1. Entry (long): close makes a new `lookback_days`-day (default 252,
-     approximating 52 weeks) high (today's close >= rolling max close over
-     the trailing lookback_days, excluding today via shift so it's a
-     genuine "new high" breakout signal known at the close).
-  2. Exit: close crosses below its own SMA(exit_sma_window) (default 200,
-     the source's disclosed "Exit 1"), or a max_hold_days time-stop as a
-     repo-standard safety valve against indefinite single-asset holds
-     (the source's original version has no time-stop since it trades a
-     rotating basket of stocks; a single-asset adaptation needs one to
-     avoid pathological infinite-hold cases).
-  3. Flat otherwise.
-
-First 52-Week-High strategy in this repo (0 prior "52 Week High" entries in
-strategies_index.jsonl as of this iteration); distinct from all prior
-Donchian-channel/breakout-family entries (which use a fixed N-day
-high/low channel breakout+reverse construction, not a single-direction
-"new high -> trend-following exit" momentum-continuation rule) and from
-all prior 200-day-SMA trend-filter entries (which gate a *different*
-indicator's entry, not use the 200SMA purely as an exit for a 52-week-high
-breakout entry).
-
-Source: https://www.quantifiedstrategies.com/52-week-high-strategy/ (the
-site's own individual-stock/S&P-100 Amibroker backtest code is paywalled;
-we implement its plainly disclosed rule -- buy 52wk high, exit below
-200d SMA -- directly, not a reproduction of the paywalled code).
+Signal logic
+------------
+- new_high_window-day (default 252, ~1 trading year) rolling max of close.
+- Entry (long): close == the current new_high_window-day rolling max of
+  close (i.e. today IS a new N-day closing high).
+- Exit: close crosses below its own trend_sma_window-day SMA (default 200,
+  per source's disclosed "Exit 1"), or a max_hold_days safety time-stop
+  (not in source, added per this repo's standard practice to bound
+  indefinite holds).
+- Flat otherwise.
 
 Interface contract for validators (see validation/validators.py):
-    generate_signals(price_df, **params) -> pd.Series  (position: 1 long/0 flat)
-    generate_returns(price_df, **params) -> pd.Series   (daily strategy returns)
+    generate_returns(price_df, **params) -> pd.Series
+    generate_signals(price_df, **params) -> pd.Series
 """
 
 from __future__ import annotations
@@ -72,21 +46,19 @@ def _prep(price_df: pd.DataFrame) -> pd.DataFrame:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    lookback_days: int = 252,
-    exit_sma_window: int = 200,
-    max_hold_days: int = 500,
+    new_high_window: int = 252,
+    trend_sma_window: int = 200,
+    max_hold_days: int = 120,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series."""
     df = _prep(price_df)
     close = df["close"]
 
-    # "New 52-week high" = today's close is the highest close over the
-    # trailing lookback_days INCLUDING today.
-    rolling_high = close.rolling(lookback_days, min_periods=lookback_days).max()
+    rolling_high = close.rolling(new_high_window, min_periods=new_high_window).max()
     is_new_high = close >= rolling_high
 
-    sma = close.rolling(exit_sma_window).mean()
-    exit_below_sma = close < sma
+    sma_trend = close.rolling(trend_sma_window).mean()
+    below_sma = close < sma_trend
 
     position = pd.Series(0, index=close.index, dtype=int)
     in_position = False
@@ -94,7 +66,8 @@ def generate_signals(
     for i in range(len(close)):
         if in_position:
             held = i - entry_idx
-            if bool(exit_below_sma.iloc[i]) or held >= max_hold_days:
+            exit_now = bool(below_sma.iloc[i]) or held >= max_hold_days
+            if exit_now:
                 in_position = False
                 position.iloc[i] = 0
                 continue
