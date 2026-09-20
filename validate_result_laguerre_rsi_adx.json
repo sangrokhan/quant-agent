@@ -1,0 +1,98 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0969773383165604,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.09885700394325714,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "cost": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0364401105323737,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 22,
+      "estimated_total_cost_drag": 0.022
+    },
+    "cost_passed": true,
+    "walk_forward": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "False",
+        "True"
+      ],
+      "note": "manual fallback split (vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version)"
+    },
+    "wf_passed": true,
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.21163812426771558,
+      "threshold": 0.5,
+      "grid_size": 18,
+      "mean": 1.0447066470716135,
+      "std": 0.22109975519625064
+    },
+    "sens_passed": true,
+    "num_trades": 22
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.9326697014409676,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": false,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.04816067060459728,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "cost": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8228391642777229,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 26,
+      "estimated_total_cost_drag": 0.026000000000000002
+    },
+    "cost_passed": true,
+    "walk_forward": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ],
+      "note": "manual fallback split (vbt.utils.splitting.RangeSplitter unavailable in installed vectorbt version)"
+    },
+    "wf_passed": true,
+    "param_sensitivity": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.18494745543500057,
+      "threshold": 0.5,
+      "grid_size": 18,
+      "mean": 0.97949835122732,
+      "std": 0.1811557276622713
+    },
+    "sens_passed": true,
+    "num_trades": 26
+  }
+}
