@@ -47,5 +47,13 @@ broadly robust across even the two equity symbols. Walk-forward/
 parameter-sensitivity/tx-cost validators skipped given SPY's decisive
 failure.
 
+**Rescue attempt (same iteration budget):** a finer local sweep around the
+near-miss config (length in [12,14,16,18], overbought/oversold pairs
+65/35, 68/32, 70/30, 72/28) found a marginally better QQQ config
+(length=14, overbought=72, oversold=28, Sharpe 0.974) -- still below the
+1.0 threshold, and SPY at that same config drops further to 0.678. This
+confirms the near-miss is a genuine ceiling rather than a tuning artifact;
+not pursued further.
+
 Strategy file (`strategies/2026-09-20_ehlers_stochastic_predictive.py`)
 kept as a record of a rejected attempt (near-miss on QQQ) — not live.
