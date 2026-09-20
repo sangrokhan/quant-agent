@@ -1,0 +1,87 @@
+import importlib.util
+import sys
+import json
+from datetime import datetime
+
+sys.path.insert(0, "data")
+sys.path.insert(0, "validation")
+
+spec = importlib.util.spec_from_file_location(
+    "strat_mod", "strategies/2026-09-20_fractional_atr_breakout_fixedbar.py"
+)
+strat = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(strat)
+
+import vectorbt as vbt  # noqa: F401,E402
+from loaders import load_equity, load_crypto  # noqa: E402
+from validators import (
+    check_sharpe_ratio,
+    check_max_drawdown,
+    check_transaction_cost_survival,
+    check_parameter_sensitivity,
+)  # noqa: E402
+
+start = datetime(2016, 1, 1)
+end = datetime(2026, 9, 1)
+
+params = {"atr_frac": 0.25, "hold_days": 10}
+
+results = {}
+for asset_class, symbol, loader in [
+    ("equity", "QQQ", load_equity),
+    ("equity", "SPY", load_equity),
+    ("crypto", "BTC/USDT", load_crypto),
+]:
+    try:
+        price_df = loader(symbol, start, end, interval="1d")
+    except TypeError:
+        price_df = loader(symbol, start, end)
+
+    r = strat.generate_returns(price_df, **params)
+    pos = strat.generate_signals(price_df, **params)
+    num_trades = int(((pos == 1) & (pos.shift(1).fillna(0) == 0)).sum())
+
+    sh_pass, sh_ev = check_sharpe_ratio(r)
+    mdd_pass, mdd_ev = check_max_drawdown(r)
+    tc_pass, tc_ev = check_transaction_cost_survival(r, cost_bps_per_trade=10.0, num_trades=num_trades)
+
+    n_splits = 4
+    idx = price_df.index
+    chunk_bounds = [int(i * len(idx) / n_splits) for i in range(n_splits + 1)]
+    wf_results = []
+    for i in range(n_splits):
+        lo, hi = chunk_bounds[i], chunk_bounds[i + 1]
+        slice_df = price_df.iloc[lo:hi]
+        if slice_df.empty:
+            continue
+        rr = strat.generate_returns(slice_df, **params)
+        sh = rr.vbt.returns(freq="D").sharpe_ratio() if len(rr) else None
+        wf_results.append(sh is not None and sh > 0)
+    wf_pass_fraction = (sum(wf_results) / len(wf_results)) if wf_results else 0.0
+    wf_pass = wf_pass_fraction >= 0.75
+    wf_ev = {
+        "metric": "walk_forward_pass_fraction_manual",
+        "value": wf_pass_fraction,
+        "threshold": 0.75,
+        "n_splits": n_splits,
+        "per_split_passed": wf_results,
+    }
+
+    sweep = {}
+    for af in [0.15, 0.25, 0.5]:
+        for hd in [3, 5, 10]:
+            rr = strat.generate_returns(price_df, atr_frac=af, hold_days=hd)
+            sh = rr.vbt.returns(freq="D").sharpe_ratio() if len(rr) else None
+            sweep[f"af={af},hd={hd}"] = float(sh) if sh is not None else 0.0
+    ps_pass, ps_ev = check_parameter_sensitivity(sweep)
+
+    results[f"{asset_class}:{symbol}"] = {
+        "num_trades": num_trades,
+        "sharpe": sh_ev, "sharpe_pass": sh_pass,
+        "mdd": mdd_ev, "mdd_pass": mdd_pass,
+        "tc": tc_ev, "tc_pass": tc_pass,
+        "wf": wf_ev, "wf_pass": wf_pass,
+        "param_sensitivity": ps_ev, "param_sensitivity_pass": ps_pass,
+    }
+
+print(json.dumps(results, indent=2, default=str))
