@@ -1,0 +1,58 @@
+{
+  "metric": "grid_test_coinbase_premium",
+  "total_cells": 36,
+  "passed_cells": 3,
+  "pass_fraction": 0.08333333333333333,
+  "by_symbol": {
+    "BTC/USDT": {
+      "passed": 3,
+      "total": 18
+    },
+    "ETH/USDT": {
+      "passed": 0,
+      "total": 18
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 2,
+      "total": 12
+    },
+    "mid": {
+      "passed": 1,
+      "total": 12
+    },
+    "high": {
+      "passed": 0,
+      "total": 12
+    }
+  },
+  "best_cell": {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.531767476695954,
+    "sharpe_passed": true,
+    "mdd": 0.28823597135557955,
+    "mdd_passed": false,
+    "error": null
+  },
+  "worst_cell": {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.05247393546062091,
+    "sharpe_passed": false,
+    "mdd": 0.4395525526304441,
+    "mdd_passed": false,
+    "error": null
+  }
+}

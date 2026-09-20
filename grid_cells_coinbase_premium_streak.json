@@ -1,0 +1,506 @@
+[
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0921334920325345,
+    "sharpe_passed": true,
+    "mdd": 0.2063908240011485,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5057844917055869,
+    "sharpe_passed": false,
+    "mdd": 0.30357336681599756,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.8779418083071688,
+    "sharpe_passed": false,
+    "mdd": 0.5818153068861853,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0774916119713094,
+    "sharpe_passed": true,
+    "mdd": 0.21469296059686727,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.47385921239117534,
+    "sharpe_passed": false,
+    "mdd": 0.2717392939079102,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.8333523306565632,
+    "sharpe_passed": false,
+    "mdd": 0.5439861151426131,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.4783600923146774,
+    "sharpe_passed": false,
+    "mdd": 0.26462345346376814,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.0066168425722157,
+    "sharpe_passed": true,
+    "mdd": 0.18231126344975734,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.22729165831470066,
+    "sharpe_passed": false,
+    "mdd": 0.5018258284265611,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.32168315185646057,
+    "sharpe_passed": false,
+    "mdd": 0.2957767776736321,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8899588230549614,
+    "sharpe_passed": false,
+    "mdd": 0.18231126344975712,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.41849332957198465,
+    "sharpe_passed": false,
+    "mdd": 0.5001323595608852,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.2500854785516383,
+    "sharpe_passed": false,
+    "mdd": 0.33257756814005857,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9158941775063866,
+    "sharpe_passed": false,
+    "mdd": 0.18260991745536137,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.41939012470752823,
+    "sharpe_passed": false,
+    "mdd": 0.46474387593346866,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.2494789713639535,
+    "sharpe_passed": false,
+    "mdd": 0.33712521903317816,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8859653752064146,
+    "sharpe_passed": false,
+    "mdd": 0.18545473135353951,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "BTC/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.3137477334452648,
+    "sharpe_passed": false,
+    "mdd": 0.46299642424757803,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.531767476695954,
+    "sharpe_passed": true,
+    "mdd": 0.28823597135557955,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.1450679164857427,
+    "sharpe_passed": true,
+    "mdd": 0.366399294681809,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.3280377740748953,
+    "sharpe_passed": false,
+    "mdd": 0.731912496144361,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.458980877008715,
+    "sharpe_passed": true,
+    "mdd": 0.31492411825133804,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9156821520557805,
+    "sharpe_passed": false,
+    "mdd": 0.4585180058935072,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 3,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.5143867462166124,
+    "sharpe_passed": false,
+    "mdd": 0.5769148525848208,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.16229541596669,
+    "sharpe_passed": true,
+    "mdd": 0.4086643063958816,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6086921753405324,
+    "sharpe_passed": false,
+    "mdd": 0.4287360531534492,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.6618666714945824,
+    "sharpe_passed": false,
+    "mdd": 0.5546109736732765,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.2003585168166564,
+    "sharpe_passed": true,
+    "mdd": 0.35852256769509694,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6436565718702779,
+    "sharpe_passed": false,
+    "mdd": 0.3870937111180015,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 5,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.5069238713734747,
+    "sharpe_passed": false,
+    "mdd": 0.6494388659368164,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.7263018755981218,
+    "sharpe_passed": false,
+    "mdd": 0.2957374358604512,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.12827559969110416,
+    "sharpe_passed": false,
+    "mdd": 0.3812961590020625,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 10
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2865377945505056,
+    "sharpe_passed": false,
+    "mdd": 0.6132765183039093,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.664795090787924,
+    "sharpe_passed": false,
+    "mdd": 0.30054715414076927,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.05247393546062091,
+    "sharpe_passed": false,
+    "mdd": 0.4395525526304441,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "binance_symbol": "ETH/USDT",
+      "streak_days": 8,
+      "max_hold_days": 20
+    },
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.5916373962677924,
+    "sharpe_passed": false,
+    "mdd": 0.548074240772417,
+    "mdd_passed": false,
+    "error": null
+  }
+]
