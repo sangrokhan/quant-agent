@@ -1,0 +1,53 @@
+{
+  "symbol": "BTC/USDT",
+  "params": {
+    "kc_atr_mult": 2.0,
+    "max_hold_days": 10
+  },
+  "num_trades": 98,
+  "sharpe_ratio": {
+    "passed": true,
+    "metric": "sharpe_ratio",
+    "value": 1.3799084500858876,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.2198267518511685,
+    "threshold": 0.25
+  },
+  "transaction_cost_survival": {
+    "passed": true,
+    "metric": "net_sharpe_after_costs",
+    "value": 1.2779544561706,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 15.0,
+    "num_trades": 98,
+    "estimated_total_cost_drag": 0.147
+  },
+  "walk_forward": {
+    "passed": "True",
+    "metric": "walk_forward_pass_fraction_manual",
+    "value": 1.0,
+    "threshold": 0.75,
+    "n_splits": 4,
+    "per_split_passed": [
+      "True",
+      "True",
+      "True",
+      "True"
+    ],
+    "note": "manual split -- validators.check_walk_forward errors on installed vectorbt (vbt.utils.splitting missing)"
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.1957102254726863,
+    "threshold": 0.5,
+    "grid_size": 9,
+    "mean": 1.0670702536701713,
+    "std": 0.2088365599409858
+  }
+}
