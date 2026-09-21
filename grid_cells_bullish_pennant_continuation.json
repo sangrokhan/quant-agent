@@ -1,0 +1,6914 @@
+[
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7120003121098016,
+    "sharpe_passed": false,
+    "mdd": 0.0029732088291573033,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.4158924141209261,
+    "sharpe_passed": false,
+    "mdd": 0.08672632380498935,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7120003121098016,
+    "sharpe_passed": false,
+    "mdd": 0.0029732088291573033,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.4158924141209261,
+    "sharpe_passed": false,
+    "mdd": 0.08672632380498935,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7120003121098016,
+    "sharpe_passed": false,
+    "mdd": 0.0029732088291573033,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.4158924141209261,
+    "sharpe_passed": false,
+    "mdd": 0.08672632380498935,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7120003121098016,
+    "sharpe_passed": false,
+    "mdd": 0.0029732088291573033,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.4158924141209261,
+    "sharpe_passed": false,
+    "mdd": 0.08672632380498935,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7292271530892842,
+    "sharpe_passed": false,
+    "mdd": 0.009126178505348803,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.19438682834170404,
+    "sharpe_passed": false,
+    "mdd": 0.0245847515374803,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.7292271530892842,
+    "sharpe_passed": false,
+    "mdd": 0.009126178505348803,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.19438682834170404,
+    "sharpe_passed": false,
+    "mdd": 0.0245847515374803,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.9644470030226352,
+    "sharpe_passed": false,
+    "mdd": 0.010838489157543596,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.44656697623768404,
+    "sharpe_passed": false,
+    "mdd": 0.003555871633034169,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.9644470030226352,
+    "sharpe_passed": false,
+    "mdd": 0.010838489157543596,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.42964067010192014,
+    "sharpe_passed": false,
+    "mdd": 0.011290026031739675,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.23336117587398195,
+    "sharpe_passed": false,
+    "mdd": 0.019603101542647328,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.42964067010192014,
+    "sharpe_passed": false,
+    "mdd": 0.011290026031739675,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.23336117587398195,
+    "sharpe_passed": false,
+    "mdd": 0.019603101542647328,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.12789660695651323,
+    "sharpe_passed": false,
+    "mdd": 0.09783855865129021,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9152228341913978,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.18471678915568412,
+    "sharpe_passed": false,
+    "mdd": 0.09783855865129021,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9152228341913978,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.32932923740599485,
+    "sharpe_passed": false,
+    "mdd": 0.04476414620874736,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9415257092196131,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.32932923740599485,
+    "sharpe_passed": false,
+    "mdd": 0.04476414620874736,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9415257092196131,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.07206701711694848,
+    "sharpe_passed": false,
+    "mdd": 0.04476414620874736,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9415257092196131,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.07206701711694848,
+    "sharpe_passed": false,
+    "mdd": 0.04476414620874736,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9415257092196131,
+    "sharpe_passed": false,
+    "mdd": 0.006433880083877019,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.8020208020320104,
+    "sharpe_passed": false,
+    "mdd": 0.1985019544219776,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.14514524758704134,
+    "sharpe_passed": false,
+    "mdd": 0.11694759576218006,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.038957469082755866,
+    "sharpe_passed": false,
+    "mdd": 0.1283264927392994,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.14514524758704134,
+    "sharpe_passed": false,
+    "mdd": 0.11694759576218006,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.038957469082755866,
+    "sharpe_passed": false,
+    "mdd": 0.1283264927392994,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.7032262000683583,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28922200390104397,
+    "sharpe_passed": false,
+    "mdd": 0.11214263339831987,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.33602772387928354,
+    "sharpe_passed": false,
+    "mdd": 0.1283264927392994,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28922200390104397,
+    "sharpe_passed": false,
+    "mdd": 0.11214263339831987,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.33602772387928354,
+    "sharpe_passed": false,
+    "mdd": 0.1283264927392994,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.7032262000683583,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8959318428430031,
+    "sharpe_passed": false,
+    "mdd": 0.014412458433844089,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0738144277218059,
+    "sharpe_passed": false,
+    "mdd": 0.01909975707463618,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.14288985282544903,
+    "sharpe_passed": false,
+    "mdd": 0.07754823234927499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.1252389227222568,
+    "sharpe_passed": false,
+    "mdd": 0.07803768666479649,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.14288985282544903,
+    "sharpe_passed": false,
+    "mdd": 0.07754823234927499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.1252389227222568,
+    "sharpe_passed": false,
+    "mdd": 0.07803768666479649,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -1.3155858255529975,
+    "sharpe_passed": false,
+    "mdd": 0.38434395721314907,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.7201388579213356,
+    "sharpe_passed": false,
+    "mdd": 0.10516615884829905,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.31256025011273125,
+    "sharpe_passed": false,
+    "mdd": 0.07501375008228284,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7348893072990506,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219196,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5942911940080046,
+    "sharpe_passed": false,
+    "mdd": 0.04532389322076724,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5942911940080046,
+    "sharpe_passed": false,
+    "mdd": 0.04532389322076724,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.31256025011273125,
+    "sharpe_passed": false,
+    "mdd": 0.07501375008228284,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7348893072990506,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219196,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.31256025011273125,
+    "sharpe_passed": false,
+    "mdd": 0.07501375008228284,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7348893072990506,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219196,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 10,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.1906354168575446,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.17167025976404518,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5942911940080046,
+    "sharpe_passed": false,
+    "mdd": 0.04532389322076724,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5942911940080046,
+    "sharpe_passed": false,
+    "mdd": 0.04532389322076724,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9576600382733091,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.05,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.1906354168575446,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.17167025976404518,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9576600382733091,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.08,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.1906354168575446,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.17167025976404518,
+    "sharpe_passed": false,
+    "mdd": 0.07236282265219163,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 7,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.47443828707659547,
+    "sharpe_passed": false,
+    "mdd": 0.10936058738885002,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3547427205727394,
+    "sharpe_passed": false,
+    "mdd": 0.0715118382441613,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 10,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.48423840955703085,
+    "sharpe_passed": false,
+    "mdd": 0.1093605873888499,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.827391345183274,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 0.75
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8209296383614718,
+    "sharpe_passed": false,
+    "mdd": 0.004111972165111388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9576600382733091,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "pole_window": 15,
+      "pole_min_return": 0.12,
+      "pennant_window": 15,
+      "target_pole_mult": 1.0
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  }
+]
