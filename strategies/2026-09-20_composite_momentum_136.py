@@ -65,8 +65,19 @@ def generate_signals(
     roc3: int = 126,
     trend_window: int = 200,
     mom_threshold: float = 0.0,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0, leverage_cap} long/flat exposure series.
+
+    ``leverage_cap`` (default 1.0, fully backward compatible with the
+    original {0,1} binary signal) scales the long exposure -- added this
+    iteration (id=2026-09-21-253) as a crypto-rescue retune per this repo's
+    established leverage-cap-aware pattern (e.g. 2026-09-16-157 Hurst
+    sizing, 2026-09-17-047 Kalman pairs): the original 2026-09-20-090 entry
+    found BTC/USDT Sharpe 0.836 (near-miss) but MDD 0.445 (decisive fail at
+    full 1.0x exposure) -- a fractional leverage_cap directly targets that
+    MDD failure without touching the entry/exit logic itself.
+    """
     df = _prep(price_df)
     close = df["close"]
 
@@ -78,7 +89,7 @@ def generate_signals(
     trend_ok = close > close.rolling(trend_window).mean()
     mom_ok = composite_mom > mom_threshold
 
-    position = (trend_ok.fillna(False) & mom_ok.fillna(False)).astype(int)
+    position = (trend_ok.fillna(False) & mom_ok.fillna(False)).astype(float) * leverage_cap
     return position
 
 
