@@ -66,8 +66,17 @@ def generate_signals(
     entry_persist: int = 5,
     trend_window: int = 200,
     mom_window: int = 126,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a position series (0 or leverage_cap while risk-on, else 0).
+
+    leverage_cap (default 1.0, full unleveraged exposure) scales the
+    exposure while the risk-on gate is active -- added in a follow-up
+    sub-iteration (2026-09-21-222) as this repo's standard
+    leverage-cap-aware retune pattern, to rescue ETH/USDT's MDD-only
+    near-miss (0.338 vs 0.25 threshold) without touching the entry/exit
+    logic itself.
+    """
     df = _prep(price_df)
     close = df["close"]
 
@@ -82,7 +91,7 @@ def generate_signals(
     momentum_ok = (mom > 0.0).fillna(False)
 
     risk_on = breakout_active & trend_ok & momentum_ok
-    position = risk_on.astype(int)
+    position = risk_on.astype(float) * leverage_cap
     return position
 
 
