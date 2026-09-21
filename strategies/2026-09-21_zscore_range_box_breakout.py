@@ -62,8 +62,25 @@ def generate_signals(
     z_threshold: float = 1.75,
     exit_z: float = 0.25,
     max_hold_days: int = 15,
+    vol_regime_gate: bool = False,
+    vol_window: int = 20,
+    vol_lookback: int = 252,
+    vol_regime_ratio: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    vol_regime_gate (added in follow-up sub-iteration 2026-09-21-223, per
+    parent entry 2026-09-21-195's own suggestion): when True, entries are
+    additionally restricted to bars where trailing realized volatility is
+    at/below its own trailing 1-year median (this repo's established
+    low-vol-regime-gate construction, reused unchanged from
+    strategies/2026-09-03_bb_meanrev_qqq_volregime.py), since the parent
+    grid showed the box-breakout edge concentrated almost entirely in the
+    low-vol tercile (31/36 low-vol cells passed vs 7/36 mid, 3/36 high).
+    """
+    import math
+    import numpy as np
+
     df = _prep(price_df)
     close = df["close"]
 
@@ -85,6 +102,15 @@ def generate_signals(
 
     box_formed = run_len >= min_compression_bars
 
+    if vol_regime_gate:
+        ratios = close / close.shift(1)
+        daily_log_ret = ratios.apply(lambda r: math.log(r) if r and r > 0 else None).astype(float)
+        realized_vol = daily_log_ret.rolling(vol_window).std() * (252 ** 0.5)
+        vol_median_1y = realized_vol.rolling(vol_lookback, min_periods=vol_window).median()
+        low_vol_regime = (realized_vol <= (vol_median_1y * vol_regime_ratio)).fillna(False)
+    else:
+        low_vol_regime = pd.Series(True, index=close.index)
+
     position = pd.Series(0, index=close.index, dtype=int)
     in_position = False
     entry_idx = 0
@@ -97,6 +123,7 @@ def generate_signals(
     z_vals = z.values
     box_formed_vals = box_formed.values
     run_len_vals = run_len.values
+    low_vol_vals = low_vol_regime.values
 
     last_box_high = np.nan
     last_box_low = np.nan
@@ -119,7 +146,8 @@ def generate_signals(
                 not np.isnan(active_box_high) and ci <= active_box_high
             )
             z_reverted = (not np.isnan(zi)) and abs(zi) <= exit_z
-            if back_inside or z_reverted or held >= max_hold_days:
+            regime_flip_exit = vol_regime_gate and not bool(low_vol_vals[i])
+            if back_inside or z_reverted or held >= max_hold_days or regime_flip_exit:
                 in_position = False
                 position.iloc[i] = 0
                 continue
@@ -131,6 +159,7 @@ def generate_signals(
                 and (not np.isnan(zi))
                 and ci > last_box_high
                 and zi >= z_threshold
+                and bool(low_vol_vals[i])
             )
             if breakout:
                 in_position = True
