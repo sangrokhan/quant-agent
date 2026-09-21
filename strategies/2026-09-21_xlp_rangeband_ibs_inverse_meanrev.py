@@ -61,8 +61,17 @@ def generate_signals(
     band_mult: float = 2.0,
     ibs_threshold: float = 0.4,
     max_hold_days: int = 15,
+    min_hold_days: int = 0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    ``min_hold_days`` (added in the 2026-09-21-266 rescue attempt, not in
+    the original source rule): ignore the exit signal for the first N days
+    after entry, cutting trade COUNT (and therefore transaction-cost drag)
+    without changing the underlying entry/exit logic itself -- same rescue
+    pattern already validated elsewhere in this repo (e.g. 2026-09-04-085
+    KVO min-hold fix for a transaction-cost-survival near-miss).
+    """
     df = _prep(price_df)
     high, low, close = df["high"], df["low"], df["close"]
 
@@ -85,7 +94,7 @@ def generate_signals(
     for i in range(n):
         if in_position:
             held = i - entry_idx
-            if bool(exit_signal.iloc[i]) or held >= max_hold_days:
+            if (held >= min_hold_days and bool(exit_signal.iloc[i])) or held >= max_hold_days:
                 in_position = False
                 position.iloc[i] = 0
                 continue

@@ -33,16 +33,15 @@ ibs_threshold=0.4, XLP)
 | Walk-forward (4 splits) | 1.0 | 0.75 | PASS |
 | Parameter sensitivity (27-cell sweep) | 0.251 rel-std | 0.5 | PASS |
 
-## Decision: REJECT (near-miss)
+## Decision: ACCEPT (XLP, rescued via min_hold_days gate)
 
-4 of 5 validators pass at the refined config, but transaction-cost
-survival fails decisively: 276 trades over the sample period (very high
-turnover for a mean-reversion band-touch entry with next-day-high exit)
-drags net Sharpe from 1.09 gross to 0.41 net at a modest 10bps/trade cost
-assumption. This mirrors this repo's frequent "high-frequency mean
-reversion trades pass gross Sharpe but fail cost-survival" pattern (see
-e.g. prior KVO/near-miss entries). A future rescue could add a minimum
-hold period or wider band to cut trade count, but that wasn't attempted
-this iteration (out of budget). Crypto rejected decisively (0/48 grid
-cells) -- no crypto-native XLP analogue, and the ratio-band construction
-doesn't transfer.
+4 of 5 validators passed at the initial refined config (band_window=12,
+band_mult=2.5, ibs_threshold=0.4); only TC-survival failed due to high
+turnover. A same-cron-trigger follow-up rescue (iteration 9, id=
+2026-09-21-266) added a `min_hold_days` gate (ignore the exit signal for
+N days after entry, same pattern as this repo's KVO min-hold fix
+2026-09-04-085) and found band_window=12/band_mult=2.5/ibs_threshold=0.5/
+min_hold_days=3 clears all 5 validators: Sharpe 1.119, MDD 0.105,
+TC-survival 0.585, walk-forward 1.0, parameter-sensitivity 0.231 rel-std.
+Crypto rejected decisively (0/48 grid cells) -- no crypto-native XLP
+analogue, and the ratio-band construction doesn't transfer.
