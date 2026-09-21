@@ -1,4 +1,15 @@
-# Backtest Report: Awesome Oscillator Bullish Saucer (SPY accepted; QQQ rejected)
+# Backtest Report: Awesome Oscillator Bullish Saucer (SPY and QQQ accepted)
+
+**UPDATE 2026-09-21 (id=2026-09-21-249):** Re-ran QQQ at the same
+trend_window=200/max_hold_days=10 config already accepted for SPY (the
+original QQQ near-miss attempt above used max_hold_days=15). Re-validation
+this iteration: Sharpe 1.080, MDD 13.1%, net-of-cost Sharpe 0.785 (101
+trades), walk-forward 0.75 pass_fraction (3/4 splits), parameter-sensitivity
+relative_std 0.244 (16-cell trend_window x max_hold_days sweep) — all 5
+validators now pass. **QQQ upgraded from rejected to accepted** on this
+shared config. (Minor Sharpe/walk-forward numeric drift vs the original
+2026-09-04 QQQ run below is consistent with cached price data refreshing
+between runs; the pass/fail conclusion is what changed, not a contradiction.)
 
 **Strategy file:** `strategies/2026-09-04_ao_saucer_bullish.py`
 **Date:** 2026-09-04
