@@ -95,8 +95,9 @@ def generate_signals(
     vol_window: int = 20,
     vol_lookback: int = 252,
     vol_regime_ratio: float = 1.0,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series.
+    """Return a position series (0 or leverage_cap while long, else 0).
 
     vol_regime_gate (added in follow-up sub-iteration 2026-09-21-225, per
     parent entry 2026-09-21-224's own suggestion): when True, entries are
@@ -106,6 +107,11 @@ def generate_signals(
     strategies/2026-09-03_bb_meanrev_qqq_volregime.py), since the parent
     grid showed the scallop edge concentrated almost entirely in the
     low-vol tercile (53/72 low-vol cells passed vs 13/72 mid, 2/72 high).
+
+    leverage_cap (added in follow-up sub-iteration 2026-09-21-226, this
+    repo's standard crypto-exposure-scaling retune pattern): scales
+    exposure down while long, to bring crypto's larger drawdowns within
+    the MDD threshold without touching the entry/exit signal logic.
     """
     import math
 
@@ -146,7 +152,7 @@ def generate_signals(
         & low_vol_regime
     )
 
-    position = pd.Series(0, index=close.index, dtype=int)
+    position = pd.Series(0.0, index=close.index, dtype=float)
     in_position = False
     entry_idx = 0
     stop_low = np.nan
@@ -163,17 +169,17 @@ def generate_signals(
             regime_flip_exit = vol_regime_gate and not bool(low_vol_vals[i])
             if stop_hit or held >= max_hold_days or regime_flip_exit:
                 in_position = False
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
                 continue
-            position.iloc[i] = 1
+            position.iloc[i] = leverage_cap
         else:
             if bool(entry_vals[i]):
                 in_position = True
                 entry_idx = i
                 stop_low = curve_low_vals[i]
-                position.iloc[i] = 1
+                position.iloc[i] = leverage_cap
             else:
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
 
     return position
 
