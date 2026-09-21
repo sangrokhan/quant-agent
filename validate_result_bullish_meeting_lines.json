@@ -1,0 +1,198 @@
+{
+  "QQQ": {
+    "asset_class": "equity",
+    "num_trades": 106,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.7738962148032711,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "max_drawdown": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.0625414850387952,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.33675224664462244,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 106,
+        "estimated_total_cost_drag": 0.106
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.24599493396158642,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": 0.6939691237333382,
+        "std": 0.17071288876416252
+      }
+    ]
+  },
+  "SPY": {
+    "asset_class": "equity",
+    "num_trades": 80,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.45093057597689873,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "max_drawdown": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.031354509467607095,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.07439340630940958,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 80,
+        "estimated_total_cost_drag": 0.08
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.3170803872027437,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": 0.4399811846808633,
+        "std": 0.13950940440053
+      }
+    ]
+  },
+  "BTC/USDT": {
+    "asset_class": "crypto",
+    "num_trades": 40,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.22930578533044035,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "max_drawdown": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.12684835274570805,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.11990371264493938,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 40,
+        "estimated_total_cost_drag": 0.04
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.8073866086613638,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": 0.15749200270885683,
+        "std": 0.12715693395839023
+      }
+    ]
+  },
+  "ETH/USDT": {
+    "asset_class": "crypto",
+    "num_trades": 28,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.06003139484734844,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "max_drawdown": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.21410667590626553,
+        "threshold": 0.25
+      }
+    ],
+    "tc_survival": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.10721529117376731,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 28,
+        "estimated_total_cost_drag": 0.028
+      }
+    ],
+    "walk_forward": [
+      null,
+      {
+        "error": "module 'vectorbt.utils' has no attribute 'splitting'"
+      }
+    ],
+    "param_sensitivity": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.39790769654918057,
+        "threshold": 0.5,
+        "grid_size": 3,
+        "mean": -0.08300595711710214,
+        "std": 0.033028709196326174
+      }
+    ]
+  }
+}
