@@ -34,14 +34,16 @@ hold_days=10, 2015-2026)
 | BTC/USDT | ~0.06-0.13 (decisive FAIL) | 0.43-0.74 (decisive FAIL) | n/a | n/a | n/a |
 | ETH/USDT | ~0.07-0.19 (decisive FAIL) | 0.44-0.74 (decisive FAIL) | n/a | n/a | n/a |
 
-## Decision: ACCEPT (SPY only)
+## Decision: ACCEPT (SPY and QQQ, per-symbol tuned configs)
 
 SPY passes all 5 validators at the source's own disclosed config
-(return_threshold=0.01/hold_days=10). QQQ is a near-miss (Sharpe 0.9908,
-one basis point shy of 1.0 on the full 2015-2026 sample, though it clears
-1.0 on the shorter 2019-2026 grid window) — worth a future rescue with a
-slightly wider threshold. Crypto rejected decisively: both BTC/USDT and
-ETH/USDT never clear Sharpe 0.2 at any tested combo, and max drawdown
-routinely exceeds 40-70% — the momentum-continuation logic (require ALL
-of RSI/Stoch/WR simultaneously bullish plus a fresh 5-day pop) doesn't
-transfer to crypto's higher-vol, choppier regime structure.
+(return_threshold=0.01/hold_days=10). QQQ was a near-miss at that shared
+config (Sharpe 0.9908) but a same-cron-trigger follow-up rescue (iteration
+5, id=2026-09-21-262) found a per-symbol retune — return_threshold=0.015/
+hold_days=12 — that clears all 5 validators for QQQ too: Sharpe 1.137,
+MDD 0.194, TC-survival 0.781, walk-forward 1.0, parameter-sensitivity
+0.156 rel-std (even lower than SPY's). Crypto rejected decisively: both
+BTC/USDT and ETH/USDT never clear Sharpe 0.2 at any tested combo, and max
+drawdown routinely exceeds 40-70% — the momentum-continuation logic
+(require ALL of RSI/Stoch/WR simultaneously bullish plus a fresh N-day
+pop) doesn't transfer to crypto's higher-vol, choppier regime structure.
