@@ -91,8 +91,24 @@ def generate_signals(
     min_corr: float = 0.3,
     trend_window: int = 100,
     max_hold_days: int = 20,
+    vol_regime_gate: bool = False,
+    vol_window: int = 20,
+    vol_lookback: int = 252,
+    vol_regime_ratio: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    vol_regime_gate (added in follow-up sub-iteration 2026-09-21-225, per
+    parent entry 2026-09-21-224's own suggestion): when True, entries are
+    additionally restricted to bars where trailing realized volatility is
+    at/below its own trailing 1-year median (this repo's established
+    low-vol-regime-gate construction, reused unchanged from
+    strategies/2026-09-03_bb_meanrev_qqq_volregime.py), since the parent
+    grid showed the scallop edge concentrated almost entirely in the
+    low-vol tercile (53/72 low-vol cells passed vs 13/72 mid, 2/72 high).
+    """
+    import math
+
     df = _prep(price_df)
     close = df["close"]
     n = len(close)
@@ -114,10 +130,20 @@ def generate_signals(
     sma = close.rolling(trend_window).mean()
     trend_ok = close > sma
 
+    if vol_regime_gate:
+        ratios = close / close.shift(1)
+        daily_log_ret = ratios.apply(lambda r: math.log(r) if r and r > 0 else None).astype(float)
+        realized_vol = daily_log_ret.rolling(vol_window).std() * (252 ** 0.5)
+        vol_median_1y = realized_vol.rolling(vol_lookback, min_periods=vol_window).median()
+        low_vol_regime = (realized_vol <= (vol_median_1y * vol_regime_ratio)).fillna(False)
+    else:
+        low_vol_regime = pd.Series(True, index=close.index)
+
     entry = (
         finish_above_start.fillna(False)
         & shape_ok.fillna(False)
         & trend_ok.fillna(False)
+        & low_vol_regime
     )
 
     position = pd.Series(0, index=close.index, dtype=int)
@@ -128,12 +154,14 @@ def generate_signals(
     closes = close.values
     curve_low_vals = curve_low.values
     entry_vals = entry.values
+    low_vol_vals = low_vol_regime.values
 
     for i in range(n):
         if in_position:
             held = i - entry_idx
             stop_hit = (not np.isnan(stop_low)) and closes[i] < stop_low
-            if stop_hit or held >= max_hold_days:
+            regime_flip_exit = vol_regime_gate and not bool(low_vol_vals[i])
+            if stop_hit or held >= max_hold_days or regime_flip_exit:
                 in_position = False
                 position.iloc[i] = 0
                 continue
