@@ -68,8 +68,8 @@ def _hma(series: pd.Series, window: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    hma_window: int = 25,
-    max_hold_days: int = 20,
+    hma_window: int = 15,
+    max_hold_days: int = 8,
 ) -> pd.Series:
     df = _prep(price_df)
     close = df["close"]
@@ -107,8 +107,8 @@ def generate_signals(
 
 def generate_returns(
     price_df: pd.DataFrame,
-    hma_window: int = 25,
-    max_hold_days: int = 20,
+    hma_window: int = 15,
+    max_hold_days: int = 8,
 ) -> pd.Series:
     df = _prep(price_df)
     close = df["close"]
