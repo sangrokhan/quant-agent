@@ -134,11 +134,16 @@ def generate_signals(
     return position
 
 
-def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
-    """Position-weighted daily returns (no transaction costs)."""
+def generate_returns(price_df: pd.DataFrame, leverage_cap: float = 1.0, **kwargs) -> pd.Series:
+    """Position-weighted daily returns (no transaction costs).
+
+    ``leverage_cap`` scales the {0,1} position uniformly (default 1.0 =
+    full-size, matching the original equity-only test); crypto retunes use
+    a lower leverage_cap (e.g. 0.3) to control drawdown, following this
+    repo's established leverage-cap-aware rescue pattern."""
     df = _prep(price_df)
     close = df["close"]
     position = generate_signals(price_df, **kwargs)
     daily_ret = close.pct_change().fillna(0.0)
-    strategy_ret = position.shift(1).fillna(0) * daily_ret
+    strategy_ret = (position.shift(1).fillna(0) * leverage_cap) * daily_ret
     return strategy_ret

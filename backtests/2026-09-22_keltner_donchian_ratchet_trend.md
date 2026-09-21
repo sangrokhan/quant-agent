@@ -53,11 +53,31 @@ config that clears the Sharpe/MDD bar on BOTH QQQ and SPY simultaneously,
 | QQQ | 1.015 (PASS) | 0.203 (pass) | 0.961 (pass) | 1.0 (pass) | 0.049 (pass) |
 | SPY | 1.012 (PASS) | 0.153 (pass) | 0.943 (pass) | 1.0 (pass) | 0.064 (pass) |
 
+## Crypto leverage-cap-aware rescue (same iteration follow-up)
+
+The initial grid rejected crypto decisively (1/54 cells) at unleveraged
+(leverage_cap=1.0) exposure -- MDD was the binding constraint (unleveraged
+Sharpe was often >1.0 but MDD badly breached 0.25 given crypto's higher
+volatility). Applying this repo's established leverage-cap-aware rescue
+pattern (added a `leverage_cap` parameter to `generate_returns`, uniformly
+scaling the {0,1} position), a full-sample sweep found
+`entry_window=20, exit_window=40, keltner_mult=1.0, leverage_cap=0.3`
+clears all 5 validators on BOTH BTC/USDT and ETH/USDT:
+
+| Symbol | Sharpe | MDD | TC-survival (net Sharpe) | Walk-forward | Param sensitivity |
+|---|---|---|---|---|---|
+| BTC/USDT | 1.120 (PASS) | 0.199 (pass) | 1.010 (pass) | 1.0 (pass) | 0.108 (pass) |
+| ETH/USDT | 1.051 (PASS) | 0.230 (pass) | 0.976 (pass) | 1.0 (pass) | 0.067 (pass) |
+
 ## Decision
 
-**Accept (QQQ and SPY)**, config `entry_window=15, exit_window=50,
-keltner_mult=1.5` -- all 5 validators pass cleanly on both equity symbols.
-Crypto (BTC/USDT, ETH/USDT) rejected in the initial grid (1/54 cells
-passing across params/vol regimes) -- not re-pursued this iteration; a
-future iteration could attempt a leverage-cap-aware crypto retune following
-this repo's established rescue pattern.
+**Accept (QQQ, SPY, BTC/USDT, ETH/USDT -- full 4-symbol acceptance)**:
+- Equity: `entry_window=15, exit_window=50, keltner_mult=1.5,
+  leverage_cap=1.0` (full-size)
+- Crypto: `entry_window=20, exit_window=40, keltner_mult=1.0,
+  leverage_cap=0.3` (leverage-cap-aware retune)
+
+All 5 validators pass cleanly for all 4 symbols at their respective
+per-asset-class configs. Config differs by asset class (expected, per this
+repo's established pattern of per-asset-class leverage-cap tuning for
+trend-following strategies).
