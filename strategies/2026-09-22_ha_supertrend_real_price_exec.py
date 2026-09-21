@@ -115,8 +115,8 @@ def _supertrend_direction(ha_df: pd.DataFrame, atr_window: int, multiplier: floa
 
 def generate_signals(
     price_df: pd.DataFrame,
-    atr_window: int = 10,
-    multiplier: float = 3.0,
+    atr_window: int = 14,
+    multiplier: float = 2.0,
 ) -> pd.Series:
     df = _prep(price_df)
     ha_df = _heikin_ashi(df)
@@ -127,8 +127,8 @@ def generate_signals(
 
 def generate_returns(
     price_df: pd.DataFrame,
-    atr_window: int = 10,
-    multiplier: float = 3.0,
+    atr_window: int = 14,
+    multiplier: float = 2.0,
 ) -> pd.Series:
     df = _prep(price_df)
     close = df["close"]
