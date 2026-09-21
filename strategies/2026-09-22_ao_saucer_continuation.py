@@ -53,7 +53,7 @@ def generate_signals(
     price_df: pd.DataFrame,
     ao_fast: int = 5,
     ao_slow: int = 34,
-    max_hold_days: int = 15,
+    max_hold_days: int = 25,
 ) -> pd.Series:
     df = _prep(price_df)
     ao = _awesome_oscillator(df, ao_fast=ao_fast, ao_slow=ao_slow)
@@ -91,7 +91,7 @@ def generate_returns(
     price_df: pd.DataFrame,
     ao_fast: int = 5,
     ao_slow: int = 34,
-    max_hold_days: int = 15,
+    max_hold_days: int = 25,
 ) -> pd.Series:
     df = _prep(price_df)
     close = df["close"]
