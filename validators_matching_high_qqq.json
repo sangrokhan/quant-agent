@@ -1,0 +1,56 @@
+{
+  "sharpe_ratio": {
+    "passed": false,
+    "evidence": {
+      "metric": "sharpe_ratio",
+      "value": 0.13020197417226564,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  },
+  "max_drawdown": {
+    "passed": true,
+    "evidence": {
+      "metric": "max_drawdown",
+      "value": 0.11690165220742188,
+      "threshold": 0.25
+    }
+  },
+  "transaction_cost_survival": {
+    "passed": false,
+    "evidence": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.07892753824131254,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 14,
+      "estimated_total_cost_drag": 0.014
+    }
+  },
+  "walk_forward": {
+    "passed": true,
+    "evidence": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        false,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "evidence": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.2716072894771086,
+      "threshold": 0.5,
+      "grid_size": 12,
+      "mean": 0.8143804392579582,
+      "std": 0.2211916637100311
+    }
+  }
+}
