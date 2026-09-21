@@ -1,0 +1,52 @@
+{
+  "metric": "grid_test",
+  "total_cells": 324,
+  "passed_cells": 0,
+  "pass_fraction": 0.0,
+  "by_asset_class": {
+    "equity": {
+      "passed": 0,
+      "total": 162
+    },
+    "crypto": {
+      "passed": 0,
+      "total": 162
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 0,
+      "total": 108
+    },
+    "mid": {
+      "passed": 0,
+      "total": 108
+    },
+    "high": {
+      "passed": 0,
+      "total": 108
+    }
+  },
+  "best_cell": {
+    "params": {
+      "trend_window": 30,
+      "tall_body_min_pct": 0.4,
+      "reward_risk_mult": 1.5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9999300871041825
+  },
+  "worst_cell": {
+    "params": {
+      "trend_window": 100,
+      "tall_body_min_pct": 0.4,
+      "reward_risk_mult": 1.5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.2959788015973116
+  }
+}
