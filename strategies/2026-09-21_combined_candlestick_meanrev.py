@@ -112,8 +112,15 @@ def _combined_pattern_signal(df: pd.DataFrame) -> pd.Series:
 def generate_signals(
     price_df: pd.DataFrame,
     max_hold_days: int = 15,
+    min_hold_days: int = 1,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    ``min_hold_days`` (added in the 2026-09-21-270 near-miss rescue of
+    2026-09-21-269): ignore the exit signal for the first N days after
+    entry, to cut round-trip trade count/turnover (the near-miss's failure
+    mode was transaction-cost-survival from high turnover, not raw edge).
+    """
     df = _prep(price_df)
     close = df["close"]
     high = df["high"]
@@ -127,7 +134,8 @@ def generate_signals(
     for i in range(len(close)):
         if in_pos:
             hold_bars += 1
-            if bool(exit_signal.iloc[i]) or hold_bars >= max_hold_days:
+            exit_allowed = hold_bars >= min_hold_days
+            if (exit_allowed and bool(exit_signal.iloc[i])) or hold_bars >= max_hold_days:
                 in_pos = False
                 hold_bars = 0
             else:
@@ -143,11 +151,12 @@ def generate_signals(
 def generate_returns(
     price_df: pd.DataFrame,
     max_hold_days: int = 15,
+    min_hold_days: int = 1,
 ) -> pd.Series:
     """Return the strategy's daily return series (no transaction costs)."""
     df = _prep(price_df)
     close = df["close"]
-    position = generate_signals(price_df, max_hold_days=max_hold_days)
+    position = generate_signals(price_df, max_hold_days=max_hold_days, min_hold_days=min_hold_days)
     daily_ret = close.pct_change().fillna(0.0)
     strat_ret = daily_ret * position.shift(1).fillna(0)
     return strat_ret
