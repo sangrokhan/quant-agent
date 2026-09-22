@@ -1,0 +1,722 @@
+[
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.5389646199616273,
+    "sharpe_passed": false,
+    "mdd": 0.07174711124041477,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.9746140426043775,
+    "sharpe_passed": false,
+    "mdd": 0.015957744076709246,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -1.1152755546197168,
+    "sharpe_passed": false,
+    "mdd": 0.056812239931988584,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.5849494072102526,
+    "sharpe_passed": false,
+    "mdd": 0.04367401312483388,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.5621357764844959,
+    "sharpe_passed": false,
+    "mdd": 0.011886872174201923,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.10866858189933891,
+    "sharpe_passed": false,
+    "mdd": 0.029672820174346914,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.7750858184553956,
+    "sharpe_passed": false,
+    "mdd": 0.018684592842903802,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.7417255148833501,
+    "sharpe_passed": false,
+    "mdd": 0.03958024338947841,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.5490852484142187,
+    "sharpe_passed": false,
+    "mdd": 0.034353882898485955,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.41533267780405975,
+    "sharpe_passed": false,
+    "mdd": 0.018684592842903913,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.7124952724143436,
+    "sharpe_passed": false,
+    "mdd": 0.004634741706768142,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.4960156817604766,
+    "sharpe_passed": true,
+    "mdd": 0.0017500255397128184,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.38515101480912933,
+    "sharpe_passed": false,
+    "mdd": 0.025739777688892684,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -0.7124952724143385,
+    "sharpe_passed": false,
+    "mdd": 0.0058472282485175775,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.1114239497780825,
+    "sharpe_passed": true,
+    "mdd": 0.0017500255397128184,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.23599420980694094,
+    "sharpe_passed": false,
+    "mdd": 0.005213764432659973,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.6905388629141627,
+    "sharpe_passed": false,
+    "mdd": 0.0055586805878179435,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.32032615377070656,
+    "sharpe_passed": false,
+    "mdd": 0.028413155964446712,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.6261214608577212,
+    "sharpe_passed": false,
+    "mdd": 0.0058472282485175775,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.993771686952026,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.3026515737655486,
+    "sharpe_passed": false,
+    "mdd": 0.020403128909728285,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.7124952724143506,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.0637934660920423,
+    "sharpe_passed": false,
+    "mdd": 0.12091681545303168,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8397274586284045,
+    "sharpe_passed": false,
+    "mdd": 0.06980779128635595,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.4463921040243023,
+    "sharpe_passed": false,
+    "mdd": 0.05489873266099521,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.26661411359545883,
+    "sharpe_passed": false,
+    "mdd": 0.10081606783636876,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7493649239794914,
+    "sharpe_passed": false,
+    "mdd": 0.06245320236705443,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2489853295464919,
+    "sharpe_passed": false,
+    "mdd": 0.028408717965609065,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.25390126780823996,
+    "sharpe_passed": false,
+    "mdd": 0.082826052517327,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2355374211716146,
+    "sharpe_passed": true,
+    "mdd": 0.03135933832003379,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.6195129648409834,
+    "sharpe_passed": false,
+    "mdd": 0.009741444423889134,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.023359220344020555,
+    "sharpe_passed": false,
+    "mdd": 0.09513112423702319,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.0032712681047928,
+    "sharpe_passed": true,
+    "mdd": 0.0313593383200339,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.5898732312793841,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.165670892390344,
+    "sharpe_passed": false,
+    "mdd": 0.15040682570260888,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.1640886576579126,
+    "sharpe_passed": true,
+    "mdd": 0.1122106798152489,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.0815683170198338,
+    "sharpe_passed": true,
+    "mdd": 0.07636274074433425,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.24367706086291405,
+    "sharpe_passed": false,
+    "mdd": 0.1079610002244743,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5531796487413225,
+    "sharpe_passed": false,
+    "mdd": 0.06867231910588678,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 14,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.39502498516138823,
+    "sharpe_passed": false,
+    "mdd": 0.015410481661451758,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.126983985885843,
+    "sharpe_passed": false,
+    "mdd": 0.10135197450355315,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7198764765870985,
+    "sharpe_passed": false,
+    "mdd": 0.13974265110912232,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 2,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.9241501313883291,
+    "sharpe_passed": false,
+    "mdd": 0.12942695989185293,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.3371606175572505,
+    "sharpe_passed": false,
+    "mdd": 0.09453450865633772,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8034597927020964,
+    "sharpe_passed": false,
+    "mdd": 0.07568550643536665,
+    "mdd_passed": true,
+    "n_trades": null
+  },
+  {
+    "params": {
+      "chop_window": 20,
+      "confirm_bars": 3,
+      "ema_window": 34
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.5898732312793854,
+    "sharpe_passed": false,
+    "mdd": 0.0654990567940753,
+    "mdd_passed": true,
+    "n_trades": null
+  }
+]
