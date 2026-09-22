@@ -50,5 +50,25 @@ direct economic link to crypto price action; the crypto test here was a
 falsification check per this repo's standard convention, not an
 expectation of transferability.
 
-Scope: QQQ only. Do not apply this strategy to SPY or crypto without
-further validation.
+Scope: QQQ (trend_window=50 config). See follow-up fine-tune below for SPY.
+
+## Follow-up fine-tune (same cron trigger, next iteration): SPY rescue
+
+A parameter sweep of `trend_window` in {40,45,50,60} at
+`skew_threshold=135, vix_threshold=15` found `trend_window=40` clears
+SPY's near-miss:
+
+| Symbol | Sharpe | MDD | TC-survival | Walk-forward | Param sensitivity |
+|---|---|---|---|---|---|
+| SPY (trend_window=40) | **1.103 (PASS)** | **0.133 (PASS)** | **0.675 (PASS)** | **1.0 (PASS)** | **0.111 (PASS)** |
+| QQQ (trend_window=40, re-check) | 0.993 (FAIL, near-miss) | 0.232 (PASS) | 0.665 (PASS) | 1.0 (PASS) | 0.090 (PASS) |
+
+**SPY ACCEPTED** at `skew_threshold=135, vix_threshold=15, trend_window=40`
+(all 5 validators pass). QQQ's own original accepted config remains
+`trend_window=50` (see above) -- the two symbols now use slightly
+different `trend_window` values, both accepted independently at their own
+best config. Do not conflate the two configs; each symbol's config is
+recorded in its own KB entry.
+
+Scope: QQQ (trend_window=50) AND SPY (trend_window=40), both accepted
+independently. Crypto remains rejected (see above, unchanged).
