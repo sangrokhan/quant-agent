@@ -1,0 +1,938 @@
+[
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.170526489328275,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.7952745748480881,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.9434167600876978,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.807287543762036,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.7846758527337518,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -1.1419588334170503,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.1079274378090775,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.2711303102944123,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.1209576294181262,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.8602142410474363,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.1900631613654251,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.2245291548070485,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.170415755467422,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.316628835816129,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.40775382332939836,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.170415755467422,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.316628835816129,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.40775382332939836,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.560070543197183,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.435276874802516,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -0.39475042808451044,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.4757558369649466,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.541537074067535,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.03486332653625635,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.3668058972056945,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.06983086769061048,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.3231948304226292,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.3668058972056945,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.11789360626054539,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.32863714435577895,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.4052093970556254,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.15662386726263208,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.6881412115487328,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.4252025559358277,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.07271323611072607,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.6069964932803302,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.503503872810362,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6864451433005128,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.6098944603873878,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.2647192771518752,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.35088214932003464,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.5707731103234526,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.46299799819752074,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.563593201519615,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.9685497240285765,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8735728693067825,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7597697272197352,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.0429960375452119,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.38518791324230667,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8209754411665995,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.234688115047712,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5587164562107343,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7559791784241416,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.1214519509044725,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5017540141656797,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.5243643109255938,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.2235214662076499,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.8976552728823334,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.366426881188518,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 63,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.1000567260436553,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.6637038388297293,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.4005595276753717,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2451023804605767,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.6718370957190548,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.1716217468476355,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 126,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2451023804605767,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.25628161908383584,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5795116349853989,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.7,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.22740718527123222,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.3600696981131238,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3770048125427204,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "window": 252,
+      "entry_threshold": 0.8,
+      "rebalance_days": 21
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.22740718527123222,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  }
+]
