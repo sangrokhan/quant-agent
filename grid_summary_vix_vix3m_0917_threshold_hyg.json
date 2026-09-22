@@ -1,0 +1,44 @@
+{
+  "metric": "grid_test",
+  "total_cells": 48,
+  "passed_cells": 6,
+  "pass_fraction": 0.125,
+  "by_asset_class": {
+    "equity": {
+      "passed": 6,
+      "total": 48
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 4,
+      "total": 16
+    },
+    "mid": {
+      "passed": 0,
+      "total": 16
+    },
+    "high": {
+      "passed": 2,
+      "total": 16
+    }
+  },
+  "best_cell": {
+    "params": {
+      "threshold": 1.0
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.446092170239907
+  },
+  "worst_cell": {
+    "params": {
+      "threshold": 0.85
+    },
+    "asset_class": "equity",
+    "symbol": "JNK",
+    "vol_regime": "mid",
+    "sharpe": -1.7109438428184924
+  }
+}
