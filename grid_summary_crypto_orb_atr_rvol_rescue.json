@@ -1,0 +1,48 @@
+{
+  "metric": "grid_test",
+  "total_cells": 24,
+  "passed_cells": 0,
+  "pass_fraction": 0.0,
+  "by_asset_class": {
+    "crypto": {
+      "passed": 0,
+      "total": 24
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 0,
+      "total": 8
+    },
+    "mid": {
+      "passed": 0,
+      "total": 8
+    },
+    "high": {
+      "passed": 0,
+      "total": 8
+    }
+  },
+  "best_cell": {
+    "params": {
+      "range_hours": 1,
+      "rvol_threshold": 1.0,
+      "atr_range_max": 0.6
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null
+  },
+  "worst_cell": {
+    "params": {
+      "range_hours": 1,
+      "rvol_threshold": 1.0,
+      "atr_range_max": 0.6
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": null
+  }
+}
