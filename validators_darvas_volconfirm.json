@@ -1,0 +1,170 @@
+{
+  "equity_QQQ": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.9514467983285897,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.11854278468355517,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.8443524062383958,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 60,
+        "estimated_total_cost_drag": 0.06
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.24002449280930793,
+        "threshold": 0.5,
+        "grid_size": 8,
+        "mean": 1.5358745174277604,
+        "std": 0.3686475020643388
+      }
+    }
+  },
+  "equity_SPY": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.37890634647653304,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.12659254735168501,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.21140502193191585,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 66,
+        "estimated_total_cost_drag": 0.066
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.302599503854355,
+        "threshold": 0.5,
+        "grid_size": 8,
+        "mean": 1.844656336413773,
+        "std": 0.5581920921805998
+      }
+    }
+  },
+  "crypto_BTC/USDT": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.17382257103108095,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.2483438771098161,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.046712292634854664,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 3822,
+        "estimated_total_cost_drag": 3.822
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.2229921805030048,
+        "threshold": 0.5,
+        "grid_size": 8,
+        "mean": 1.2118298115872184,
+        "std": 0.2702285720843793
+      }
+    }
+  }
+}
