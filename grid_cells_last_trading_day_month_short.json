@@ -1,0 +1,134 @@
+[
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.3733246541350075,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.3756137093586082,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.996528757289047,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.593479972770967,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.0102558800886352,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -1.1572597183748798,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5489047303901851,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.4657144829668936,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.4453047714197917,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0528939827208361,
+    "sharpe_passed": true,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.16805621228087986,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  },
+  {
+    "params": {
+      "allow_short": true
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.9131786488213434,
+    "sharpe_passed": false,
+    "max_drawdown": null
+  }
+]
