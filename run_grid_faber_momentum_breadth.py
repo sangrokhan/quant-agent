@@ -1,0 +1,45 @@
+import sys, os, json
+from datetime import datetime
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "validation"))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from grid_test import run_strategy_grid, GridSpec
+from data.loaders import load_equity, load_crypto
+import importlib.util
+
+spec_mod_path = "strategies/2026-09-22_faber_momentum_breadth_sizing_dial.py"
+spec = importlib.util.spec_from_file_location("strat_faber", spec_mod_path)
+strat = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(strat)
+
+gspec = GridSpec(
+    param_grid={
+        "min_breadth": [1, 2],
+        "slow_months": [8, 10, 12],
+    },
+    symbols={"equity": ["QQQ", "SPY"], "crypto": ["BTC/USDT", "ETH/USDT"]},
+    vol_regime_splits=3,
+)
+
+result = run_strategy_grid(
+    generate_returns_fn=strat.generate_returns,
+    loader_fn_by_asset_class={"equity": load_equity, "crypto": load_crypto},
+    spec=gspec,
+    start=datetime(2018, 1, 1),
+    end=datetime(2026, 9, 1),
+)
+
+summary = result.summary()
+with open("grid_summary_faber_momentum_breadth.json", "w") as f:
+    json.dump(summary, f, indent=2, default=str)
+
+cells = [{
+    "params": c.params, "asset_class": c.asset_class, "symbol": c.symbol,
+    "vol_regime": c.vol_regime_label, "sharpe": c.sharpe, "sharpe_passed": c.sharpe_passed,
+    "max_drawdown": getattr(c, "max_drawdown", None),
+} for c in result.cells]
+with open("grid_cells_faber_momentum_breadth.json", "w") as f:
+    json.dump(cells, f, indent=2, default=str)
+
+print(json.dumps(summary, indent=2, default=str))
