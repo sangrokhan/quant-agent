@@ -1,0 +1,434 @@
+[
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.553559127969654,
+    "mdd": 0.0689763602341914,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.060859168915662024,
+    "mdd": 0.16237084520729017,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.5256917893595436,
+    "mdd": 0.20235617992177346,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.7115000160808587,
+    "mdd": 0.0899407818669562,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.35493851019204586,
+    "mdd": 0.1761782379537724,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.8724147503832536,
+    "mdd": 0.2312952409907083,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.9531652862658793,
+    "mdd": 0.09121494633628835,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.9619370380326377,
+    "mdd": 0.1041230042713126,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 1.0542874161072597,
+    "mdd": 0.261230738743389,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.714726181072792,
+    "mdd": 0.04255062564933032,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.5524560196114386,
+    "mdd": 0.13139290261379377,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.9551189036789605,
+    "mdd": 0.23340934779412725,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.5011745803113246,
+    "mdd": 0.06428954636546746,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.18674927945993583,
+    "mdd": 0.18564074157042043,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 1.1273168899794597,
+    "mdd": 0.30597561182719624,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.669410892969206,
+    "mdd": 0.06428954636546724,
+    "passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.341681000192648,
+    "mdd": 0.1750496079825521,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8746479872717217,
+    "mdd": 0.25617205060968995,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.48784415608959925,
+    "mdd": 0.5081268340862726,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.19643059931826667,
+    "mdd": 0.4951523803029393,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.3823898455599832,
+    "mdd": 0.44821162981463636,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.13619981845367848,
+    "mdd": 0.35977585455546524,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.07581563817948557,
+    "mdd": 0.6157108126694384,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.5696013309280885,
+    "mdd": 0.41531673560204296,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.2348561893413086,
+    "mdd": 0.38731428738970064,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.2610341117289952,
+    "mdd": 0.5847398721957038,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.1286803107146535,
+    "mdd": 0.48679538488904395,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.39907227239757864,
+    "mdd": 0.3581416628191496,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.1393445115255978,
+    "mdd": 0.5226379941474815,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 5
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.42132414877113367,
+    "mdd": 0.6075732698844338,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.29425421801944424,
+    "mdd": 0.4218317776316177,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.4981643625446446,
+    "mdd": 0.46057498360310767,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 10
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.347806288797883,
+    "mdd": 0.729625217244829,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.036085288220825226,
+    "mdd": 0.5247747167668702,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.3065796887534702,
+    "mdd": 0.558694660507742,
+    "passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "min_hold_days": 15
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.37954951564138684,
+    "mdd": 0.7153176164997271,
+    "passed": false,
+    "error": null
+  }
+]
