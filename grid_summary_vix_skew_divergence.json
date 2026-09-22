@@ -1,0 +1,52 @@
+{
+  "metric": "grid_test",
+  "total_cells": 48,
+  "passed_cells": 19,
+  "pass_fraction": 0.3958333333333333,
+  "by_asset_class": {
+    "equity": {
+      "passed": 12,
+      "total": 24
+    },
+    "crypto": {
+      "passed": 7,
+      "total": 24
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 15,
+      "total": 16
+    },
+    "mid": {
+      "passed": 4,
+      "total": 16
+    },
+    "high": {
+      "passed": 0,
+      "total": 16
+    }
+  },
+  "best_cell": {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.6256060904673544
+  },
+  "worst_cell": {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.1700660916789743
+  }
+}

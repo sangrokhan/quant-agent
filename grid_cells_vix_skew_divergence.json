@@ -1,0 +1,578 @@
+[
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.037579429130264,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.9097029453869119,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.1700660916789743,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.3538820741224151,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 2.2420511920979105,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.352293461506439,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.9031653938333444,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.7812253887033966,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.14344361645276096,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.5649579095548465,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.8162913009645145,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.27585673209476547,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.203893255711237,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.5843039211741315,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.404297801815607,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.7428935647909014,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.7592510659040691,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.4285406388555059,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.1061303897413506,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.4454317313662137,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.47206467843617084,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.7787738844579972,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.4329245336911339,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.3712024327401824,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.7802539021447596,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.0563876631417317,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.3780869610108815,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 2.203255149392546,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2224503647380511,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.336685910548841,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.929658452588688,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.973491430891282,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.3174184905234956,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.9839765547713695,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9505026893080896,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 1.3002170925051364,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.994116161202383,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.6256060904673544,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.3761873496491538,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.438350747364832,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.384100533943371,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 135,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.13158087820820985,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0522084408345478,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.488414154680526,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 15,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.34347239218058734,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 1.0996179690387662,
+    "passed": true
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 2.3776526509967995,
+    "passed": false
+  },
+  {
+    "params": {
+      "skew_threshold": 140,
+      "vix_threshold": 18,
+      "trend_window": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.15842954037768897,
+    "passed": false
+  }
+]

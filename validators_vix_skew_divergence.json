@@ -1,0 +1,226 @@
+{
+  "equity_QQQ": {
+    "sharpe_ratio": {
+      "passed": true,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 1.0260321117923679,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.18871094603385907,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7475439843851841,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 192,
+        "estimated_total_cost_drag": 0.192
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.15765502335260564,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 1.7148962016602174,
+        "std": 0.2703620007200363
+      }
+    }
+  },
+  "equity_SPY": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.8925510554968779,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.21463320358145233,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.49136731634727715,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 213,
+        "estimated_total_cost_drag": 0.213
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.10240376635230515,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 1.9579227736753717,
+        "std": 0.20049866625131
+      }
+    }
+  },
+  "crypto_ETH/USDT": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.17848410549843322,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": false,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.6006712087058749,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.010249901080315092,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 4707,
+        "estimated_total_cost_drag": 4.707
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.75,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.1508049940770696,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 1.1460733296101322,
+        "std": 0.1728335816837434
+      }
+    }
+  },
+  "crypto_BTC/USDT": {
+    "sharpe_ratio": {
+      "passed": false,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 0.16001542789359377,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": false,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.5540774679480325,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": false,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.02651490768544771,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 4641,
+        "estimated_total_cost_drag": 4.641
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": true,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.07688350499133426,
+        "threshold": 0.5,
+        "grid_size": 4,
+        "mean": 1.9742860147243408,
+        "std": 0.15179002866738028
+      }
+    }
+  }
+}
