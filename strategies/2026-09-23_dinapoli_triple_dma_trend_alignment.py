@@ -57,6 +57,10 @@ def generate_signals(
     long_window: int = 25,
     long_disp: int = 5,
     max_hold_days: int = 30,
+    vol_regime_gate: bool = False,
+    vol_window: int = 20,
+    vol_lookback: int = 252,
+    vol_regime_ratio: float = 1.0,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
@@ -64,6 +68,13 @@ def generate_signals(
     triple-DMA stacked alignment, DiNapoli's multi-timeframe trend
     confirmation). Exit: close crosses back below DMA_short (loses the
     short-term trend reference), or a max_hold_days time-stop.
+
+    vol_regime_gate: if True, only allow entries when the current
+    `vol_window`-day realized volatility is <= `vol_regime_ratio` times its
+    trailing `vol_lookback`-day median (low/mid-vol regime filter, same
+    construction as strategies/2026-09-03_bb_meanrev_qqq_volregime.py) --
+    direct rescue attempt for near-miss 2026-09-23-041, whose grid showed
+    the edge concentrated in low/mid vol terciles (0/24 high-vol passes).
     """
     df = _prep(price_df)
     close = df["close"]
@@ -74,6 +85,15 @@ def generate_signals(
 
     stacked_bullish = (close > dma_short) & (dma_short > dma_med) & (dma_med > dma_long)
     exit_signal = close < dma_short
+
+    if vol_regime_gate:
+        log_ret = np.log(close / close.shift(1))
+        realized_vol = log_ret.rolling(vol_window, min_periods=vol_window).std()
+        trailing_median = realized_vol.rolling(vol_lookback, min_periods=max(20, vol_lookback // 4)).median()
+        low_vol_regime = realized_vol <= (vol_regime_ratio * trailing_median)
+        low_vol_regime = low_vol_regime.fillna(False)
+        stacked_bullish = stacked_bullish & low_vol_regime
+        exit_signal = exit_signal | (~low_vol_regime)
 
     position = pd.Series(0, index=close.index, dtype=int)
     in_position = False
