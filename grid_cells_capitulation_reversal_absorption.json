@@ -1,0 +1,3242 @@
+[
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.2086039191204637,
+    "sharpe_passed": false,
+    "mdd": 0.12893360675344878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.4738650133757432,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.4738650133757432,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.7120003121097762,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.1073593199856757,
+    "sharpe_passed": false,
+    "mdd": 0.07699217649207502,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.5351082349195783,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.7120003121097762,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.1073593199856757,
+    "sharpe_passed": false,
+    "mdd": 0.07699217649207502,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.5351082349195783,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.7120003121097762,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.1073593199856757,
+    "sharpe_passed": false,
+    "mdd": 0.07699217649207502,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.7120003121097762,
+    "sharpe_passed": false,
+    "mdd": 0.0,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -1.1073593199856757,
+    "sharpe_passed": false,
+    "mdd": 0.07699217649207502,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.686809677066271,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.4738650133757432,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.9802273260073779,
+    "sharpe_passed": false,
+    "mdd": 0.034531508947014844,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.4738650133757432,
+    "sharpe_passed": false,
+    "mdd": 0.11295937017044488,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.9584808205484383,
+    "sharpe_passed": false,
+    "mdd": 0.007434370560114534,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.31914008272440336,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.9584808205484383,
+    "sharpe_passed": false,
+    "mdd": 0.007434370560114534,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.31914008272440336,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.9584808205484383,
+    "sharpe_passed": false,
+    "mdd": 0.007434370560114534,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.31914008272440336,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.9584808205484383,
+    "sharpe_passed": false,
+    "mdd": 0.007434370560114534,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.31914008272440336,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.072701816317392,
+    "sharpe_passed": false,
+    "mdd": 0.13720252242274378,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.072701816317392,
+    "sharpe_passed": false,
+    "mdd": 0.13720252242274378,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.2276437666169413,
+    "sharpe_passed": false,
+    "mdd": 0.03526568047754419,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.24165078803963203,
+    "sharpe_passed": false,
+    "mdd": 0.12429770959054054,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.2276437666169413,
+    "sharpe_passed": false,
+    "mdd": 0.03526568047754419,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.24165078803963203,
+    "sharpe_passed": false,
+    "mdd": 0.12429770959054054,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.2405387707919655,
+    "sharpe_passed": false,
+    "mdd": 0.02505977697208661,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.3626339817449035,
+    "sharpe_passed": false,
+    "mdd": 0.12429770959054054,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.2405387707919655,
+    "sharpe_passed": false,
+    "mdd": 0.02505977697208661,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.3626339817449035,
+    "sharpe_passed": false,
+    "mdd": 0.12429770959054054,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.045444348553067,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401316,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5074639415723361,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": null,
+    "sharpe_passed": false,
+    "mdd": null,
+    "mdd_passed": false,
+    "error": "empty/no-trade slice"
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -1.045444348553067,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401316,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5074639415723361,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.0301467546098682,
+    "sharpe_passed": true,
+    "mdd": 0.002708613946659777,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.17189157613953857,
+    "sharpe_passed": false,
+    "mdd": 0.033140668862048916,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.12231932253465784,
+    "sharpe_passed": false,
+    "mdd": 0.1865090709401761,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.0301467546098682,
+    "sharpe_passed": true,
+    "mdd": 0.002708613946659777,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.17189157613953857,
+    "sharpe_passed": false,
+    "mdd": 0.033140668862048916,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.12231932253465784,
+    "sharpe_passed": false,
+    "mdd": 0.1865090709401761,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.6399733217722408,
+    "sharpe_passed": false,
+    "mdd": 0.0009446218183523092,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.4297678560547987,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401316,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5318077911379198,
+    "sharpe_passed": false,
+    "mdd": 0.1242977095905402,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.6399733217722408,
+    "sharpe_passed": false,
+    "mdd": 0.0009446218183523092,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.4297678560547987,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401316,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5318077911379198,
+    "sharpe_passed": false,
+    "mdd": 0.1242977095905402,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.6399733217722408,
+    "sharpe_passed": false,
+    "mdd": 0.0009446218183523092,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.22961110095283058,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401427,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5074639415723361,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.6399733217722408,
+    "sharpe_passed": false,
+    "mdd": 0.0009446218183523092,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": -0.22961110095283058,
+    "sharpe_passed": false,
+    "mdd": 0.019552578608401427,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5074639415723361,
+    "sharpe_passed": false,
+    "mdd": 0.12347368207482856,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.8789359234499103,
+    "sharpe_passed": false,
+    "mdd": 0.09434011765961037,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.9740337720390208,
+    "sharpe_passed": false,
+    "mdd": 0.050818544118280906,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.06610573170768916,
+    "sharpe_passed": false,
+    "mdd": 0.40711051382652896,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.8789359234499103,
+    "sharpe_passed": false,
+    "mdd": 0.09434011765961037,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.7187854841384771,
+    "sharpe_passed": false,
+    "mdd": 0.10633629130605604,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.06610573170768916,
+    "sharpe_passed": false,
+    "mdd": 0.40711051382652896,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5467699953779965,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.879803459448772,
+    "sharpe_passed": false,
+    "mdd": 0.050643248683186703,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18138771128968603,
+    "sharpe_passed": false,
+    "mdd": 0.4336015838889171,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5467699953779965,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5833655711709648,
+    "sharpe_passed": false,
+    "mdd": 0.07987956403169683,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18138771128968603,
+    "sharpe_passed": false,
+    "mdd": 0.4336015838889171,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5467699953779965,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.879803459448772,
+    "sharpe_passed": false,
+    "mdd": 0.050643248683186703,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18138771128968603,
+    "sharpe_passed": false,
+    "mdd": 0.4336015838889171,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5467699953779965,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5833655711709648,
+    "sharpe_passed": false,
+    "mdd": 0.07987956403169683,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18138771128968603,
+    "sharpe_passed": false,
+    "mdd": 0.4336015838889171,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.37692436172173355,
+    "sharpe_passed": false,
+    "mdd": 0.14566112753879712,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.4354663123366858,
+    "sharpe_passed": false,
+    "mdd": 0.13472253553454472,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.24453806408701495,
+    "sharpe_passed": false,
+    "mdd": 0.41552268996109964,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5018100356285498,
+    "sharpe_passed": false,
+    "mdd": 0.1667875309771748,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.12334886010952843,
+    "sharpe_passed": false,
+    "mdd": 0.16958596313205687,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.24453806408701495,
+    "sharpe_passed": false,
+    "mdd": 0.41552268996109964,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.6901782753880065,
+    "sharpe_passed": false,
+    "mdd": 0.09540866102434942,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5767695544198916,
+    "sharpe_passed": false,
+    "mdd": 0.13472253553454416,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.04319691290112696,
+    "sharpe_passed": false,
+    "mdd": 0.44163789309962576,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.6901782753880065,
+    "sharpe_passed": false,
+    "mdd": 0.09540866102434942,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.4052709576025115,
+    "sharpe_passed": false,
+    "mdd": 0.14500172916968213,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.04319691290112696,
+    "sharpe_passed": false,
+    "mdd": 0.44163789309962576,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28735312418686937,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.8649730919340096,
+    "sharpe_passed": false,
+    "mdd": 0.08484465572657629,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.29089604487743786,
+    "sharpe_passed": false,
+    "mdd": 0.433601583888917,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28735312418686937,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6639925066787906,
+    "sharpe_passed": false,
+    "mdd": 0.14500172916968257,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.29089604487743786,
+    "sharpe_passed": false,
+    "mdd": 0.433601583888917,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.5185527498029733,
+    "sharpe_passed": false,
+    "mdd": 0.1712922766649565,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3505912698612829,
+    "sharpe_passed": false,
+    "mdd": 0.16938129392288737,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.007524746805898141,
+    "sharpe_passed": false,
+    "mdd": 0.6000973330586488,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.6364274033051353,
+    "sharpe_passed": false,
+    "mdd": 0.191784863693379,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.05716539432793085,
+    "sharpe_passed": false,
+    "mdd": 0.2239814127085894,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.028100920787804955,
+    "sharpe_passed": false,
+    "mdd": 0.6000973330586488,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.8519977269642806,
+    "sharpe_passed": false,
+    "mdd": 0.11580322203973703,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.4706085277317658,
+    "sharpe_passed": false,
+    "mdd": 0.16907286033810787,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.24652646677833412,
+    "sharpe_passed": false,
+    "mdd": 0.6622179901088161,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.8519977269642806,
+    "sharpe_passed": false,
+    "mdd": 0.11580322203973703,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.31080932870002637,
+    "sharpe_passed": false,
+    "mdd": 0.20100754465949078,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.20634038084615763,
+    "sharpe_passed": false,
+    "mdd": 0.6622179901088161,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28735312418686937,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6504699236123102,
+    "sharpe_passed": false,
+    "mdd": 0.14479100077136253,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18458112602479265,
+    "sharpe_passed": false,
+    "mdd": 0.6573564125702376,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.28735312418686937,
+    "sharpe_passed": false,
+    "mdd": 0.05387107110475886,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.4625493672751231,
+    "sharpe_passed": false,
+    "mdd": 0.201007544659491,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.18458112602479265,
+    "sharpe_passed": false,
+    "mdd": 0.6573564125702376,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.1645213207817729,
+    "sharpe_passed": false,
+    "mdd": 0.17427617428045084,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3307697713392902,
+    "sharpe_passed": false,
+    "mdd": 0.1019480425616206,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.3223022894386941,
+    "sharpe_passed": false,
+    "mdd": 0.41889076824505,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.32225884720739345,
+    "sharpe_passed": false,
+    "mdd": 0.17427617428045084,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.28991745282858145,
+    "sharpe_passed": false,
+    "mdd": 0.1137215972286496,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.1343346136501036,
+    "sharpe_passed": false,
+    "mdd": 0.49775445597398404,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.1645213207817729,
+    "sharpe_passed": false,
+    "mdd": 0.17427617428045084,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.3307697713392902,
+    "sharpe_passed": false,
+    "mdd": 0.1019480425616206,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.06137413070279265,
+    "sharpe_passed": false,
+    "mdd": 0.5365191216075832,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.32225884720739345,
+    "sharpe_passed": false,
+    "mdd": 0.17427617428045084,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.28991745282858145,
+    "sharpe_passed": false,
+    "mdd": 0.1137215972286496,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.12792975918844945,
+    "sharpe_passed": false,
+    "mdd": 0.6287441810759938,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.10144786412472463,
+    "sharpe_passed": false,
+    "mdd": 0.105812725537478,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.9415007347984841,
+    "sharpe_passed": false,
+    "mdd": 0.17800057175202044,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.07279471459357968,
+    "sharpe_passed": false,
+    "mdd": 0.34978449564529923,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.07627116701297762,
+    "sharpe_passed": false,
+    "mdd": 0.1179575549370877,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -1.010300221979278,
+    "sharpe_passed": false,
+    "mdd": 0.1887770698427872,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 28,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.13532418292393697,
+    "sharpe_passed": false,
+    "mdd": 0.4791666694350516,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.32168924346754546,
+    "sharpe_passed": false,
+    "mdd": 0.23917752453311814,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0060184337686677485,
+    "sharpe_passed": false,
+    "mdd": 0.1875364173994103,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.07400099582483036,
+    "sharpe_passed": false,
+    "mdd": 0.5103252878082133,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.025594310941519732,
+    "sharpe_passed": false,
+    "mdd": 0.23917752453311802,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.02205078452714529,
+    "sharpe_passed": false,
+    "mdd": 0.2388433544950036,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.061599428965065366,
+    "sharpe_passed": false,
+    "mdd": 0.5767801838600687,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.10724052901072349,
+    "sharpe_passed": false,
+    "mdd": 0.23471807366898068,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.1271857340024818,
+    "sharpe_passed": false,
+    "mdd": 0.1895258189508635,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.314013277030314,
+    "sharpe_passed": false,
+    "mdd": 0.6094454306846937,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.41140141138058395,
+    "sharpe_passed": false,
+    "mdd": 0.234718073668981,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.0934639878946674,
+    "sharpe_passed": false,
+    "mdd": 0.18952581895086362,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.28437782547962615,
+    "sharpe_passed": false,
+    "mdd": 0.687159356026544,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.35987081006172206,
+    "sharpe_passed": false,
+    "mdd": 0.105812725537478,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.8990886675034692,
+    "sharpe_passed": false,
+    "mdd": 0.21533755036531388,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.21274381458596991,
+    "sharpe_passed": false,
+    "mdd": 0.5434427308137377,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.017017431076938698,
+    "sharpe_passed": false,
+    "mdd": 0.11795755493708748,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.9543823109640714,
+    "sharpe_passed": false,
+    "mdd": 0.2202575291720259,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 32,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.1868125205455353,
+    "sharpe_passed": false,
+    "mdd": 0.6342901061088801,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.34619574132635966,
+    "sharpe_passed": false,
+    "mdd": 0.26211921104218716,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.1988187570958053,
+    "sharpe_passed": false,
+    "mdd": 0.34744541702469844,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.25814079375524646,
+    "sharpe_passed": false,
+    "mdd": 0.5103252878082134,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.06089840803218976,
+    "sharpe_passed": false,
+    "mdd": 0.26211921104218705,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.3322017406392997,
+    "sharpe_passed": false,
+    "mdd": 0.4115001540875993,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.3,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2542411159399376,
+    "sharpe_passed": false,
+    "mdd": 0.5789725470871605,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.050182184249178974,
+    "sharpe_passed": false,
+    "mdd": 0.2347180736689809,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.1618030431181329,
+    "sharpe_passed": false,
+    "mdd": 0.3549095542035533,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.17329203468484178,
+    "sharpe_passed": false,
+    "mdd": 0.5431417869351647,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.3487995705008537,
+    "sharpe_passed": false,
+    "mdd": 0.2347180736689808,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.3791934807163089,
+    "sharpe_passed": false,
+    "mdd": 0.4249553187342274,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 1.5,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.17268129787208938,
+    "sharpe_passed": false,
+    "mdd": 0.6340490451044276,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.4037026230094426,
+    "sharpe_passed": false,
+    "mdd": 0.105812725537478,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -0.8184475457422042,
+    "sharpe_passed": false,
+    "mdd": 0.24542697711842498,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 20
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.3041509391127032,
+    "sharpe_passed": false,
+    "mdd": 0.5434427308137377,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.038772156449595835,
+    "sharpe_passed": false,
+    "mdd": 0.11795755493708748,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": -1.0455354538007098,
+    "sharpe_passed": false,
+    "mdd": 0.3315782459064812,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "rsi_entry_threshold": 36,
+      "volume_ratio_threshold": 2.0,
+      "max_hold_days": 30
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.2717907005248453,
+    "sharpe_passed": false,
+    "mdd": 0.6342901061088801,
+    "mdd_passed": false,
+    "error": null
+  }
+]
