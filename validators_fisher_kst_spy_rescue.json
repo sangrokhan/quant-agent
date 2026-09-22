@@ -1,0 +1,28 @@
+{
+  "SPY": {
+    "sharpe": 1.0300738539429553,
+    "sharpe_pass": true,
+    "mdd": 0.1397521078883358,
+    "mdd_pass": true,
+    "tc_sharpe": 0.9038747159993199,
+    "tc_pass": true,
+    "n_trades": 70,
+    "walk_forward_frac": 1.0,
+    "walk_forward_pass": true,
+    "param_sens_pass": true,
+    "param_sens": 0.065689612106842
+  },
+  "QQQ": {
+    "sharpe": 1.2142926235603317,
+    "sharpe_pass": true,
+    "mdd": 0.15570346767885634,
+    "mdd_pass": true,
+    "tc_sharpe": 1.1067996816242127,
+    "tc_pass": true,
+    "n_trades": 78,
+    "walk_forward_frac": 1.0,
+    "walk_forward_pass": true,
+    "param_sens_pass": true,
+    "param_sens": 0.065689612106842
+  }
+}
