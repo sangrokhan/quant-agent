@@ -18,7 +18,7 @@ _spec.loader.exec_module(strat)
 spec = GridSpec(
     param_grid={
         "k": [10, 20, 30],
-        "entry_threshold": [-1.5, -2.0],
+        "entry_threshold": [-0.5, -0.75],
     },
     symbols={"equity": ["QQQ", "SPY"], "crypto": ["BTC/USDT", "ETH/USDT"]},
     vol_regime_splits=3,
