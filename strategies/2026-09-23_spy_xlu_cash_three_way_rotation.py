@@ -61,8 +61,19 @@ def _load_xlu(start, end) -> pd.Series:
     return xlu_df.sort_index()["close"]
 
 
-def _decide_states(price_df: pd.DataFrame, lookback_days: int, rebalance_days: int) -> np.ndarray:
-    """Return an array of states per bar: 1=underlying, 0=XLU, -1=cash."""
+def _decide_states(
+    price_df: pd.DataFrame,
+    lookback_days: int,
+    rebalance_days: int,
+    cash_trigger: str = "both",
+) -> np.ndarray:
+    """Return an array of states per bar: 1=underlying, 0=XLU, -1=cash.
+
+    cash_trigger: "both" (original rule, cash only when BOTH trailing
+    returns are non-positive) or "either" (faster de-risking rescue
+    variant, cash when EITHER trailing return is non-positive -- per
+    2026-09-23-152's own follow-up note).
+    """
     df = _prep(price_df)
     close = df["close"]
 
@@ -85,7 +96,9 @@ def _decide_states(price_df: pd.DataFrame, lookback_days: int, rebalance_days: i
             x = x_ret[i]
             if np.isnan(u) or np.isnan(x):
                 current = 1
-            elif u <= 0 and x <= 0:
+            elif cash_trigger == "either" and (u <= 0 or x <= 0):
+                current = -1  # cash
+            elif cash_trigger == "both" and (u <= 0 and x <= 0):
                 current = -1  # cash
             elif u >= x:
                 current = 1  # underlying
@@ -99,10 +112,11 @@ def generate_signals(
     price_df: pd.DataFrame,
     lookback_days: int = 20,
     rebalance_days: int = 5,
+    cash_trigger: str = "both",
 ) -> pd.Series:
     """Return a {0,1} series: 1 = hold underlying, 0 = hold XLU or cash."""
     df = _prep(price_df)
-    states = _decide_states(price_df, lookback_days, rebalance_days)
+    states = _decide_states(price_df, lookback_days, rebalance_days, cash_trigger)
     pos = (states == 1).astype(int)
     return pd.Series(pos, index=df.index, dtype=int)
 
@@ -111,6 +125,7 @@ def generate_returns(
     price_df: pd.DataFrame,
     lookback_days: int = 20,
     rebalance_days: int = 5,
+    cash_trigger: str = "both",
 ) -> pd.Series:
     """Daily strategy returns: underlying's return / XLU's return / 0 (cash)."""
     df = _prep(price_df)
@@ -121,7 +136,7 @@ def generate_returns(
     xlu_close = _load_xlu(start, end)
     xlu_close = xlu_close.reindex(close.index).ffill().bfill()
 
-    states = _decide_states(price_df, lookback_days, rebalance_days)
+    states = _decide_states(price_df, lookback_days, rebalance_days, cash_trigger)
     states_shifted = np.roll(states, 1)
     states_shifted[0] = 1
 
