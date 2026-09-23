@@ -89,8 +89,16 @@ def generate_signals(
     price_df: pd.DataFrame,
     adx_period: int = 14,
     max_hold_days: int = 40,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,leverage_cap} long/flat position series.
+
+    ``leverage_cap`` scales the binary long/flat exposure (default 1.0 =
+    full exposure, matching original behavior). Added for a crypto MDD
+    leverage-cap-recalibration follow-up -- see
+    knowledge_base/strategies_log.jsonl id 2026-09-24-018 (decisive MDD
+    failure on BTC/USDT and ETH/USDT at leverage_cap=1.0).
+    """
     df = _prep(price_df)
     close = df["close"]
 
@@ -108,7 +116,7 @@ def generate_signals(
     di_confirm = plus_di > minus_di
     entry = cross_up & di_confirm.fillna(False)
 
-    position = pd.Series(0, index=close.index, dtype=int)
+    position = pd.Series(0.0, index=close.index, dtype=float)
     in_position = False
     entry_idx = 0
     for i in range(len(close)):
@@ -116,16 +124,16 @@ def generate_signals(
             held = i - entry_idx
             if bool(cross_down.iloc[i]) or held >= max_hold_days:
                 in_position = False
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
                 continue
-            position.iloc[i] = 1
+            position.iloc[i] = leverage_cap
         else:
             if bool(entry.iloc[i]):
                 in_position = True
                 entry_idx = i
-                position.iloc[i] = 1
+                position.iloc[i] = leverage_cap
             else:
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
     return position
 
 

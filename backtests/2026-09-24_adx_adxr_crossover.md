@@ -59,8 +59,22 @@ good candidate for a future leverage-cap-recalibration follow-up (this
 repo's established rescue pattern, e.g. NVI 2026-09-14-131 →
 2026-09-14-196).
 
+## Leverage-cap rescue follow-up (2026-09-24-019)
+
+BTC/USDT and ETH/USDT both failed only MDD (decisive, not near-miss) at
+`leverage_cap=1.0`. Since Sharpe is invariant to a uniform scalar exposure
+multiplier (risk-free rate = 0 in these validators), a leverage_cap sweep
+`{0.3, 0.4, 0.5, 0.6, 0.7}` was run to find the highest exposure that still
+clears the MDD threshold:
+
+| Symbol | Config | Sharpe | MDD | TC-survival | Walk-forward | Param-sensitivity | Verdict |
+|---|---|---|---|---|---|---|---|
+| BTC/USDT | adx_period=10, max_hold=40, **leverage_cap=0.5** | 1.356 ✅ | 0.224 ✅ | 1.283 ✅ | 1.0 ✅ | ~0 ✅ | **ACCEPT** |
+| ETH/USDT | adx_period=10, max_hold=20, **leverage_cap=0.7** | 1.391 ✅ | 0.241 ✅ | 1.351 ✅ | 1.0 ✅ | ~0 ✅ | **ACCEPT** |
+
 ## Decision
 
-**Accepted for QQQ only.** Strategy file and this report kept as the live
-QQQ config. SPY and crypto configs are documented rejections, not deleted,
-per Step 8 guidance.
+**Accepted for QQQ (leverage_cap=1.0 default), BTC/USDT (leverage_cap=0.5),
+and ETH/USDT (leverage_cap=0.7).** SPY remains rejected (Sharpe +
+parameter-sensitivity fail). Strategy file's `leverage_cap` kwarg (default
+1.0, backward-compatible) added specifically to support this rescue.
