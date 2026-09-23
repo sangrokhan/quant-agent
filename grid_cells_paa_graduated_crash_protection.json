@@ -1,0 +1,50 @@
+[
+  {
+    "symbol": "QQQ",
+    "params": {
+      "mom_months": 10,
+      "n_select": 6,
+      "cp_denominator": 6,
+      "primary_symbol": "QQQ"
+    },
+    "sharpe": 0.6213816276885644,
+    "mdd": 0.036488809325669114,
+    "passed": false
+  },
+  {
+    "symbol": "QQQ",
+    "params": {
+      "mom_months": 13,
+      "n_select": 6,
+      "cp_denominator": 6,
+      "primary_symbol": "QQQ"
+    },
+    "sharpe": 0.3751960528586483,
+    "mdd": 0.038840973850493454,
+    "passed": false
+  },
+  {
+    "symbol": "SPY",
+    "params": {
+      "mom_months": 10,
+      "n_select": 6,
+      "cp_denominator": 6,
+      "primary_symbol": "SPY"
+    },
+    "sharpe": 0.5146620339498684,
+    "mdd": 0.04479715202758461,
+    "passed": false
+  },
+  {
+    "symbol": "SPY",
+    "params": {
+      "mom_months": 13,
+      "n_select": 6,
+      "cp_denominator": 6,
+      "primary_symbol": "SPY"
+    },
+    "sharpe": 0.3956316375769609,
+    "mdd": 0.04713684653349948,
+    "passed": false
+  }
+]
