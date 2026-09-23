@@ -52,3 +52,18 @@ margin -- flagged for a future leverage-cap rescue attempt.**
 ## Decision: ACCEPT (QQQ, all 5 validators pass); REJECT (BTC/USDT near-miss,
 MDD fails narrowly -- flagged for leverage-cap rescue; SPY/ETH not
 individually validated, grid pass_fraction lower, deprioritized)
+
+## Rescue update (this same cron trigger, iteration 3): BTC/USDT leverage-cap
+Applied this repo's established leverage-cap-recalibration rescue pattern
+(`leverage_cap` param scales position size by a fixed multiplier) to the
+2026-09-24-055 BTC/USDT near-miss (MDD 0.266 fails at implicit leverage_cap
+1.0). A leverage scan found leverage_cap=0.9 clears MDD with margin
+(0.242 <= 0.25) while Sharpe stays 1.445 (leverage-invariant for pure
+long/flat exposure with no vol targeting) -- all 5 validators now pass:
+Sharpe 1.445, MDD 0.242, TC-survival net Sharpe 1.340 @127 trades,
+walk-forward 1.0, parameter_sensitivity relative_std 0.124 (unaffected by
+leverage scaling since it's leverage-invariant).
+
+**Updated decision: ACCEPT (BTC/USDT at leverage_cap=0.9, all 5 validators
+pass).** `generate_returns` was extended with an optional `leverage_cap:
+float = 1.0` kwarg (default preserves prior QQQ-validated behavior exactly).

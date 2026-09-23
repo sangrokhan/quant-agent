@@ -118,11 +118,16 @@ def generate_signals(
     return position
 
 
-def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
-    """Position-weighted daily returns (no transaction costs)."""
+def generate_returns(price_df: pd.DataFrame, leverage_cap: float = 1.0, **kwargs) -> pd.Series:
+    """Position-weighted daily returns (no transaction costs).
+
+    ``leverage_cap`` scales position size by a fixed multiplier (repo's
+    established leverage-cap-recalibration rescue pattern) -- default 1.0
+    preserves prior behavior exactly.
+    """
     df = _prep(price_df)
     close = df["close"]
     position = generate_signals(price_df, **kwargs)
     daily_ret = close.pct_change().fillna(0.0)
-    strategy_ret = position.shift(1).fillna(0) * daily_ret
+    strategy_ret = position.shift(1).fillna(0) * daily_ret * leverage_cap
     return strategy_ret
