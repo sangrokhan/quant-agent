@@ -1,0 +1,578 @@
+[
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.0566201510153652,
+    "mdd": 0.022646667466164838,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.429194415131162,
+    "mdd": 0.10891878959686019,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.1939357786259708,
+    "mdd": 0.15463452169066116,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": -0.07589583586608384,
+    "mdd": 0.06795697237032627,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.5795358241483701,
+    "mdd": 0.07416178487054292,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.18828238360460353,
+    "mdd": 0.1546345216906614,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.8778823319538931,
+    "mdd": 0.02521050033570793,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.07575011747739412,
+    "mdd": 0.10833233587393176,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.02964715972201514,
+    "mdd": 0.14787959242351711,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 0.470778758106278,
+    "mdd": 0.06795697237032627,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": -0.024764757511995507,
+    "mdd": 0.12389065238979802,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.00041606847306801067,
+    "mdd": 0.147879592423517,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": -0.12669717770322303,
+    "mdd": 0.0429052227148915,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.9681841460153803,
+    "mdd": 0.08504463528785156,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -0.34782671009003974,
+    "mdd": 0.09603254817137263,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": -0.08616631244917107,
+    "mdd": 0.0456433900059352,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.40583148956446513,
+    "mdd": 0.103211362592882,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.11377549552403077,
+    "mdd": 0.08514181245983532,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": -0.2778273180861089,
+    "mdd": 0.04290522271489139,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.5524469676823343,
+    "mdd": 0.08407175218748153,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -0.3694549464233034,
+    "mdd": 0.12009933051358568,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": -0.14087407427940188,
+    "mdd": 0.0456433900059352,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.3884321879335991,
+    "mdd": 0.1022577963932767,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": -0.1397361455926857,
+    "mdd": 0.11266862065583849,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.11543759370548765,
+    "mdd": 0.1861126893587497,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5277466545359396,
+    "mdd": 0.17704157977083013,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.0670406354328072,
+    "mdd": 0.3448001538818881,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.1633010492508489,
+    "mdd": 0.26472394742407745,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.4642066735442736,
+    "mdd": 0.19914062879563066,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": -0.028197868216578596,
+    "mdd": 0.3428200835234557,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.34403874640972487,
+    "mdd": 0.19774604768146076,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.6587582525453134,
+    "mdd": 0.18271997245973493,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2706877020667887,
+    "mdd": 0.3448001538818882,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "low",
+    "sharpe": -0.47060302954262323,
+    "mdd": 0.30809018301350655,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "mid",
+    "sharpe": 0.5393146260303329,
+    "mdd": 0.19323190308921612,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "BTC/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.39322259242546614,
+    "mdd": 0.3428200835234555,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.7750810363750542,
+    "mdd": 0.10326046671952016,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.0296636838635167,
+    "mdd": 0.07703142422667719,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.6720485317766515,
+    "mdd": 0.24280327383317313,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.2765380010560404,
+    "mdd": 0.17026469622388374,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.049608328605329,
+    "mdd": 0.07703142422667719,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 25,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.37801797631270323,
+    "mdd": 0.38884385199993254,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.6134627317288126,
+    "mdd": 0.13068694329158392,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.442209962508295,
+    "mdd": 0.07703142422667719,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 40
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.6221209029224276,
+    "mdd": 0.24280327383317313,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "low",
+    "sharpe": 0.5460951452894536,
+    "mdd": 0.15709517125750427,
+    "passed": false
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "mid",
+    "sharpe": 1.2786141306057053,
+    "mdd": 0.14714928503704228,
+    "passed": true
+  },
+  {
+    "params": {
+      "rsi_entry": 30,
+      "rsi_exit": 50
+    },
+    "asset_class": "crypto",
+    "symbol": "ETH/USDT",
+    "vol_regime": "high",
+    "sharpe": 0.2177873392976504,
+    "mdd": 0.505497911675245,
+    "passed": false
+  }
+]
