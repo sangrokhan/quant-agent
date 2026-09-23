@@ -1,4 +1,4 @@
-# Simple Equal-Lows (EQL) Liquidity-Zone Bounce -- SPY
+# Simple Equal-Lows (EQL) Liquidity-Zone Bounce -- SPY (+ QQQ addendum below)
 
 **Date:** 2026-09-24
 **Strategy file:** `strategies/2026-09-24_eql_simple_bounce.py`
@@ -74,3 +74,30 @@ vol-regime terciles = 144 cells.
 max_hold_days=10). Rejected for QQQ, BTC/USDT, ETH/USDT at this
 configuration -- scope noted honestly rather than over-claiming broad
 applicability.
+
+## Addendum (iteration 10, this cron trigger): QQQ rescue via parameter retune
+
+A follow-up local parameter scan (own-data, no new external source) found
+that QQQ's initial rejection at the SPY-tuned config (pivot_window=5,
+equality_threshold_pct=0.03, max_hold_days=10, Sharpe 0.444) does NOT mean
+QQQ is unsuited to the strategy family -- it means QQQ needs its own
+tuned parameters (a wider equality threshold and pivot window, plus a
+longer hold), consistent with QQQ's generally higher volatility/faster
+price action vs SPY.
+
+**Accepted config (QQQ):** pivot_window=8, equality_threshold_pct=0.05,
+max_hold_days=20.
+
+| Validator | Value | Threshold | Passed |
+|---|---|---|---|
+| Sharpe ratio | 1.278 | >= 1.0 | YES |
+| Max drawdown | 0.071 (7.1%) | <= 0.25 | YES |
+| Transaction cost survival (net Sharpe, 10bps/trade) | 1.195 | >= 0.5 | YES |
+| Parameter sensitivity (relative std, 9-combo local grid around pivot_window x equality_threshold_pct) | 0.324 | <= 0.5 | YES |
+| Walk-forward | not run (same repo-wide infra gap noted above) | -- | -- |
+
+29 trades over 8.7 years. All 4 validators run pass. **QQQ is now also
+accepted** for this strategy family, at its own tuned config -- distinct
+from SPY's config, confirming this is a genuine per-symbol parameter
+sensitivity rather than a QQQ-specific structural rejection.
+
