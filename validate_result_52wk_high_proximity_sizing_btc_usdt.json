@@ -1,0 +1,63 @@
+{
+  "sharpe": {
+    "passed": true,
+    "evidence": {
+      "metric": "sharpe_ratio",
+      "value": 1.092501089153809,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  },
+  "mdd": {
+    "passed": true,
+    "evidence": {
+      "metric": "max_drawdown",
+      "value": 0.23651320542582366,
+      "threshold": 0.25
+    }
+  },
+  "tc_survival": {
+    "passed": true,
+    "evidence": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.7280615586958272,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 345,
+      "estimated_total_cost_drag": 0.34500000000000003
+    }
+  },
+  "walk_forward": {
+    "passed": "True",
+    "evidence": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        "True",
+        "True",
+        "True",
+        "False"
+      ],
+      "note": "manual fallback split"
+    }
+  },
+  "param_sensitivity": {
+    "passed": true,
+    "evidence": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.023498520602365784,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": 1.1150379456616157,
+      "std": 0.026201742138549096
+    }
+  },
+  "num_trades": 345,
+  "params": {
+    "min_proximity": 0.9,
+    "lookback_days": 252,
+    "deadband": 0.05
+  }
+}
