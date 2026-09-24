@@ -1,0 +1,114 @@
+{
+  "SPY": {
+    "sharpe_ratio": {
+      "passed": true,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 1.1333024291565728,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.19678093308356237,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.8260760655915634,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 107,
+        "estimated_total_cost_drag": 0.107
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": false,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.7224800458756936,
+        "threshold": 0.5,
+        "grid_size": 18,
+        "mean": 0.3475006481185939,
+        "std": 0.25106228419455495
+      }
+    }
+  },
+  "QQQ": {
+    "sharpe_ratio": {
+      "passed": true,
+      "evidence": {
+        "metric": "sharpe_ratio",
+        "value": 1.3222712208190959,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    },
+    "max_drawdown": {
+      "passed": true,
+      "evidence": {
+        "metric": "max_drawdown",
+        "value": 0.2018801331522655,
+        "threshold": 0.25
+      }
+    },
+    "transaction_cost_survival": {
+      "passed": true,
+      "evidence": {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.0522913242775505,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 109,
+        "estimated_total_cost_drag": 0.109
+      }
+    },
+    "walk_forward": {
+      "passed": true,
+      "evidence": {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.75,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          false,
+          true,
+          true
+        ]
+      }
+    },
+    "parameter_sensitivity": {
+      "passed": false,
+      "evidence": {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 1.679864231327081,
+        "threshold": 0.5,
+        "grid_size": 18,
+        "mean": 0.29641250793223345,
+        "std": 0.49793276979331363
+      }
+    }
+  }
+}
