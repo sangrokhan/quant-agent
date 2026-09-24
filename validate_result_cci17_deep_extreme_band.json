@@ -1,0 +1,126 @@
+{
+  "SPY_17_-180_-75": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.7633525815862623,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.1721743989118285,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7089762306191597,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10,
+        "num_trades": 33,
+        "estimated_total_cost_drag": 0.033
+      }
+    ],
+    "num_trades": 33
+  },
+  "QQQ_17_-180_-75": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.9814880460894866,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.12292208242506164,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.9368368677565052,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10,
+        "num_trades": 28,
+        "estimated_total_cost_drag": 0.028
+      }
+    ],
+    "num_trades": 28
+  },
+  "SPY_14_-220_-50": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.6678649570424892,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.07493944532497687,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.6228373810227552,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10,
+        "num_trades": 18,
+        "estimated_total_cost_drag": 0.018000000000000002
+      }
+    ],
+    "num_trades": 18
+  },
+  "QQQ_14_-220_-50": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.396597080060046,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.07463055587881151,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.3768205642409313,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10,
+        "num_trades": 8,
+        "estimated_total_cost_drag": 0.008
+      }
+    ],
+    "num_trades": 8
+  }
+}
