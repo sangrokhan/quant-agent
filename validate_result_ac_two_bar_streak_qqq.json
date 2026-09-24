@@ -1,0 +1,54 @@
+{
+  "symbol": "QQQ",
+  "params": {
+    "max_hold_days": 10
+  },
+  "num_trades": 141,
+  "sharpe": {
+    "passed": false,
+    "evidence": {
+      "metric": "sharpe_ratio",
+      "value": 0.4996020876386278,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  },
+  "max_drawdown": {
+    "passed": true,
+    "evidence": {
+      "metric": "max_drawdown",
+      "value": 0.1601507949124925,
+      "threshold": 0.25
+    }
+  },
+  "transaction_cost": {
+    "passed": false,
+    "evidence": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.2718929933525811,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 141,
+      "estimated_total_cost_drag": 0.14100000000000001
+    }
+  },
+  "walk_forward": {
+    "passed": null,
+    "evidence": {
+      "metric": "walk_forward_pass_fraction",
+      "value": null,
+      "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue, light workload"
+    }
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "evidence": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.024823693672205764,
+      "threshold": 0.5,
+      "grid_size": 2,
+      "mean": 0.6883489311875259,
+      "std": 0.01708736300738939
+    }
+  }
+}
