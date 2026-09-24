@@ -1,0 +1,46 @@
+{
+  "metric": "grid_test",
+  "total_cells": 24,
+  "passed_cells": 10,
+  "pass_fraction": 0.4166666666666667,
+  "by_asset_class": {
+    "equity": {
+      "passed": 10,
+      "total": 24
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 8,
+      "total": 8
+    },
+    "mid": {
+      "passed": 0,
+      "total": 8
+    },
+    "high": {
+      "passed": 2,
+      "total": 8
+    }
+  },
+  "best_cell": {
+    "params": {
+      "max_hold_days": 40,
+      "trend_ema": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 2.057196117401299
+  },
+  "worst_cell": {
+    "params": {
+      "max_hold_days": 40,
+      "trend_ema": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.596789213128403
+  }
+}
