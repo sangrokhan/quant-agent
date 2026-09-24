@@ -1,0 +1,52 @@
+{
+  "sharpe": {
+    "metric": "sharpe_ratio",
+    "value": 1.1501555195714102,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "mdd": {
+    "metric": "max_drawdown",
+    "value": 0.10259016474380356,
+    "threshold": 0.25
+  },
+  "tc": {
+    "metric": "net_sharpe_after_costs",
+    "value": 0.8520207798753408,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10,
+    "num_trades": 128,
+    "estimated_total_cost_drag": 0.128
+  },
+  "wf": {
+    "metric": "walk_forward_pass_fraction",
+    "value": 1.0,
+    "threshold": 0.75,
+    "per_split_passed": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "ps": {
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.19907448999552294,
+    "threshold": 0.5,
+    "grid_size": 9,
+    "mean": 0.9863436166766143,
+    "std": 0.19635585245023657
+  },
+  "sharpe_pass": true,
+  "mdd_pass": true,
+  "tc_pass": true,
+  "wf_pass": true,
+  "ps_pass": true,
+  "num_trades": 128,
+  "config": {
+    "divergence_threshold": 1.25,
+    "sma_window": 50,
+    "zscore_window": 126,
+    "max_hold_days": 20
+  }
+}

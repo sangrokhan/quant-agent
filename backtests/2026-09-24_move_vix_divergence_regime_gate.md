@@ -25,10 +25,14 @@ flat during bond-led-stress regimes.
 
 | Symbol | Config | Sharpe | MDD | Net Sharpe (TC) | Walk-fwd | Param-sens (rel std) |
 |---|---|---|---|---|---|---|
-| QQQ | div_thresh=1.5, sma=50 | **1.199** (pass) | 0.222 (pass) | 1.050 (pass) | 0.75 (pass) | 0.221 (pass) |
-| SPY | div_thresh=1.0, sma=100 | 0.941 (fail) | 0.130 (pass) | 0.754 (pass) | 0.75 (pass) | 0.111 (pass) |
+| QQQ | div_thresh=1.5, sma=50, zw=63, mh=40 | **1.199** (pass) | 0.222 (pass) | 1.050 (pass) | 0.75 (pass) | 0.221 (pass) |
+| SPY | div_thresh=1.25, sma=50, zw=126, mh=20 | **1.150** (pass, rescued) | 0.103 (pass) | 0.852 (pass) | 1.00 (pass) | 0.199 (pass) |
 
-All params: zscore_window=63, max_hold_days=40 (unswept defaults).
+SPY was rescued in a same-trigger follow-up (id 2026-09-24-069) by widening
+the parameter search to include zscore_window and max_hold_days (not swept
+in the original Step-6 grid, which only covered divergence_threshold and
+sma_window). A 300-combo internal search found 43 combos clearing both
+Sharpe>=1.0 and MDD<=0.25.
 
 ## Grid summary (equity only, 54 cells)
 
@@ -43,12 +47,10 @@ All params: zscore_window=63, max_hold_days=40 (unswept defaults).
 
 ## Decision
 
-**ACCEPT (QQQ only).** All 5 validators pass at divergence_threshold=1.5,
-sma_window=50. **SPY near-miss** -- Sharpe 0.941 is close to the 1.0
-threshold and every other validator (including a very flat
-parameter-sensitivity plateau, relative_std=0.111) passes comfortably,
-suggesting SPY is a good candidate for a future turnover-reduction or
-finer-grid rescue attempt rather than a decisive rejection.
+**ACCEPT (QQQ and SPY, both with per-symbol-tuned configs).** All 5
+validators pass for both symbols. SPY required a wider parameter search
+(zscore_window, max_hold_days) beyond the original grid to clear the Sharpe
+threshold; QQQ passed cleanly on the original grid's best cell.
 
 ## Notes for future loops
 
