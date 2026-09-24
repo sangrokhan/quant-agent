@@ -1,0 +1,24 @@
+{
+  "QQQ": [
+    true,
+    {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.39221329420196394,
+      "threshold": 0.5,
+      "grid_size": 18,
+      "mean": 0.7898603499368705,
+      "std": 0.309793729808256
+    }
+  ],
+  "SPY": [
+    false,
+    {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.654945090236485,
+      "threshold": 0.5,
+      "grid_size": 18,
+      "mean": 0.5994149191079645,
+      "std": 0.3925838582842612
+    }
+  ]
+}
