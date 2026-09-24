@@ -1,0 +1,758 @@
+[
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.3738653436568276,
+    "sharpe_passed": true,
+    "mdd": 0.07388621094100578,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.1280162981708555,
+    "sharpe_passed": true,
+    "mdd": 0.17256214054154662,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.43042232168324795,
+    "sharpe_passed": false,
+    "mdd": 0.2517796501215859,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.5017225676234105,
+    "sharpe_passed": true,
+    "mdd": 0.07849612649712878,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.0054603367964985,
+    "sharpe_passed": true,
+    "mdd": 0.1818672294308199,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.14286190543975197,
+    "sharpe_passed": false,
+    "mdd": 0.20579530748222385,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.1481230330066783,
+    "sharpe_passed": true,
+    "mdd": 0.09144742048292287,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.1027849636922364,
+    "sharpe_passed": true,
+    "mdd": 0.15869851508138377,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": -0.10149658129361686,
+    "sharpe_passed": false,
+    "mdd": 0.20481094087201634,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.9353414313095243,
+    "sharpe_passed": true,
+    "mdd": 0.0695128958678578,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.4255643308290988,
+    "sharpe_passed": true,
+    "mdd": 0.1456947926434694,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.5212127499419941,
+    "sharpe_passed": false,
+    "mdd": 0.19621608827376558,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 2.229378700369712,
+    "sharpe_passed": true,
+    "mdd": 0.07831966163183068,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3472688418746515,
+    "sharpe_passed": true,
+    "mdd": 0.1800969402369721,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.3271446522805877,
+    "sharpe_passed": false,
+    "mdd": 0.2007206204579397,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.904990576452847,
+    "sharpe_passed": true,
+    "mdd": 0.08819397399412299,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.2197768917609657,
+    "sharpe_passed": true,
+    "mdd": 0.15378811253878588,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": -0.1287151264578381,
+    "sharpe_passed": false,
+    "mdd": 0.22854580544743908,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 2.2252797267456437,
+    "sharpe_passed": true,
+    "mdd": 0.06951289586785814,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.4685809938457077,
+    "sharpe_passed": true,
+    "mdd": 0.12602914023328005,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.3247915540303977,
+    "sharpe_passed": false,
+    "mdd": 0.227488385577442,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 2.516520282582313,
+    "sharpe_passed": true,
+    "mdd": 0.07285924567318192,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.479523982265311,
+    "sharpe_passed": true,
+    "mdd": 0.1492180744687608,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": 0.12411308474660525,
+    "sharpe_passed": false,
+    "mdd": 0.23181766286086192,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "low",
+    "sharpe": 1.94857995632822,
+    "sharpe_passed": true,
+    "mdd": 0.1048801500059039,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "mid",
+    "sharpe": 1.3908746588160728,
+    "sharpe_passed": true,
+    "mdd": 0.13132552830754096,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime_label": "high",
+    "sharpe": -0.5943326909954082,
+    "sharpe_passed": false,
+    "mdd": 0.2913189200113192,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 1.260488721280263,
+    "sharpe_passed": true,
+    "mdd": 0.061793667050583645,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.33283982632843484,
+    "sharpe_passed": false,
+    "mdd": 0.08692741253555913,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.7345529046771527,
+    "sharpe_passed": false,
+    "mdd": 0.14150587343017706,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 1.503046727759825,
+    "sharpe_passed": true,
+    "mdd": 0.061736554284276046,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.41068940292895434,
+    "sharpe_passed": false,
+    "mdd": 0.1203772526228698,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.26926377748461033,
+    "sharpe_passed": false,
+    "mdd": 0.13925602116175106,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 1.4585966434894433,
+    "sharpe_passed": true,
+    "mdd": 0.05489275047082842,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.7020450867126157,
+    "sharpe_passed": false,
+    "mdd": 0.08605378641064976,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 0.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.24057297210061276,
+    "sharpe_passed": false,
+    "mdd": 0.1152656571389703,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 1.9072261948880627,
+    "sharpe_passed": true,
+    "mdd": 0.04759762125549594,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": -0.13948106008783184,
+    "sharpe_passed": false,
+    "mdd": 0.14579909073957664,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 1.0225008952690577,
+    "sharpe_passed": true,
+    "mdd": 0.14256815141412194,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 2.273459902856139,
+    "sharpe_passed": true,
+    "mdd": 0.054210617424582,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.09892611580109806,
+    "sharpe_passed": false,
+    "mdd": 0.16098008195791091,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.6169922224301194,
+    "sharpe_passed": false,
+    "mdd": 0.115604988092188,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 2.2456504404869118,
+    "sharpe_passed": true,
+    "mdd": 0.06258232850088441,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.4177174164607702,
+    "sharpe_passed": false,
+    "mdd": 0.1074032924566708,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.0,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.5667164429058738,
+    "sharpe_passed": false,
+    "mdd": 0.09763815770884854,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 2.2749652394076496,
+    "sharpe_passed": true,
+    "mdd": 0.059511811920550106,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": -0.2533283370615589,
+    "sharpe_passed": false,
+    "mdd": 0.15067766767880053,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 30
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.8873542097966777,
+    "sharpe_passed": false,
+    "mdd": 0.16774217661512691,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 2.6049238689276377,
+    "sharpe_passed": true,
+    "mdd": 0.04746328330374894,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": -0.13487073232791855,
+    "sharpe_passed": false,
+    "mdd": 0.16195799375518238,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 50
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.4038098150724312,
+    "sharpe_passed": false,
+    "mdd": 0.18352572192962746,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "low",
+    "sharpe": 2.4683221469911873,
+    "sharpe_passed": true,
+    "mdd": 0.06428954636546746,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "mid",
+    "sharpe": 0.3152009587187767,
+    "sharpe_passed": false,
+    "mdd": 0.10383700094338,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "divergence_threshold": 1.5,
+      "sma_window": 100
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime_label": "high",
+    "sharpe": 0.21606040210299987,
+    "sharpe_passed": false,
+    "mdd": 0.15101993338803965,
+    "mdd_passed": true,
+    "error": null
+  }
+]

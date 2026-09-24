@@ -1,0 +1,94 @@
+{
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 0.9405367375264164,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.13007147366220806,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.7535531818941201,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 98,
+      "estimated_total_cost_drag": 0.098
+    },
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.11061068928597557,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.8193478303918341,
+      "std": 0.09062862828460938
+    },
+    "sharpe_pass": false,
+    "mdd_pass": true,
+    "tc_pass": true,
+    "wf_pass": true,
+    "ps_pass": true,
+    "num_trades": 98
+  },
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.1990649722532118,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.22243359317150035,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0495938664514015,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 103,
+      "estimated_total_cost_drag": 0.10300000000000001
+    },
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.75,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.22118414492945757,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9566581394043827,
+      "std": 0.2115976125539642
+    },
+    "sharpe_pass": true,
+    "mdd_pass": true,
+    "tc_pass": true,
+    "wf_pass": true,
+    "ps_pass": true,
+    "num_trades": 103
+  }
+}
