@@ -1,0 +1,506 @@
+[
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.7336805768081196,
+    "sharpe_passed": true,
+    "mdd": 0.039242671386106376,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.2625987205555793,
+    "sharpe_passed": true,
+    "mdd": 0.07479387864190523,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.761430528266092,
+    "sharpe_passed": false,
+    "mdd": 0.2973510432336218,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.8373297688193349,
+    "sharpe_passed": true,
+    "mdd": 0.039242671386106265,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 1.3169099416798917,
+    "sharpe_passed": true,
+    "mdd": 0.07479387864190512,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.8877571708179779,
+    "sharpe_passed": false,
+    "mdd": 0.2654200973061088,
+    "mdd_passed": false,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.4118155876261955,
+    "sharpe_passed": true,
+    "mdd": 0.04265463984242712,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.9662509748811697,
+    "sharpe_passed": false,
+    "mdd": 0.05274392609613188,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 1.0527631384806362,
+    "sharpe_passed": true,
+    "mdd": 0.17781011651113454,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.4511557151662697,
+    "sharpe_passed": true,
+    "mdd": 0.03909361804754563,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.9190751348820217,
+    "sharpe_passed": false,
+    "mdd": 0.05274392609613188,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 1.0194237346335198,
+    "sharpe_passed": true,
+    "mdd": 0.20524388035251384,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.0609043213837972,
+    "sharpe_passed": true,
+    "mdd": 0.03186152629997352,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.8822125955210258,
+    "sharpe_passed": false,
+    "mdd": 0.03533498884605757,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.8963058210376824,
+    "sharpe_passed": false,
+    "mdd": 0.18001704466683122,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 1.0609043213837972,
+    "sharpe_passed": true,
+    "mdd": 0.03186152629997352,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "mid",
+    "sharpe": 0.8822125955210258,
+    "sharpe_passed": false,
+    "mdd": 0.03533498884605757,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": 0.8625590925746434,
+    "sharpe_passed": false,
+    "mdd": 0.2020945634574265,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.2460477336637392,
+    "sharpe_passed": true,
+    "mdd": 0.06333778107486321,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.8203708459212424,
+    "sharpe_passed": false,
+    "mdd": 0.1179417866058412,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5364376810310584,
+    "sharpe_passed": false,
+    "mdd": 0.17918468563598822,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 1.2702310314035772,
+    "sharpe_passed": true,
+    "mdd": 0.06333778107486321,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 0.9129678037163019,
+    "sharpe_passed": false,
+    "mdd": 0.11794178660584098,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 3,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.5840944317297356,
+    "sharpe_passed": false,
+    "mdd": 0.19328002114226883,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.723528339499457,
+    "sharpe_passed": false,
+    "mdd": 0.06192233552656479,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.1019784562802155,
+    "sharpe_passed": true,
+    "mdd": 0.07394591679321039,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.8358739063626732,
+    "sharpe_passed": false,
+    "mdd": 0.1379435257019701,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.839631761162415,
+    "sharpe_passed": false,
+    "mdd": 0.06192233552656412,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.0665910083252659,
+    "sharpe_passed": true,
+    "mdd": 0.07394591679321083,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 4,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.7729650978894623,
+    "sharpe_passed": false,
+    "mdd": 0.16533990842665314,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.3963578243063029,
+    "sharpe_passed": false,
+    "mdd": 0.05566436596647606,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.4358510176265709,
+    "sharpe_passed": true,
+    "mdd": 0.03471742532876332,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 7
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.945898255202305,
+    "sharpe_passed": false,
+    "mdd": 0.09240079929075029,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "low",
+    "sharpe": 0.5191335088683791,
+    "sharpe_passed": false,
+    "mdd": 0.05566436596647606,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "mid",
+    "sharpe": 1.4358510176265709,
+    "sharpe_passed": true,
+    "mdd": 0.03471742532876332,
+    "mdd_passed": true,
+    "error": null
+  },
+  {
+    "params": {
+      "hist_decline_days": 5,
+      "max_hold_days": 10
+    },
+    "asset_class": "equity",
+    "symbol": "SPY",
+    "vol_regime": "high",
+    "sharpe": 0.945898255202305,
+    "sharpe_passed": false,
+    "mdd": 0.09240079929075029,
+    "mdd_passed": true,
+    "error": null
+  }
+]
