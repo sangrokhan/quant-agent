@@ -1,0 +1,114 @@
+{
+  "SPY": {
+    "params": {
+      "trend_window": 0,
+      "height_mult": 1.0,
+      "max_hold_days": 30
+    },
+    "num_trades": 16,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.8431272171083517,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.058764242340564876,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7702494096222147,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 16,
+        "estimated_total_cost_drag": 0.016
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.6230677046075002,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 0.5301317969481525,
+        "std": 0.3303080018639347
+      }
+    ],
+    "all_pass": false
+  },
+  "QQQ": {
+    "params": {
+      "trend_window": 0,
+      "height_mult": 1.0,
+      "max_hold_days": 30
+    },
+    "num_trades": 12,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.7342069946377507,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.08345942061805467,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.6976074241783663,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 12,
+        "estimated_total_cost_drag": 0.012
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.3866491671296582,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 0.5356423146611602,
+        "std": 0.2071056548431399
+      }
+    ],
+    "all_pass": false
+  }
+}
