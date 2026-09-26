@@ -1,0 +1,118 @@
+{
+  "QQQ": {
+    "num_trades": 170,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.867939919349265,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.06837208515396653,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.14671312594873034,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 170,
+        "estimated_total_cost_drag": 0.17
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_sharpe": [
+          0.6026495543559257,
+          0.7397376091213568,
+          0.20646222547997434,
+          1.6997576429003094
+        ]
+      }
+    ],
+    "param_sensitivity": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.5511275249191736,
+        "threshold": 0.5,
+        "grid_size": 54,
+        "mean": 0.490461360649324,
+        "std": 0.2703067557631521
+      }
+    ],
+    "all_pass": false
+  },
+  "SPY": {
+    "num_trades": 160,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.32100462640804545,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.043574723682276106,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.23622939770583773,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 160,
+        "estimated_total_cost_drag": 0.16
+      }
+    ],
+    "wf": [
+      false,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.5,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_sharpe": [
+          0.3870773098548242,
+          0.8802882850766373,
+          -0.09756932326225087,
+          -0.16369644510287562
+        ]
+      }
+    ],
+    "param_sensitivity": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.987324116870728,
+        "threshold": 0.5,
+        "grid_size": 54,
+        "mean": 0.28032153862377346,
+        "std": 0.2767682155615608
+      }
+    ],
+    "all_pass": false
+  }
+}
