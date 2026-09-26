@@ -54,8 +54,15 @@ def generate_signals(
     edge_pct: float = 0.25,
     height_mult: float = 1.0,
     max_hold_days: int = 20,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1}-scaled (by leverage_cap) long/flat position series.
+
+    ``leverage_cap`` (default 1.0 = full exposure) scales the binary long
+    position down to a fraction of notional -- used to bring crypto MDD
+    within threshold without changing the entry/exit trigger logic itself,
+    per this repo's established leverage-cap-aware crypto rescue pattern.
+    """
     df = _prep(price_df)
     open_, high, low, close = df["open"], df["high"], df["low"], df["close"]
 
@@ -83,7 +90,7 @@ def generate_signals(
     height_level = pattern_height.shift(1)
     pattern_high_level = pattern_high.shift(1)
 
-    position = pd.Series(0, index=close.index, dtype=int)
+    position = pd.Series(0.0, index=close.index, dtype=float)
     in_position = False
     entry_idx = 0
     target_level = None
@@ -93,10 +100,10 @@ def generate_signals(
             hit_target = (target_level is not None) and (close.iloc[i] >= target_level)
             if hit_target or held >= max_hold_days:
                 in_position = False
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
                 target_level = None
                 continue
-            position.iloc[i] = 1
+            position.iloc[i] = leverage_cap
         else:
             if bool(breakout_trigger.iloc[i]):
                 in_position = True
@@ -104,9 +111,9 @@ def generate_signals(
                 h = height_level.iloc[i]
                 base = pattern_high_level.iloc[i]
                 target_level = (base + height_mult * h) if pd.notna(h) and pd.notna(base) else None
-                position.iloc[i] = 1
+                position.iloc[i] = leverage_cap
             else:
-                position.iloc[i] = 0
+                position.iloc[i] = 0.0
     return position
 
 
