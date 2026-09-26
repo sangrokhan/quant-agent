@@ -91,12 +91,21 @@ def _minor_lows(low: pd.Series, pivot_window: int) -> pd.Series:
 
 def generate_signals(
     price_df: pd.DataFrame,
-    resistance_window: int = 50,
+    resistance_window: int = 30,
     sma_window: int = 150,
     slope_lookback: int = 10,
-    pivot_window: int = 5,
+    pivot_window: int = 3,
+    min_hold_days: int = 5,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    min_hold_days: suppress ALL exit conditions (stop-loss and
+    wait-for-profit) for this many bars after entry -- a rescue lever for
+    the base strategy's overtrading problem (see the follow-up entry to
+    2026-09-26-006 in knowledge_base/strategies_log.jsonl), following this
+    repo's established min_hold_days rescue pattern (e.g. 2026-09-04-085,
+    2026-09-06-171/174).
+    """
     df = _prep(price_df)
     high = df["high"]
     low = df["low"]
@@ -121,10 +130,12 @@ def generate_signals(
     entry_price = 0.0
     stop_level = 0.0
     pending_exit = False
+    entry_idx = 0
 
     for i in range(len(close)):
         if in_position:
-            if pending_exit:
+            held = i - entry_idx
+            if pending_exit and held >= min_hold_days:
                 in_position = False
                 position.iloc[i] = 0
                 pending_exit = False
@@ -134,7 +145,7 @@ def generate_signals(
             if pd.notna(mlv):
                 stop_level = max(stop_level, mlv)
 
-            if close.iloc[i] < stop_level:
+            if held >= min_hold_days and close.iloc[i] < stop_level:
                 in_position = False
                 position.iloc[i] = 0
                 continue
@@ -145,6 +156,7 @@ def generate_signals(
         else:
             if bool(entry.iloc[i]):
                 in_position = True
+                entry_idx = i
                 entry_price = close.iloc[i]
                 mlv = minor_low_value.iloc[i]
                 stop_level = mlv if pd.notna(mlv) else close.iloc[i] * 0.85
@@ -156,10 +168,11 @@ def generate_signals(
 
 def generate_returns(
     price_df: pd.DataFrame,
-    resistance_window: int = 50,
+    resistance_window: int = 30,
     sma_window: int = 150,
     slope_lookback: int = 10,
-    pivot_window: int = 5,
+    pivot_window: int = 3,
+    min_hold_days: int = 5,
 ) -> pd.Series:
     """Daily strategy returns, position lagged by 1 day (no look-ahead)."""
     df = _prep(price_df)
@@ -171,6 +184,7 @@ def generate_returns(
         sma_window=sma_window,
         slope_lookback=slope_lookback,
         pivot_window=pivot_window,
+        min_hold_days=min_hold_days,
     )
     daily_ret = close.pct_change().fillna(0.0)
     strat_ret = position.shift(1).fillna(0).astype(float) * daily_ret
