@@ -1,0 +1,59 @@
+{
+  "SPY": {
+    "params": {
+      "trend_window": 30,
+      "edge_pct": 0.2,
+      "height_mult": 1.5,
+      "max_hold_days": 20
+    },
+    "num_trades": 24,
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.0996251047235315,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.13088548649572862,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.0508593814023488,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 24,
+        "estimated_total_cost_drag": 0.024
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.21055631796795876,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 0.7835748632515025,
+        "std": 0.16498663805848315
+      }
+    ],
+    "all_pass": true
+  }
+}
