@@ -1,0 +1,173 @@
+{
+  "SPY": {
+    "params": {
+      "trend_window": 0,
+      "edge_pct": 0.65,
+      "height_mult": 2.0,
+      "max_hold_days": 20
+    },
+    "num_trades": 25,
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.3148052877064307,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.07346135308829149,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 1.2243688748357076,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 25,
+        "estimated_total_cost_drag": 0.025
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.13653072971629346,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 1.1754098798308372,
+        "std": 0.160479568609045
+      }
+    ],
+    "all_pass": true
+  },
+  "QQQ": {
+    "params": {
+      "trend_window": 0,
+      "edge_pct": 0.65,
+      "height_mult": 2.0,
+      "max_hold_days": 20
+    },
+    "num_trades": 33,
+    "sharpe": [
+      true,
+      {
+        "metric": "sharpe_ratio",
+        "value": 1.0280470887832631,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.12751547717257294,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.9599286353082663,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 33,
+        "estimated_total_cost_drag": 0.033
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.07094640792102921,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 0.9767081047434518,
+        "std": 0.06929393161890426
+      }
+    ],
+    "all_pass": true
+  },
+  "BTC/USDT": {
+    "params": {
+      "trend_window": 0,
+      "edge_pct": 0.65,
+      "height_mult": 2.0,
+      "max_hold_days": 20
+    },
+    "num_trades": 59,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.6740467628286049,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.5463158071636766,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.6508915809422806,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 59,
+        "estimated_total_cost_drag": 0.059000000000000004
+      }
+    ],
+    "wf": [
+      null,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": null,
+        "reason": "skipped: vectorbt API error (module 'vectorbt.utils' has no attribute 'splitting'); known repo issue"
+      }
+    ],
+    "param_sens": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.12092697021829472,
+        "threshold": 0.5,
+        "grid_size": 9,
+        "mean": 0.686793332012772,
+        "std": 0.08305183680643188
+      }
+    ],
+    "all_pass": false
+  }
+}
