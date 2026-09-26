@@ -1,0 +1,137 @@
+{
+  "QQQ": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.8296713393271541,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.12301006292718353,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.6788972748416591,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 50,
+        "estimated_total_cost_drag": 0.05
+      }
+    ],
+    "num_trades": 50
+  },
+  "SPY": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.6927175067298045,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.11975045111545679,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.5114576571964624,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 50,
+        "estimated_total_cost_drag": 0.05
+      }
+    ],
+    "num_trades": 50
+  },
+  "BTC/USDT": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": -0.06427187304773652,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.3804371874435658,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.0891463429038314,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 930,
+        "estimated_total_cost_drag": 0.93
+      }
+    ],
+    "num_trades": 930
+  },
+  "ETH/USDT": {
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.13416655916283834,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      false,
+      {
+        "metric": "max_drawdown",
+        "value": 0.30382443778518686,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": -0.018999674418907847,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 982,
+        "estimated_total_cost_drag": 0.982
+      }
+    ],
+    "num_trades": 982
+  },
+  "QQQ_param_sensitivity": [
+    true,
+    {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.05637248631193803,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.8115629097933774,
+      "std": 0.04574981902360377
+    }
+  ]
+}
