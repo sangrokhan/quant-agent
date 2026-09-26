@@ -1,0 +1,142 @@
+{
+  "equity:QQQ": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.7289881410655765,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.1602958740942153,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6786449235195957,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 37,
+      "estimated_total_cost_drag": 0.037
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.2570388512421788,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.5418312830291367,
+      "std": 0.13927169055688515
+    },
+    "num_trades": 37,
+    "all_passed": false
+  },
+  "equity:SPY": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.7820717114976765,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": true,
+      "metric": "max_drawdown",
+      "value": 0.2089165677185555,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.6985334081295492,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 41,
+      "estimated_total_cost_drag": 0.041
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.2043005449345885,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.684176672599743,
+      "std": 0.13977766704366104
+    },
+    "num_trades": 41,
+    "all_passed": false
+  },
+  "crypto:BTC/USDT": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.9622771346111855,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.37806540451732573,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9391983573096786,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 51,
+      "estimated_total_cost_drag": 0.051000000000000004
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.06409245564620315,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.893213896304092,
+      "std": 0.05724827203144232
+    },
+    "num_trades": 51,
+    "all_passed": false
+  },
+  "crypto:ETH/USDT": {
+    "sharpe": {
+      "passed": false,
+      "metric": "sharpe_ratio",
+      "value": 0.7859125342060634,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "passed": false,
+      "metric": "max_drawdown",
+      "value": 0.746559902946579,
+      "threshold": 0.25
+    },
+    "tc_survival": {
+      "passed": true,
+      "metric": "net_sharpe_after_costs",
+      "value": 0.7719533634511831,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 49,
+      "estimated_total_cost_drag": 0.049
+    },
+    "param_sensitivity": {
+      "passed": true,
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.09947964895733512,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.7441199683249525,
+      "std": 0.07402479323110961
+    },
+    "num_trades": 49,
+    "all_passed": false
+  }
+}
