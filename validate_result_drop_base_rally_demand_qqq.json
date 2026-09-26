@@ -1,0 +1,37 @@
+{
+  "sharpe_ratio": {
+    "passed": true,
+    "metric": "sharpe_ratio",
+    "value": 1.7942289070410427,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.02269664862718057,
+    "threshold": 0.25
+  },
+  "transaction_cost_survival": {
+    "passed": true,
+    "metric": "net_sharpe_after_costs",
+    "value": 1.748929183636762,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10.0,
+    "num_trades": 7,
+    "estimated_total_cost_drag": 0.007
+  },
+  "walk_forward": {
+    "passed": null,
+    "reason": "skipped: module 'vectorbt.utils' has no attribute 'splitting'"
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.04027878495911903,
+    "threshold": 0.5,
+    "grid_size": 6,
+    "mean": 1.7372804696389252,
+    "std": 0.06997554645026359
+  }
+}
