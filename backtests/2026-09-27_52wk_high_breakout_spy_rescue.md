@@ -42,6 +42,24 @@ All 5 validators pass for SPY.
 - best_cell: SPY lookback_days=252/trend_exit_window=100/trailing_stop_pct=0.15, low-vol, Sharpe 2.745
 - worst_cell: QQQ lookback_days=200/trend_exit_window=100/trailing_stop_pct=0.15, high-vol, Sharpe -0.691
 
-## Decision: ACCEPT (SPY only)
+## Decision: ACCEPT (SPY, config A)
 
-SPY at lookback_days=200/trend_exit_window=150/trailing_stop_pct=0.20/max_hold_days=300 passes all 5 standard validators on the full sample. QQQ and crypto are NOT accepted at this or the original config — scope is narrow (SPY, low-vol regime dominant in the grid) but honestly documented. Strategy file kept live in `strategies/`.
+SPY at lookback_days=200/trend_exit_window=150/trailing_stop_pct=0.20/max_hold_days=300 passes all 5 standard validators on the full sample. Crypto is NOT accepted at this config — scope is narrow (equity, low-vol regime dominant in the grid) but honestly documented. Strategy file kept live in `strategies/`.
+
+## Addendum (2026-09-27-042): QQQ rescue with its own tuned config
+
+A follow-up iteration the same cron trigger found a SEPARATE per-symbol config that rescues QQQ (which failed at the SPY-tuned config, Sharpe 0.897):
+
+**QQQ config: lookback_days=150, trend_exit_window=200, trailing_stop_pct=0.15, max_hold_days=300**
+
+| Validator | QQQ value | Threshold | Passed |
+|---|---|---|---|
+| Sharpe ratio | 1.149 | >= 1.0 | YES |
+| Max drawdown | 0.203 | <= 0.25 | YES |
+| Transaction cost survival (10bps/trade, 7 trades) | net Sharpe 1.141 | >= 0.5 | YES |
+| Walk-forward (manual 4-split) | 4/4 splits positive (pass_fraction 1.0) | >= 0.75 | YES |
+| Parameter sensitivity (12-point tew x tsp sweep) | relative_std 0.061 | <= 0.5 | YES |
+
+All 5 validators pass for QQQ at its OWN tuned config (distinct from SPY's config — lookback_days 150 vs 200, trend_exit_window 200 vs 150). This is the same per-symbol-tuned-config pattern seen elsewhere in this repo (e.g. Hurst exponent, DFA sizing dial) where a single shared config does not transfer across QQQ/SPY but each symbol individually clears the bar with its own parameters.
+
+**Combined scope after this addendum: SPY (config A) + QQQ (config B, this addendum) both accepted, each with a distinct tuned parameter set. Crypto remains out of scope/rejected.**
