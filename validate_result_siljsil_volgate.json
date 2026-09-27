@@ -1,0 +1,96 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.020713619252563,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.10851540627425782,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.9058645708256594,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 73,
+      "estimated_total_cost_drag": 0.073
+    },
+    "wf": {
+      "value": 0.75,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.08366412367417571,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9174867982263533,
+      "std": 0.0767607289562331
+    },
+    "num_trades": 73,
+    "passed": {
+      "sharpe": true,
+      "mdd": true,
+      "tc": true,
+      "wf": true,
+      "ps": true
+    }
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0346051818522222,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.1025790091345985,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.8584588263770037,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 70,
+      "estimated_total_cost_drag": 0.07
+    },
+    "wf": {
+      "value": 1.0,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.055812740770958234,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9699141827504191,
+      "std": 0.05413356885192495
+    },
+    "num_trades": 70,
+    "passed": {
+      "sharpe": true,
+      "mdd": true,
+      "tc": true,
+      "wf": true,
+      "ps": true
+    }
+  }
+}

@@ -78,14 +78,25 @@ def generate_signals(
     price_df: pd.DataFrame,
     trend_sma_window: int = 200,
     ratio_sma_window: int = 100,
+    vol_window: int = 20,
+    vol_lookback: int = 252,
+    vol_regime_ratio: float = 10.0,
 ) -> pd.Series:
     """Return a {0,1} long/flat position series.
 
     Long when close > own trend_sma_window-day SMA AND SILJ/SIL ratio is
     above its own ratio_sma_window-day SMA (junior silver miners
     outperforming senior silver miners -- risk-on/high-beta-appetite
-    proxy); flat otherwise.
+    proxy) AND trailing vol_window-day realized vol <= vol_regime_ratio x
+    its trailing vol_lookback-day median (low/normal-vol regime gate,
+    rescuing the near-miss full-sample Sharpe recorded at
+    2026-09-27-063 -- the un-gated version's edge is concentrated in the
+    low-vol tercile per that grid test); flat otherwise. Default
+    vol_regime_ratio=10.0 is effectively a no-op (matches the un-gated
+    2026-09-27-063 behavior) unless explicitly tightened by the caller.
     """
+    import math
+
     df = _prep(price_df)
     close = df["close"]
 
@@ -94,7 +105,14 @@ def generate_signals(
 
     ratio_gate = _load_silj_sil_gate(df.index, ratio_sma_window)
 
-    position = (own_trend_up.astype(int) & ratio_gate).astype(int)
+    daily_log_ret = (close / close.shift(1)).apply(
+        lambda r: math.log(r) if r and r > 0 else None
+    ).astype(float)
+    realized_vol = daily_log_ret.rolling(vol_window).std() * (252 ** 0.5)
+    vol_median = realized_vol.rolling(vol_lookback, min_periods=vol_window).median()
+    low_vol_regime = (realized_vol <= (vol_median * vol_regime_ratio)).fillna(False)
+
+    position = (own_trend_up.astype(int) & ratio_gate & low_vol_regime.astype(int)).astype(int)
     return position
 
 
