@@ -1,0 +1,44 @@
+{
+  "metric": "grid_test",
+  "total_cells": 9,
+  "passed_cells": 2,
+  "pass_fraction": 0.2222222222222222,
+  "by_asset_class": {
+    "equity": {
+      "passed": 2,
+      "total": 9
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 1,
+      "total": 3
+    },
+    "mid": {
+      "passed": 1,
+      "total": 3
+    },
+    "high": {
+      "passed": 0,
+      "total": 3
+    }
+  },
+  "best_cell": {
+    "params": {
+      "strong_months": "7"
+    },
+    "asset_class": "equity",
+    "symbol": "PPLT",
+    "vol_regime": "low",
+    "sharpe": 1.3353452012961322
+  },
+  "worst_cell": {
+    "params": {
+      "strong_months": "6"
+    },
+    "asset_class": "equity",
+    "symbol": "PPLT",
+    "vol_regime": "low",
+    "sharpe": -1.4668826471874534
+  }
+}
