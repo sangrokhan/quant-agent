@@ -211,15 +211,23 @@ def _knn_bullish_proba(
 def generate_signals(
     price_df: pd.DataFrame,
     atr_period: int = 10,
-    st_multiplier: float = 3.0,
+    st_multiplier: float = 4.5,
     rsi_period: int = 14,
     vol_window: int = 20,
-    k_neighbors: int = 15,
+    k_neighbors: int = 20,
     retrain_every: int = 63,
     train_min_bars: int = 252,
-    confidence_buffer: float = 0.1,
+    confidence_buffer: float = 0.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a {0,1} long/flat position series.
+
+    Defaults reflect the ACCEPTED QQQ-only config from
+    knowledge_base/strategies_log.jsonl id=2026-09-27-115 (Sharpe 1.126,
+    MDD 0.161, TC-survival net Sharpe 0.747, param-sensitivity rel-std
+    0.039). This exact config decisively FAILS on SPY (Sharpe 0.082, MDD
+    0.256) and was not full-sample-validated on crypto -- callers targeting
+    other symbols should re-tune, not assume these defaults transfer.
+    """
     df = _prep(price_df)
     close = df["close"]
     high = df["high"] if "high" in df.columns else close
@@ -242,13 +250,13 @@ def generate_signals(
 def generate_returns(
     price_df: pd.DataFrame,
     atr_period: int = 10,
-    st_multiplier: float = 3.0,
+    st_multiplier: float = 4.5,
     rsi_period: int = 14,
     vol_window: int = 20,
-    k_neighbors: int = 15,
+    k_neighbors: int = 20,
     retrain_every: int = 63,
     train_min_bars: int = 252,
-    confidence_buffer: float = 0.1,
+    confidence_buffer: float = 0.0,
 ) -> pd.Series:
     """Return the strategy's daily return series (no transaction costs)."""
     df = _prep(price_df)
