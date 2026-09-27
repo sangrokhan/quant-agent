@@ -1,0 +1,96 @@
+{
+  "QQQ": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.2495150272217743,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.10004336198791342,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.093809856822463,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 84,
+      "estimated_total_cost_drag": 0.084
+    },
+    "wf": {
+      "value": 1.0,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.04595248785172094,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.1816632968342056,
+      "std": 0.05430036829259834
+    },
+    "num_trades": 84,
+    "passed": {
+      "sharpe": true,
+      "mdd": true,
+      "tc": true,
+      "wf": true,
+      "ps": true
+    }
+  },
+  "SPY": {
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.2399758297193586,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.0756949755618348,
+      "threshold": 0.25
+    },
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.061075797073904,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10,
+      "num_trades": 71,
+      "estimated_total_cost_drag": 0.07100000000000001
+    },
+    "wf": {
+      "value": 1.0,
+      "threshold": 0.75,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.03909653320677922,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.2045154421309066,
+      "std": 0.04709237798134935
+    },
+    "num_trades": 71,
+    "passed": {
+      "sharpe": true,
+      "mdd": true,
+      "tc": true,
+      "wf": true,
+      "ps": true
+    }
+  }
+}
