@@ -1,0 +1,50 @@
+{
+  "metric": "grid_test",
+  "total_cells": 108,
+  "passed_cells": 33,
+  "pass_fraction": 0.3055555555555556,
+  "by_asset_class": {
+    "equity": {
+      "passed": 27,
+      "total": 54
+    },
+    "crypto": {
+      "passed": 6,
+      "total": 54
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 24,
+      "total": 36
+    },
+    "mid": {
+      "passed": 9,
+      "total": 36
+    },
+    "high": {
+      "passed": 0,
+      "total": 36
+    }
+  },
+  "best_cell": {
+    "params": {
+      "trend_window": 50,
+      "min_advance_atr_mult": 1.5
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "low",
+    "sharpe": 2.7119443990915024
+  },
+  "worst_cell": {
+    "params": {
+      "trend_window": 100,
+      "min_advance_atr_mult": 1.5
+    },
+    "asset_class": "equity",
+    "symbol": "QQQ",
+    "vol_regime": "high",
+    "sharpe": -0.25076129296244754
+  }
+}
