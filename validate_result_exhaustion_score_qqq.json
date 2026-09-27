@@ -1,0 +1,54 @@
+{
+  "symbol": "QQQ",
+  "params": {
+    "trend_window": 150,
+    "deviation_pct": 0.05,
+    "exit_min_score": 3
+  },
+  "num_trades": 69,
+  "sharpe_ratio": {
+    "passed": true,
+    "metric": "sharpe_ratio",
+    "value": 1.0851370077748448,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.2444587187760584,
+    "threshold": 0.25
+  },
+  "transaction_cost_survival": {
+    "passed": true,
+    "metric": "net_sharpe_after_costs",
+    "value": 0.9923280513948114,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 15.0,
+    "num_trades": 69,
+    "estimated_total_cost_drag": 0.10350000000000001
+  },
+  "walk_forward": {
+    "passed": "True",
+    "metric": "walk_forward_pass_fraction_manual",
+    "value": 0.75,
+    "threshold": 0.75,
+    "n_splits": 4,
+    "per_split_passed": [
+      "True",
+      "False",
+      "True",
+      "True"
+    ],
+    "note": "manual split -- validators.check_walk_forward errors on installed vectorbt (vbt.utils.splitting missing)"
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.33423547853510005,
+    "threshold": 0.5,
+    "grid_size": 6,
+    "mean": 0.7009505060478466,
+    "std": 0.23428252781832254
+  }
+}
