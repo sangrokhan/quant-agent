@@ -1,0 +1,46 @@
+{
+  "metric": "grid_test",
+  "total_cells": 27,
+  "passed_cells": 8,
+  "pass_fraction": 0.2962962962962963,
+  "by_asset_class": {
+    "equity": {
+      "passed": 8,
+      "total": 27
+    }
+  },
+  "by_vol_regime": {
+    "low": {
+      "passed": 8,
+      "total": 9
+    },
+    "mid": {
+      "passed": 0,
+      "total": 9
+    },
+    "high": {
+      "passed": 0,
+      "total": 9
+    }
+  },
+  "best_cell": {
+    "params": {
+      "entry_contango": 0.03,
+      "max_hold_days": 90
+    },
+    "asset_class": "equity",
+    "symbol": "VXX",
+    "vol_regime": "low",
+    "sharpe": 1.39106770250077
+  },
+  "worst_cell": {
+    "params": {
+      "entry_contango": 0.03,
+      "max_hold_days": 30
+    },
+    "asset_class": "equity",
+    "symbol": "VXX",
+    "vol_regime": "high",
+    "sharpe": -1.445292240778383
+  }
+}
