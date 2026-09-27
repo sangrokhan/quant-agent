@@ -1,0 +1,57 @@
+{
+  "sharpe_ratio": {
+    "passed": false,
+    "evidence": {
+      "metric": "sharpe_ratio",
+      "value": -0.22141852868971895,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  },
+  "max_drawdown": {
+    "passed": true,
+    "evidence": {
+      "metric": "max_drawdown",
+      "value": 0.04381899719533311,
+      "threshold": 0.25
+    }
+  },
+  "transaction_cost_survival": {
+    "passed": false,
+    "evidence": {
+      "metric": "net_sharpe_after_costs",
+      "value": -0.2637723945159251,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 6,
+      "estimated_total_cost_drag": 0.006
+    }
+  },
+  "walk_forward": {
+    "passed": false,
+    "evidence": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.5,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "note": "manual fallback split (vectorbt RangeSplitter API error: module 'vectorbt.utils' has no attribute 'splitting')"
+    }
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "evidence": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.20670862700656487,
+      "threshold": 0.5,
+      "grid_size": 6,
+      "mean": -0.3438947589701729,
+      "std": 0.071086013461478
+    }
+  }
+}
