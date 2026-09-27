@@ -1,0 +1,39 @@
+{
+  "symbol": "SPY",
+  "best_params": {
+    "confidence_buffer": 0.0,
+    "retrain_every": 126
+  },
+  "num_trades": 370,
+  "sharpe": {
+    "passed": false,
+    "metric": "sharpe_ratio",
+    "value": 0.6971886820077295,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": false,
+    "metric": "max_drawdown",
+    "value": 0.3176525679059089,
+    "threshold": 0.25
+  },
+  "tc_survival": {
+    "passed": false,
+    "metric": "net_sharpe_after_costs",
+    "value": 0.3576211319409238,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10.0,
+    "num_trades": 370,
+    "estimated_total_cost_drag": 0.37
+  },
+  "parameter_sensitivity": {
+    "passed": false,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.6262316393937,
+    "threshold": 0.5,
+    "grid_size": 3,
+    "mean": 0.3937683156779621,
+    "std": 0.24659017786830617
+  }
+}
