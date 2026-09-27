@@ -1,0 +1,40 @@
+{
+  "symbol": "QQQ",
+  "best_params": {
+    "fvg_search_window": 5,
+    "trend_window": 100,
+    "max_hold_days": 5
+  },
+  "num_trades": 199,
+  "sharpe": {
+    "passed": false,
+    "metric": "sharpe_ratio",
+    "value": 0.5370177120287721,
+    "threshold": 1.0,
+    "periods_per_year": 252
+  },
+  "max_drawdown": {
+    "passed": true,
+    "metric": "max_drawdown",
+    "value": 0.11980847699764696,
+    "threshold": 0.25
+  },
+  "tc_survival": {
+    "passed": false,
+    "metric": "net_sharpe_after_costs",
+    "value": 0.22435139103632482,
+    "threshold": 0.5,
+    "cost_bps_per_trade": 10.0,
+    "num_trades": 199,
+    "estimated_total_cost_drag": 0.199
+  },
+  "parameter_sensitivity": {
+    "passed": true,
+    "metric": "parameter_sensitivity_relative_std",
+    "value": 0.49478048936848174,
+    "threshold": 0.5,
+    "grid_size": 9,
+    "mean": 0.30721048545459934,
+    "std": 0.1520017543323555
+  }
+}
