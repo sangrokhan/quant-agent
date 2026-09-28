@@ -77,5 +77,13 @@ per-symbol retune).
   live in `strategies/`.
 - BTC/USDT accepted (rescued) at `leverage_cap=0.65`,
   `target_pct=0.75`, `max_hold_days=40`.
-- SPY (Sharpe 0.85) and ETH/USDT (Sharpe 0.89) are near-misses worth a
-  per-symbol retune in a future iteration.
+- SPY accepted (per-symbol retune, log id 2026-09-28-060) at
+  `cup_window=75`, `handle_max_days=15`, `target_pct=0.5`,
+  `max_hold_days=90`, `leverage_cap=1.0` — cleanest result of all four
+  symbols (Sharpe 1.217, MDD 0.100, walk-forward 4/4).
+- ETH/USDT accepted (per-symbol retune, log id 2026-09-28-060) at
+  `cup_window=60`, `handle_max_days=22`, `target_pct=0.75`,
+  `max_hold_days=40`, `leverage_cap=0.7` (needed to bring full-exposure
+  MDD 0.338 under the 0.25 cap).
+- Cup with Handle now covers the full universe this repo tracks: QQQ,
+  SPY, BTC/USDT, ETH/USDT, each with a distinct per-symbol tuned config.
