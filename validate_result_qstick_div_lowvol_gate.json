@@ -1,0 +1,118 @@
+{
+  "QQQ": {
+    "num_trades": 2,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.7373913067380492,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.022696648627180682,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7221626838729152,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 2,
+        "estimated_total_cost_drag": 0.002
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 1.0,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "note": "manual chronological split fallback (vectorbt API error: module 'vectorbt.utils' has no attribute 'splitting')"
+      }
+    ],
+    "ps": [
+      false,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 5.941013276044895,
+        "threshold": 0.5,
+        "grid_size": 18,
+        "mean": -0.08310282076859092,
+        "std": 0.4937149614629781
+      }
+    ]
+  },
+  "ETH/USDT": {
+    "num_trades": 26,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.7561490379887988,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.24713948419905563,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      true,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.7284864884769147,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 26,
+        "estimated_total_cost_drag": 0.026000000000000002
+      }
+    ],
+    "wf": [
+      true,
+      {
+        "metric": "walk_forward_pass_fraction",
+        "value": 0.75,
+        "threshold": 0.75,
+        "n_splits": 4,
+        "per_split_passed": [
+          true,
+          true,
+          false,
+          true
+        ],
+        "note": "manual chronological split fallback (vectorbt API error: module 'vectorbt.utils' has no attribute 'splitting')"
+      }
+    ],
+    "ps": [
+      true,
+      {
+        "metric": "parameter_sensitivity_relative_std",
+        "value": 0.4567009863203626,
+        "threshold": 0.5,
+        "grid_size": 18,
+        "mean": 0.450811444528537,
+        "std": 0.20588603136069028
+      }
+    ]
+  }
+}
