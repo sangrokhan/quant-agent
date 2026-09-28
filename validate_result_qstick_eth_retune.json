@@ -1,0 +1,58 @@
+{
+  "num_trades": 24,
+  "sharpe": [
+    false,
+    {
+      "metric": "sharpe_ratio",
+      "value": 0.5985007671154611,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    }
+  ],
+  "mdd": [
+    true,
+    {
+      "metric": "max_drawdown",
+      "value": 0.24309757305189938,
+      "threshold": 0.25
+    }
+  ],
+  "tc": [
+    true,
+    {
+      "metric": "net_sharpe_after_costs",
+      "value": 0.5626835580158244,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 24,
+      "estimated_total_cost_drag": 0.024
+    }
+  ],
+  "wf": [
+    false,
+    {
+      "metric": "walk_forward_pass_fraction",
+      "value": 0.5,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "note": "manual chronological split fallback (vectorbt API error: module 'vectorbt.utils' has no attribute 'splitting')"
+    }
+  ],
+  "ps": [
+    true,
+    {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.06956585386412566,
+      "threshold": 0.5,
+      "grid_size": 3,
+      "mean": 0.7077200065076958,
+      "std": 0.04923314654943243
+    }
+  ]
+}
