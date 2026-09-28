@@ -1,0 +1,33 @@
+{
+  "SPY": {
+    "num_trades": 22,
+    "sharpe": [
+      false,
+      {
+        "metric": "sharpe_ratio",
+        "value": 0.27476246975776897,
+        "threshold": 1.0,
+        "periods_per_year": 252
+      }
+    ],
+    "mdd": [
+      true,
+      {
+        "metric": "max_drawdown",
+        "value": 0.08113641390928339,
+        "threshold": 0.25
+      }
+    ],
+    "tc": [
+      false,
+      {
+        "metric": "net_sharpe_after_costs",
+        "value": 0.14361029046806942,
+        "threshold": 0.5,
+        "cost_bps_per_trade": 10.0,
+        "num_trades": 22,
+        "estimated_total_cost_drag": 0.022
+      }
+    ]
+  }
+}
