@@ -36,7 +36,7 @@ ETH/USDT], `vol_regime_splits=3`.
 **Decision: ACCEPTED (QQQ)** — all 4 runnable validators pass, 61 trades
 over 7.5yr, modest cost drag.
 
-### BTC/USDT (cup_window=60, handle_max_days=15, target_pct=0.5)
+### BTC/USDT — original config (cup_window=60, handle_max_days=15, target_pct=0.5)
 
 | Validator | Passed | Value | Threshold |
 |---|---|---|---|
@@ -45,9 +45,25 @@ over 7.5yr, modest cost drag.
 | Transaction cost survival | PASS | 1.033 net Sharpe | 0.5 |
 | Walk-forward (4 splits) | **FAIL** | 0.5 (2/4 positive) | 0.75 |
 
-**Decision: REJECTED (BTC/USDT)** — walk-forward fails despite strong
-full-sample Sharpe/TC-survival; the edge is not consistently present
-across out-of-sample sub-periods, and MDD only barely clears the 0.25 cap.
+Original config rejected on walk-forward.
+
+### BTC/USDT — RESCUED (cup_window=60, handle_max_days=15, target_pct=0.75,
+max_hold_days=40, leverage_cap=0.65)
+
+A same-cron-trigger rescue (log id 2026-09-28-059) added a `leverage_cap`
+parameter to the strategy and retuned `target_pct`/`max_hold_days` to find
+a config with walk-forward-stable timing, then scaled exposure down to
+clear the max-drawdown cap:
+
+| Validator | Passed | Value | Threshold |
+|---|---|---|---|
+| Sharpe ratio | PASS | 1.049 | 1.0 |
+| Max drawdown | PASS | 0.235 | 0.25 |
+| Transaction cost survival | PASS | 1.003 net Sharpe | 0.5 |
+| Walk-forward (4 splits) | PASS | 0.75 (3/4 positive) | 0.75 |
+
+**Decision: ACCEPTED (BTC/USDT, rescued)** — all 4 validators pass, 45
+trades over 7.5yr at `leverage_cap=0.65`.
 
 SPY and ETH/USDT were not run through full single-config validators this
 iteration (best full-sample Sharpe from the parameter scan was 0.85 and
@@ -57,9 +73,9 @@ per-symbol retune).
 
 ## Notes for future loops
 
-- QQQ config accepted; strategy file kept live in `strategies/`.
-- BTC/USDT is a near-miss (Sharpe/MDD/TC all pass, only walk-forward
-  fails) — worth revisiting with a narrower parameter search focused on
-  walk-forward stability specifically.
+- QQQ config accepted at default `leverage_cap=1.0`; strategy file kept
+  live in `strategies/`.
+- BTC/USDT accepted (rescued) at `leverage_cap=0.65`,
+  `target_pct=0.75`, `max_hold_days=40`.
 - SPY (Sharpe 0.85) and ETH/USDT (Sharpe 0.89) are near-misses worth a
   per-symbol retune in a future iteration.

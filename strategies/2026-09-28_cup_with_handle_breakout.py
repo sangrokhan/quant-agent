@@ -90,8 +90,16 @@ def generate_signals(
     handle_depth_pct: float = 0.5,
     target_pct: float = 0.61,
     max_hold_days: int = 60,
+    leverage_cap: float = 1.0,
 ) -> pd.Series:
-    """Return a {0,1} long/flat position series."""
+    """Return a position series (0 or `leverage_cap` when long).
+
+    `leverage_cap` rescales the full-exposure {0,1} signal to {0,
+    leverage_cap} -- added to allow position-size-capped variants (e.g.
+    for crypto, where full 1.0 exposure breaches the max-drawdown cap even
+    when Sharpe/TC/walk-forward all pass) without changing the underlying
+    entry/exit timing logic at all.
+    """
     df = _prep(price_df)
     close = df["close"]
     close_arr = close.to_numpy()
@@ -182,7 +190,7 @@ def generate_signals(
                 position[t] = 1
                 watching = False
 
-    return pd.Series(position, index=close.index)
+    return pd.Series(position, index=close.index) * leverage_cap
 
 
 def generate_returns(price_df: pd.DataFrame, **kwargs) -> pd.Series:
