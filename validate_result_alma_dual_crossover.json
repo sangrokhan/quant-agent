@@ -1,0 +1,194 @@
+{
+  "QQQ": {
+    "num_trades": 59,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.1384519450880977,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.22638148941844438,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0636581341232392,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 59,
+      "estimated_total_cost_drag": 0.059000000000000004
+    },
+    "tc_passed": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "wf_passed": true,
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.17298923877806824,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.029737056292768,
+      "std": 0.17813342950965472
+    },
+    "ps_passed": true,
+    "all_passed": true
+  },
+  "SPY": {
+    "num_trades": 58,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.334448023842577,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.1370577090966989,
+      "threshold": 0.25
+    },
+    "mdd_passed": true,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.2312749049189746,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 58,
+      "estimated_total_cost_drag": 0.058
+    },
+    "tc_passed": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "wf_passed": true,
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.3050326328652931,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9360437063443761,
+      "std": 0.2855238762232123
+    },
+    "ps_passed": true,
+    "all_passed": true
+  },
+  "BTC/USDT": {
+    "num_trades": 91,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.0832202037094252,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.5840003448721627,
+      "threshold": 0.25
+    },
+    "mdd_passed": false,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0503624788924553,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 91,
+      "estimated_total_cost_drag": 0.091
+    },
+    "tc_passed": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "wf_passed": true,
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.08719248068905001,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 1.0173577167368908,
+      "std": 0.08870594307043736
+    },
+    "ps_passed": true,
+    "all_passed": false
+  },
+  "ETH/USDT": {
+    "num_trades": 96,
+    "sharpe": {
+      "metric": "sharpe_ratio",
+      "value": 1.084928732516661,
+      "threshold": 1.0,
+      "periods_per_year": 252
+    },
+    "sharpe_passed": true,
+    "mdd": {
+      "metric": "max_drawdown",
+      "value": 0.5371719654876014,
+      "threshold": 0.25
+    },
+    "mdd_passed": false,
+    "tc": {
+      "metric": "net_sharpe_after_costs",
+      "value": 1.0602977007582575,
+      "threshold": 0.5,
+      "cost_bps_per_trade": 10.0,
+      "num_trades": 96,
+      "estimated_total_cost_drag": 0.096
+    },
+    "tc_passed": true,
+    "wf": {
+      "metric": "walk_forward_pass_fraction",
+      "value": 1.0,
+      "threshold": 0.75,
+      "n_splits": 4,
+      "per_split_passed": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "wf_passed": true,
+    "ps": {
+      "metric": "parameter_sensitivity_relative_std",
+      "value": 0.1162713358512835,
+      "threshold": 0.5,
+      "grid_size": 9,
+      "mean": 0.9514753723147682,
+      "std": 0.11062931256863542
+    },
+    "ps_passed": true,
+    "all_passed": false
+  }
+}
